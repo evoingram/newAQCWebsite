@@ -27,3 +27,4 @@ Still left to finish:
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [ ] stop underlining of all links
 - [ ] add hover blur to background of showcase
+- [ ] maybe affix header menu
