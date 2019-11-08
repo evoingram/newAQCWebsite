@@ -26,7 +26,7 @@ Still left to finish:
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
-- [ ] stop underlining of all links
+- [ ] stop underlining of all body links
 - [ ] add hover blur to background of showcase
 - [ ] maybe affix header menu
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
