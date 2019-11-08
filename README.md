@@ -31,3 +31,4 @@ Still left to finish:
 - [ ] maybe affix header menu
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
 - [ ] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
+- [ ] add empty line/space above green text in showcase image
