@@ -14,7 +14,7 @@ Done so far:
 - [X] contains separate less files for animation/header/form or popup window.
 - [X] contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
-- [X] added blur to front showcase image
+- [X] added hover blur to front showcase image
 
 Still left to finish: 
 
@@ -26,4 +26,4 @@ Still left to finish:
 - [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [ ] stop underlining of all links
-- [ ] add blur to background of showcase
+- [ ] add hover blur to background of showcase
