@@ -15,6 +15,7 @@ Done so far:
 - [X] contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - [X] added hover blur to front showcase image
+- [X] added linear gradient to logo and nav menus
 
 Still left to finish: 
 
