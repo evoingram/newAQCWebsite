@@ -1,2 +1,2 @@
 # newAQCWebsite
-new website using what i've learned in Lambda
+new company website using what i've learned in Lambda
