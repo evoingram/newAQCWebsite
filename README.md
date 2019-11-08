@@ -14,7 +14,8 @@ Done so far:
 - [X] contains separate less files for animation/header/form or popup window.
 - [X] contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
-- [X] added blur to front showcase image
+- [X] added hover blur to front showcase image
+- [X] added linear gradient to logo and nav menus
 
 Still left to finish: 
 
@@ -25,5 +26,9 @@ Still left to finish:
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
-- [ ] stop underlining of all links
-- [ ] add blur to background of showcase
+- [ ] stop underlining of all body links
+- [ ] add hover blur to background of showcase
+- [ ] maybe affix header menu
+- [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
+- [ ] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
+- [ ] add empty line/space above green text in showcase image
