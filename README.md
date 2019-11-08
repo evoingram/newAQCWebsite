@@ -7,7 +7,7 @@ Done so far:
 - [X] made base layout
 - [X] set colors and added previous content
 - [X] completed popup windows except for priceQuote & FAQ
-- [X] this is an infinite or endless page; all internal links on main page are a popup to other sections on the same page.
+- [X] this is an infinite or endless page; all internal links on main page are a popup to other hidden sections on the same page.
 - [X] added placeholder pictures
 - [X] contains animation in showcase image from top of page to where it resides.
 - [X] contains animation bringing in the stripes/main nav linked pages from either side; left, right, left,right, left to where they each reside.
