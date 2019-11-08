@@ -24,3 +24,4 @@ Still left to finish:
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
+- [ ] stop underlining of all links
