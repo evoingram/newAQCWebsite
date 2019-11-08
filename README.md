@@ -13,6 +13,7 @@ Done so far:
 - [X] contains animation bringing in the stripes/main nav linked pages from either side; left, right, left,right, left to where they each reside.
 - [X] contains separate less files for animation/header/form or popup window.
 - [X] contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
+- [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 
 Still left to finish: 
 
