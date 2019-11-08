@@ -22,4 +22,5 @@ Still left to finish:
 - [ ] FAQ questions
 - [ ] rates section
 - [ ] ordering pages/popup
+- [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
