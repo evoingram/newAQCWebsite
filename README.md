@@ -29,4 +29,4 @@ Still left to finish:
 - [ ] stop underlining of all links
 - [ ] add hover blur to background of showcase
 - [ ] maybe affix header menu
-- [ ] maybe add smoky text effect somewhere from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
+- [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
