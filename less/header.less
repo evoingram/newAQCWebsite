@@ -1,0 +1,100 @@
+.showcase {
+	flex-direction: column;
+	position: relative;
+	margin: 5% 0 5% 5%;
+	padding: 0;
+	animation: titleAnimationT 3s 1;
+	.vCenter();
+	color: @green;
+	.fontBold();
+
+	.content::after {
+		content: '';
+		.vCenter();
+		margin-top: 0% 0% 5% 0%;
+		z-index: 99002;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		transition: all 1000ms;
+		background: transparent;
+	}
+
+	.content::hover {
+		z-index: 99002;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		transition: all 1000ms;
+	}
+
+	.content {
+		.stackedRows {
+			display: flex;
+			width: 75%;
+			z-index: 99007;
+			flex-wrap: wrap;
+
+			h1 {
+				color: @gray;
+				.fontBold();
+				margin-bottom: 5%;
+				z-index: 99002;
+			}
+
+			img {
+				margin: 5% 1% 5% 1%;
+				z-index: 99002;
+			}
+
+			p {
+				z-index: 99002;
+			}
+		}
+
+		.aqcLogo {
+			padding-top: 3%;
+			background-image: linear-gradient(135deg, @navy 0%, @navy 35%, @green 100%);
+			background-attachment: fixed;
+			z-index: 99007;
+			background-size: cover;
+			.rowNWHVCenter();
+			width: 75%;
+
+			h1 {
+				font-family: Arial, 'sans-serif';
+				font-size: 8rem;
+				font-weight: bold;
+			}
+		}
+	}
+
+	&::after {
+		content: '';
+		flex-direction: column;
+		margin: 0%;
+		z-index: 99003;
+		align-items: center;
+		color: @green;
+		.fontBold();
+		overflow-x: hidden;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+		transition: all 1000ms;
+		.vCenter();
+	}
+
+	&:hover::after {
+		z-index: 99003;
+		filter: blur(10px);
+		-webkit-filter: blur(10px);
+	}
+
+	&:hover .content {
+		filter: blur(0px);
+		-webkit-filter: blur(10px);
+	}
+}
+
+header .navigation {
+	margin: 5% 0 0 0;
+	align-items: baseline;
+}
