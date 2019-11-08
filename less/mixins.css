@@ -1,0 +1,14 @@
+.vCenter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.mTopBottom {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.mLeftRight {
+  margin-left: 2%;
+  margin-right: 2%;
+}

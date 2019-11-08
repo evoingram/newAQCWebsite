@@ -1,0 +1,11 @@
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+body {
+  background-image: url('../img/IMG_1600.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
