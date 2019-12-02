@@ -34,3 +34,4 @@ Still left to finish:
 - [ ] add empty line/space above green text in showcase image
 - [ ] 45 pages per audio hour added to terms
 - [ ] close all other popups when other one opens
+- [ ] add space between company logo and green text or get rid of green text
