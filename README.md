@@ -35,3 +35,4 @@ Still left to finish:
 - [ ] 45 pages per audio hour added to terms
 - [ ] close all other popups when other one opens
 - [ ] add space between company logo and green text or get rid of green text
+- [ ] change developer section to include appropriate projects, links, etc
