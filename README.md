@@ -21,7 +21,7 @@ Still left to finish:
 
 - [ ] typos
 - [ ] priceQuote popup
-- [ ] FAQ questions
+- [ ] FAQ questions & also FAQ expands to 100% width
 - [ ] rates section
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
