@@ -28,7 +28,7 @@ Still left to finish:
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [ ] stop underlining of all body links
 - [ ] add hover blur to background of showcase
-- [ ] maybe affix header menu
+- [ ] sticky nav menu using j30 example
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
 - [ ] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [ ] add empty line/space above green text in showcase image
