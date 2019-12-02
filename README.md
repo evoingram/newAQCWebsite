@@ -36,3 +36,4 @@ Still left to finish:
 - [ ] close all other popups when other one opens
 - [ ] add space between company logo and green text or get rid of green text
 - [ ] change developer section to include appropriate projects, links, etc
+- [ ] add user click menu to courttranscription slide so they can switch between pictures
