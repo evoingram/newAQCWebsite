@@ -33,3 +33,4 @@ Still left to finish:
 - [ ] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [ ] add empty line/space above green text in showcase image
 - [ ] 45 pages per audio hour added to terms
+- [ ] close all other popups when other one opens
