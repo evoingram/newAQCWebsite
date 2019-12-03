@@ -423,6 +423,9 @@ header .sticky {
 header .sticky + .content {
   padding-top: 60px;
 }
+.frontWords {
+  padding-top: 2%;
+}
 @keyframes titleAnimation {
   0% {
     transform: translateY(-50px);
@@ -492,6 +495,7 @@ h2 {
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin-top: 4%;
 }
 .row {
   height: 20%;
