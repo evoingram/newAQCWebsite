@@ -18,6 +18,7 @@ Done so far:
 - [X] added linear gradient to logo and nav menus
 - [X] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [X] FAQ issues fixed (width, padding, and questions/answers not popping out properly)
+- [X] added clickable image carousel, removed timed image shuffle
 - [X] sticky header menu
 - [X] add empty line/space above green text in showcase image
 - [X] stop underlining of all body links
