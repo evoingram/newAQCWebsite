@@ -16,6 +16,8 @@ Done so far:
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - [X] added hover blur to front showcase image
 - [X] added linear gradient to logo and nav menus
+
+12/3/2019:
 - [X] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [X] FAQ issues fixed (width, padding, and questions/answers not popping out properly)
 - [X] added clickable image carousel, removed timed image shuffle
