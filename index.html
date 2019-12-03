@@ -37,7 +37,8 @@
                 <div class="navLinkContainer">
                     <a href="#contact" class="navLink">Contact</a>
                 </div>
-                <div class="navLinkContainer"><a href="https://www.aquoco.co/Files/" class="navLink" target="_blank">Log
+                <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
+                        target="_blank">Log
                         In</a></div>
             </nav>
         </section>
@@ -341,11 +342,14 @@
             </div>
             <div class="navLinkContainer"><a href="#softwareDevelopment" class="navLink">Development</a></div>
             <div class="navLinkContainer"><a href="#contact" class="navLink">Contact</a></div>
-            <div class="navLinkContainer"><a href="https://www.aquoco.co/Files/" class="navLink" target="_blank">Log
+            <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
+                    target="_blank">Log
                     In</a></div>
         </nav>
     </footer>
     <!-- Need popups for contact form contactus -->
+
+
 
     <div class="form-popup" id="requestAudio">
         <div class="form-container">
@@ -1466,6 +1470,24 @@
                     return;
                 }
 
+            }
+
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function () { myFunction() };
+
+            // Get the navbar
+            var navbar = document.querySelector(".navigation");
+
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
             } 
         </script>
 
