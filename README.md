@@ -24,14 +24,13 @@ Done so far:
 - [X] sticky header menu
 - [X] add empty line/space above green text in showcase image
 - [X] stop underlining of all body links
+- [X] sub real images for placeholders
 
 Still left to finish: 
-
 - [ ] typos
 - [ ] priceQuote popup
 - [ ] rates section
 - [ ] ordering pages/popup
-- [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [ ] add hover blur to background of showcase
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
