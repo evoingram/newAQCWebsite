@@ -385,10 +385,6 @@ footer nav #loginLink {
   filter: blur(0px);
   -webkit-filter: blur(10px);
 }
-header {
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-}
 header .navigation {
   margin: 5% 0 0 0;
   align-items: baseline;
