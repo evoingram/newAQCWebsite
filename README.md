@@ -16,12 +16,13 @@ Done so far:
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - [X] added hover blur to front showcase image
 - [X] added linear gradient to logo and nav menus
+- [X] add user click menu to courttranscription slide so they can switch between pictures
+- [X] FAQ questions & also FAQ expands to 100% width
 
 Still left to finish: 
 
 - [ ] typos
 - [ ] priceQuote popup
-- [ ] FAQ questions & also FAQ expands to 100% width
 - [ ] rates section
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
@@ -36,5 +37,4 @@ Still left to finish:
 - [ ] close all other popups when other one opens
 - [ ] add space between company logo and green text or get rid of green text
 - [ ] change developer section to include appropriate projects, links, etc
-- [ ] add user click menu to courttranscription slide so they can switch between pictures
 - [ ] add resources page w/ useful law links
