@@ -35,6 +35,9 @@
 	}
 }
 
+#faq {
+}
+
 .form-container {
 	/* Add styles to the form container */
 	max-width: 300px;
@@ -44,12 +47,47 @@
 	.details,
 	.show,
 	.hide:target {
+		text-align: left;
+		justify-content: left;
 		display: none;
 	}
 
 	.hide:target + .show,
 	.hide:target ~ .details {
+		text-align: left;
+		justify-content: left;
 		display: block;
+	}
+
+	.stackedRows {
+		div {
+			.question,
+			.show,
+			.hide,
+			.details {
+				padding-top: 2%;
+				padding-bottom: 2%;
+
+				&:after {
+					text-align: left;
+				}
+
+				&:before {
+					text-align: left;
+				}
+			}
+
+			a {
+				color: @green;
+				text-align: center;
+			}
+			&:active {
+				text-align: left;
+			}
+		}
+		.question {
+			border-top: 1px solid green;
+		}
 	}
 }
 

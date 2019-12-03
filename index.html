@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link href="css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Welcome to A Quo Co. court transcription services.</title>
 </head>
 
@@ -71,6 +76,7 @@
             <br><br>
             <section class="stackedRows">
                 <section id="leftHalf" class="quarter">
+                    <!--
                     <script>
                         var i = 0; 			// Start Point
                         var images = [];	// Images Array
@@ -98,7 +104,45 @@
 
                     </script><br><br>
                     <img name="slide" alt="A Quo Co., Seattle, Washington court transcription services features"
-                        title="A Quo Co., Seattle, Washington court transcription services features" />
+                        title="A Quo Co., Seattle, Washington court transcription services features" />-->
+
+                    <div class="carouselContainer">
+                        <div id="transcriptCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#transcriptCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#transcriptCarousel" data-slide-to="1"></li>
+                                <li data-target="#transcriptCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="img/table-of-authorities.jpg" alt="example of table of authorities"
+                                        style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/TOA-HeadingLinks.jpg"
+                                        alt="example of Table of Authorities with heading links" style="width:100%;">
+                                </div>
+
+                                <div class="item">
+                                    <img src="img/word-index.jpg" alt="example of word index" style="width:100%;">
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#transcriptCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#transcriptCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
                 </section>
                 <br><br>
                 <section id="rightHalf" class="quarter">
@@ -127,17 +171,15 @@
             <section class="stackedRows">
                 <p>Rates start as low as $2.50 per page. A deposit of 100 percent of the quote is required up front for
                     court & any balance/refund due upon completion of the
-                    transcript prior to delivery. <a href="#requestAudio" class="btn open-button"
-                        onclick="openForm('requestAudio')">We can request your audio
+                    transcript prior to delivery. <a href="#requestAudio" onclick="openForm('requestAudio')">We can
+                        request your audio
                         at no or for an additional charge</a>, depending on the circumstance. We currently accept check
                     or money order. We provide terms to government agencies and approved businesses; you may <a
                         href="Application-Template.pdf">apply here</a>.</p>
             </section>
             <section class="stackedRows">
                 <p>For an extensive list of jurisdictions where we are approved, please <a href="#jurisdictions"
-                        class="btn open-button" onclick="openForm('jurisdictions')">click
-                        here</a>.
-                </p>
+                        onclick="openForm('jurisdictions')">click here</a>.</p>
             </section>
         </section>
 
@@ -148,8 +190,8 @@
             </section>
 
             <section class="stackedRows">
-                <p>By ordering, you are agreeing to the following <a href="#tos" class="btn open-button"
-                        onclick="openForm('tos')">terms of service here</a>.
+                <p>By ordering, you are agreeing to the following <a href="#tos" onclick="openForm('tos')">terms of
+                        service here</a>.
                 </p>
             </section>
             <section class="stackedRows">
@@ -213,25 +255,25 @@
                 <section id="rightHalf" class="quarter">
                     <h3>What are you looking for?</h3><br>
                     <ul>
-                        <li><a href="#aboutAQC" class="btn open-button" onclick="openForm('aboutAQC')">About A Quo
+                        <li><a href="#aboutAQC" onclick="openForm('aboutAQC')">About A Quo
                                 Co.</a></li>
-                        <li><a href="#aboutELI" class="btn open-button" onclick="openForm('aboutELI')">About Erica L.
+                        <li><a href="#aboutELI" onclick="openForm('aboutELI')">About Erica L.
                                 Ingram</a></li>
                         <li><a href="https://www.aquoco.co/Application-Template.pdf">Businesses, apply for terms
                                 here.</a>
                         </li>
-                        <li><a href="#faq" class="btn open-button" onclick="openForm('faq')">Frequently Asked
+                        <li><a href="#faq" onclick="openForm('faq')">Frequently Asked
                                 Questions</a></li>
-                        <li><a href="#priceQuote" class="btn open-button" onclick="openForm('priceQuote')">Get a price
+                        <li><a href="#priceQuote" onclick="openForm('priceQuote')">Get a price
                                 quote
                                 here.</a></li>
-                        <li><a href="#tos" class="btn open-button" onclick="openForm('tos')">Terms of Service here</a>.
+                        <li><a href="#tos" onclick="openForm('tos')">Terms of Service here</a>.
                         </li>
-                        <li><a href="#difference" class="btn open-button" onclick="openForm('difference')">What's the
+                        <li><a href="#difference" onclick="openForm('difference')">What's the
                                 difference between a transcriber and a
                                 stenographer?</a>
                         </li>
-                        <li><a href="#security" class="btn open-button" onclick="openForm('security')">See our security
+                        <li><a href="#security" onclick="openForm('security')">See our security
                                 policy here.</a></li>
                         <li><a href="https://transcription.aquoco.co/" target="_blank">Erica's blog</a>
                         </li>
@@ -904,364 +946,528 @@
                 <h1>Frequently Asked Questions</h1>
             </section><br><br>
             <section class="stackedRows">
-                <a id="hide1" href="#hide1" class="hide">+ What is the transcription process?</a></section>
-            <section class="stackedRows">
-                <a id="show1" href="#show1" class="show">- What is the transcription process?</a>
-                <p class="details">You calculate your price via our quote form. Once you hit submit, it takes you to an
-                    order form
-                    to fill out. Once
-                    you submit that form, it takes you to a secure site to upload your audio, where you register. We
-                    send you an
-                    invoice. Once audio and payment are fulfilled on your end, the turnaround time starts ticking
-                    and we send you
-                    your files within that time period. Then we make mailing arrangements when appropriate. Your
-                    files are stored
-                    for 10 years unless you request otherwise and you can download them here on our site.</p>
+                <div>
+                    <a id="hide01" href="#hide01" class="question hide" onclick="toggleFAQDetails(this.id)">+ What is
+                        the
+                        transcription process?</a>
+                    <a id="show01" href="#show01" class="question show" onclick="toggleFAQDetails(this.id)">- What is
+                        the
+                        transcription process?</a>
+                    <p id="details01" class="details hide">You calculate your price via our quote form. Once you hit
+                        submit,
+                        it takes you
+                        to
+                        an order form to fill out. Once you submit that form, it takes you to a secure site to upload
+                        your
+                        audio, where you register. We send you an
+                        invoice. Once audio and payment are fulfilled on your end, the turnaround time starts ticking
+                        and we send you your files within that time period. Then we make mailing arrangements when
+                        appropriate. Your files are stored for 10 years unless you request otherwise and you can
+                        download
+                        them here on our site.</p>
+                </div>
             </section>
-        </div>
-        <div>
-            <a id="hide" href="#hide" class="hide">+ How do my files get to AQC?</a>
-            <a id="show" href="#show" class="show">- How do my files get to AQC?</a>
-            <div class="details">
-                <p class="details">We offer an online repository that you can upload your files to once we set up a
-                    username for you.
-                    You can
-                    also mail us your media or we can arrange for free pick-up within the Seattle area.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide3" href="#hide3" class="hide">+ How much does it cost?</a>
-            <a id="show3" href="#show3" class="show">- How much does it cost?</a>
-            <div class="details">
-                <p>Please use our <a href="#priceQuote">price estimate calculator</a> to
-                    estimate
-                    the cost of your transcript.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide4" href="#hide4" class="hide">+ How does payment work?</a>
-            <a id="show4" href="#show4" class="show">- How does payment work?</a>
-            <div class="details">
-                <p>We invoice approved businesses. Businesses may <strong><a
-                            href="https://www.aquoco.co/Application-Template.pdf">click here to apply for
-                            terms</a></strong>. In
-                    all other cases, we send you an invoice for a deposit (see <a href="#priceQuote"><strong>rate
-                            calculator</strong></a> for
-                    deposit
-                    amount) and the turnaround time begins once it is paid.</p><br />
-            </div>
-        </div>
-
-        <div>
-            <a id="hide5" href="#hide5" class="hide">+ What forms of payment do you accept?</a>
-            <a id="show5" href="#show5" class="show">- What forms of payment do you accept?</a>
-            <div class="details">
-                <p>Cash, check, money order, credit card, PayPal, Bill Me Later, and GSA SmartPay 2. We offer terms to
-                    approved
-                    businesses and you may <strong><a href="https://www.aquoco.co/Application-Template.pdf">apply
-                            here</a></strong>.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide6" href="#hide6" class="hide">+ Where can you pick up from?</a>
-            <a id="show6" href="#show6" class="show">- Where can you pick up from?</a>
-            <div class="details">
-                <p>WRTS picks up in the general Seattle area. Let us know your pick-up location and we'll tell you if we
-                    can get
-                    there.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide7" href="#hide7" class="hide">+ What turnaround times do you offer?</a>
-            <a id="show7" href="#show7" class="show">- What turnaround times do you offer?</a>
-            <div class="details">
-                <p>Turnaround for all non-court proceedings is five business days. For court proceedings, we offer
-                    turnaround
-                    times of overnight, three calendar days, seven calendar days, 14 calendar days, 30 calendar days, or
-                    45
-                    calendar days.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide8" href="#hide8" class="hide">+ From what audio formats can you transcribe?</a>
-            <a id="show8" href="#show8" class="show">- From what audio formats can you transcribe?</a>
-            <div class="details">
-                <p>We have a <a href="#courtTranscription">relatively extensive list
-                        here.</a></p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide9" href="#hide9" class="hide">+ In what format do you provide the transcript?</a>
-            <a id="show9" href="#show9" class="show">- In what format do you provide the transcript?</a>
-            <div class="details">
-                <p>Certified condensed PDFs, 2 and 4 pages per page; uncertified working copy in Word, locked uneditable
-                    Word
-                    version, regular certified PDF.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide10" href="#hide10" class="hide">+ I lost my transcript. Do you still have it?</a>
-            <a id="show10" href="#show10" class="show">- I lost my transcript. Do you still have it?</a>
-            <div class="details">
-                <p>Yes. It is in your online repository (You are free to delete them there if you wish). We also store
-                    them
-                    offline securely.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide11" href="#hide11" class="hide">+ Where do you archive files at?</a>
-            <a id="show11" href="#show11" class="show">- Where do you archive files at?</a>
-            <div class="details">
-                <p>Offline and in your area of our online repository.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide12" href="#hide12" class="hide">+ Can you do timestamps?</a>
-            <a id="show12" href="#show12" class="show">- Can you do timestamps?</a>
-            <div class="details">
-                <p>Yes, we can! Just request it in your order.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide13" href="#hide13" class="hide">+ What is AAERT certification?</a>
-            <a id="show13" href="#show13" class="show">- What is AAERT certification?</a>
-            <div class="details">
-                <p>Check out <a href="https://www.aaert.org" target="_blank">AAERT, the American Association of
-                        Electronic
-                        Reporters and Transcribers, here.</a></p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide14" href="#hide14" class="hide">+ Are you hiring?</a>
-            <a id="show14" href="#show14" class="show">- Are you hiring?</a>
-            <div class="details">
-                <p>Not at the moment.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide15" href="#hide15" class="hide">+ How do I contact you?</a>
-            <a id="show15" href="#show15" class="show">- How do I contact you?</a>
-            <div class="details">
-                <p>AQC has many ways to <a href="#contact">contact us here.</a></p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide16" href="#hide16" class="hide">+ How do I use the login you sent me?</a>
-            <a id="show16" href="#show16" class="show">- How do I use the login you sent me?</a>
-            <div class="details">
-                <p>Go to <a href="https://www.aquoco.co/Files/" target="_blank">this link and log in</a>.</p>
-            </div>
-        </div>
-
-        <div>
-            <a id="hide17" href="#hide17" class="hide">+ Are there rules for transcripts of court proceedings in
-                Washington?</a>
-            <a id="show17" href="#show17" class="show">- Are there rules for transcripts of court proceedings in
-                Washington?</a>
-            <div class="details">
-                <p>You may <a
-                        href="http://www.courts.wa.gov/court_rules/?fa=court_rules.display&group=app&set=RAP&ruleid=apprap09.02"
-                        target="_blank">check them out here.</a></p>
-            </div>
-        </div>
-
-        <br><br>
-        </section>
-        <button type="button" class="btn cancel" onclick="closeForm('faq')">Close</button>
-    </div>
-
-    <div class="form-popup" id="difference">
-        <div class="form-container">
             <section class="stackedRows">
+                <div>
+                    <a id="hide02" href="#hide02" class="question hide" onclick="toggleFAQDetails(this.id)">+ How do my
+                        files
+                        get to
+                        AQC?</a>
+                    <a id="show02" href="#show02" class="question show" onclick="toggleFAQDetails(this.id)">- How do my
+                        files
+                        get to
+                        AQC?</a>
+                    <p id="details02" class="details hide">We offer an online repository that you can upload your files
+                        to once we set
+                        up a
+                        username for you.
+                        You can
+                        also mail us your media or we can arrange for free pick-up within the Seattle area.</p>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide03" href="#hide03" class="question hide" onclick="toggleFAQDetails(this.id)">+ How much
+                        does
+                        it cost?</a>
+                    <a id="show03" href="#show03" class="question show" onclick="toggleFAQDetails(this.id)">- How much
+                        does it
+                        cost?</a>
+                    <p id="details03" class="details hide">Please use our <a href="#priceQuote">price estimate
+                            calculator</a> to
+                        estimate
+                        the cost of your transcript.</p>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide04" href="#hide04" class="question hide" onclick="toggleFAQDetails(this.id)">+ How does
+                        payment
+                        work?</a>
+                    <a id="show04" href="#show04" class="question show" onclick="toggleFAQDetails(this.id)">- How does
+                        payment
+                        work?</a>
+                    <div id="details04" class="details hide">
+                        <p>We invoice approved businesses. Businesses may <strong><a
+                                    href="https://www.aquoco.co/Application-Template.pdf">click here to apply for
+                                    terms</a></strong>. In
+                            all other cases, we send you an invoice for a deposit (see <a
+                                href="#priceQuote"><strong>rate
+                                    calculator</strong></a> for
+                            deposit
+                            amount) and the turnaround time begins once it is paid.</p><br />
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide05" href="#hide05" class="question hide" onclick="toggleFAQDetails(this.id)">+ What forms
+                        of
+                        payment do you accept?</a>
+                    <a id="show05" href="#show05" class="question show" onclick="toggleFAQDetails(this.id)">- What forms
+                        of
+                        payment do you accept?</a>
+                    <div id="details05" class="details hide">
+                        <p>Cash, check, money order, credit card, PayPal, Bill Me Later, and GSA SmartPay 2. We offer
+                            terms to
+                            approved
+                            businesses and you may <strong><a
+                                    href="https://www.aquoco.co/Application-Template.pdf">apply
+                                    here</a></strong>.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide06" href="#hide06" class="question hide" onclick="toggleFAQDetails(this.id)">+ Where can
+                        you
+                        pick up from?</a>
+                    <a id="show06" href="#show06" class="question show" onclick="toggleFAQDetails(this.id)">- Where can
+                        you
+                        pick up from?</a>
+                    <div id="details06" class="details hide">
+                        <p>WRTS picks up in the general Seattle area. Let us know your pick-up location and we'll tell
+                            you if we
+                            can get
+                            there.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide07" href="#hide07" class="question hide" onclick="toggleFAQDetails(this.id)">+ What
+                        turnaround
+                        times do you offer?</a>
+                    <a id="show07" href="#show07" class="question show" onclick="toggleFAQDetails(this.id)">- What
+                        turnaround
+                        times do you offer?</a>
+                    <div id="details07" class="details hide">
+                        <p>Turnaround for all non-court proceedings is five business days. For court proceedings, we
+                            offer
+                            turnaround
+                            times of overnight, three calendar days, seven calendar days, 14 calendar days, 30 calendar
+                            days, or
+                            45
+                            calendar days.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+                <div>
+                    <a id="hide08" href="#hide08" class="question hide" onclick="toggleFAQDetails(this.id)">+ From what
+                        audio
+                        formats can you transcribe?</a>
+                    <a id="show08" href="#show08" class="question show" onclick="toggleFAQDetails(this.id)">- From what
+                        audio
+                        formats can you transcribe?</a>
+                    <div id="details08" class="details hide">
+                        <p>We have a <a href="#courtTranscription">relatively extensive list
+                                here.</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+                <div>
+                    <a id="hide09" href="#hide09" class="question hide" onclick="toggleFAQDetails(this.id)">+ In what
+                        format
+                        do you provide the transcript?</a>
+                    <a id="show09" href="#show09" class="question show" onclick="toggleFAQDetails(this.id)">- In what
+                        format
+                        do you provide the transcript?</a>
+                    <p id="details09" class="details hide">Certified condensed PDFs, 2 and 4 pages per page; uncertified
+                        working copy in Word, locked
+                        uneditable
+                        Word
+                        version, regular certified PDF.</p>
+                </div>
+            </section>
+            <section class="stackedRows">
+                <div>
+                    <a id="hide10" href="#hide10" class="question hide" onclick="toggleFAQDetails(this.id)">+ I lost my
+                        transcript. Do you still have it?</a>
+                    <a id="show10" href="#show10" class="question show" onclick="toggleFAQDetails(this.id)">- I lost my
+                        transcript. Do you still have it?</a>
+                    <p id="details10" class="details hide">Yes. It is in your online repository (You are free to delete
+                        them there if you wish). We also store them offline securely.</p>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide11" href="#hide11" class="question hide" onclick="toggleFAQDetails(this.id)">+ Where do
+                        you
+                        archive files at?</a>
+                    <a id="show11" href="#show11" class="question show" onclick="toggleFAQDetails(this.id)">- Where do
+                        you
+                        archive files at?</a>
+                    <div id="details11" class="details hide">
+                        <p>Offline and in your area of our online repository.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide12" href="#hide12" class="question hide" onclick="toggleFAQDetails(this.id)">+ Can you do
+                        timestamps?</a>
+                    <a id="show12" href="#show12" class="question show" onclick="toggleFAQDetails(this.id)">- Can you do
+                        timestamps?</a>
+                    <div id="details12" class="details hide">
+                        <p>Yes, we can! Just request it in your order.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide13" href="#hide13" class="question hide" onclick="toggleFAQDetails(this.id)">+ What is
+                        AAERT
+                        certification?</a>
+                    <a id="show13" href="#show13" class="question show" onclick="toggleFAQDetails(this.id)">- What is
+                        AAERT
+                        certification?</a>
+                    <div id="details13" class="details hide">
+                        <p>Check out <a href="https://www.aaert.org" target="_blank">AAERT, the American Association of
+                                Electronic
+                                Reporters and Transcribers, here.</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide14" href="#hide14" class="question hide" onclick="toggleFAQDetails(this.id)">+ Are you
+                        hiring?</a>
+                    <a id="show14" href="#show14" class="question show" onclick="toggleFAQDetails(this.id)">- Are you
+                        hiring?</a>
+                    <div id="details14" class="details hide">
+                        <p>Not at the moment.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide15" href="#hide15" class="question hide" onclick="toggleFAQDetails(this.id)">+ How do I
+                        contact you?</a>
+                    <a id="show15" href="#show15" class="question show" onclick="toggleFAQDetails(this.id)">- How do I
+                        contact you?</a>
+                    <div id="details15" class="details hide">
+                        <p>AQC has many ways to <a href="#contact">contact us here.</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide16" href="#hide16" class="question hide" onclick="toggleFAQDetails(this.id)">+ How do I
+                        use
+                        the login you sent me?</a>
+                    <a id="show16" href="#show16" class="question show" onclick="toggleFAQDetails(this.id)">- How do I
+                        use
+                        the login you sent me?</a>
+                    <div id="details16" class="details hide">
+                        <p>Go to <a href="https://www.aquoco.co/Files/" target="_blank">this link and log in</a>.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <div>
+                    <a id="hide17" href="#hide17" class="question hide" onclick="toggleFAQDetails(this.id)">+ Are there
+                        rules for transcripts of court proceedings in
+                        Washington?</a>
+                    <a id="show17" href="#show17" class="question show" onclick="toggleFAQDetails(this.id)">- Are there
+                        rules for transcripts of court proceedings in
+                        Washington?</a>
+                    <div id="details17" class="details hide">
+                        <p>You may <a
+                                href="http://www.courts.wa.gov/court_rules/?fa=court_rules.display&group=app&set=RAP&ruleid=apprap09.02"
+                                target="_blank">check them out here.</a></p>
+                    </div>
+                </div>
+            </section>
+            <section class="stackedRows">
+
+                <br><br>
+            </section>
+            <button type="button" class="btn cancel" onclick="closeForm('faq')">Close</button>
+        </div>
+
+        <div class="form-popup" id="difference">
+            <div class="form-container">
+                <section class="stackedRows">
+                    <button type="button" class="btn cancel" onclick="closeForm('difference')">Close</button>
+                </section>
+                <section class="stackedRows">
+                    <img src="https://www.aquoco.co/images/RectLogo.png" class="logo" alt="A Quo Co.">
+                </section>
+                <section class="stackedRows" id="formHeading">
+                    <h1>What's the difference between transcription and stenography?</h1>
+                </section><br><br>
+                <section class="stackedRows">
+                    <p>This is just a general explainer. Some states have different rules/processes to avoid problems
+                        listed
+                        here, and this
+                        is not intended to go into that much detail.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>The biggest difference is mainly the method in which the record is taken. With stenography, a
+                        person
+                        comes in with a
+                        stenography machine, like you might see in the movies, who has been trained in stenography for
+                        18 to
+                        24 months, and
+                        takes the record down. They may possibly have a single microphone at their table in the
+                        courtroom as
+                        a back-up
+                        record, purchased by the stenographer. All equipment is purchased and maintained by the
+                        stenographer.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>The stenographer keeps the record made and there is generally no back-up stored with the court.
+                        If
+                        something happens
+                        to the stenographer or the record they took, there's no other record or third party from which
+                        to
+                        obtain a
+                        transcript of the proceedings.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>If you don't schedule a stenographer to come to your proceedings, then there will be no record of
+                        it.
+                        Further, most but not every stenographer records audio as a back-up, so what the stenographer
+                        says
+                        happened is what
+                        happened and there isn't as much of an opportunity to question the accuracy of the transcript as
+                        there is with the
+                        second method I'm about to describe. Generally speaking, you will not be allowed to buy or
+                        purchase
+                        a copy of the
+                        stenographer's notes or audio they recorded themselves because it is their work product.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>If you want a copy, you have to buy the full transcript. Frequently, these stenographers
+                        sometimes
+                        will be 'tied' to
+                        or work for a particular judge and receive some of their salary from the state. Stenographers
+                        will
+                        frequently charge
+                        an appearance, a flat fee, just for showing up, not including the charge for the transcript
+                        itself.
+                    </p>
+                </section>
+                <section class="stackedRows">
+                    <p>With transcription, the process is a little bit different. With transcription, the record is
+                        electronically recorded
+                        by a court monitor or clerk who is paid usually an hourly rate by the court to monitor
+                        audio-recorded proceedings,
+                        note speakers, take down appearances, and things like this in something called reporter's notes
+                        or a
+                        reporter's log.
+                    </p>
+                </section>
+                <section class="stackedRows">
+                    <p>The courts who use this method record all proceedings that happen in their court, regardless if
+                        they
+                        need a
+                        transcript of it or not, and keep the log or notes as well as the audio, have their own storage
+                        process. The court
+                        purchases and maintains all recording equipment. There are usually, in any given courtroom, four
+                        microphones around
+                        the courtroom; one for each of the witness, judge, and two counsel tables. The audio will have
+                        four
+                        corresponding
+                        channels, each of which you can isolate to hear what they're saying.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>Then, if the transcript is necessary, someone, such as a party appealing, can order a transcript
+                        of
+                        it from a
+                        transcriber, usually from a list of transcribers approved by that particular court. In some
+                        jurisdictions, the audio
+                        has to be transmitted directly from the court to the transcriber; in others, it doesn't. Once a
+                        party orders, then
+                        the transcriber will transcribe the proceedings.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>The transcriber only purchases and maintains equipment they need to transcribe, which is usually
+                        just
+                        a regular
+                        computer and keyboard, although you can see how these two methods can overlap in some ways. For
+                        example, a
+                        stenographer can hook up their steno machine to a computer and transcribe audio recorded via the
+                        second method.
+                        Unlike the stenographer, the transcriber receives all their income from transcript orders only
+                        and
+                        this is part of
+                        the overall cost savings of a transcriber as opposed to a stenographer. A stenographer can do
+                        the
+                        job of a
+                        transcriber, but for the reasons described here, a transcriber cannot do the job of a
+                        stenographer,
+                        since their
+                        roles are slightly different.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>In addition, there is a huge shortage of stenographers nationwide, so courts have been somewhat
+                        forced by
+                        circumstances to adopt the second method. Places that have a strong stenographer lobby (CA, TX,
+                        others) tend to shy
+                        as much as they can from adopting the second method.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>Now, AQC wants to be clear. We're transcribers. This has been written from that point of view.
+                        There
+                        are a lot of
+                        upsides to transcribing, such as the ability to infinitely listen to a proceeding over and over.
+                        It's also usually
+                        cheaper because there is a greater incentive to be competitive, as there is no monopoly on who
+                        holds
+                        the official
+                        audio/notes/log record with the second method. You can review the proceedings via audio before
+                        you
+                        order a
+                        transcript with the second method, and when you go back and review audio of a given proceeding,
+                        you
+                        can hear the
+                        participants' own voices and are not relying on someone else's characterization of it.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>But much like the rest of technology, electronic recording is only as good as its input, so there
+                        are
+                        also plenty of
+                        downsides to electronic recording if the people in the courtroom aren't carefully monitoring,
+                        such
+                        as using one mic
+                        or people speaking softly while walking away from their mic, that stenographers won't have a
+                        problem
+                        with since
+                        they're physically there. The second method requires people to be involved in the process to
+                        make a
+                        good audio
+                        record for transcription and for the most part does not involve only machines and no humans.
+                        Here's
+                        <a
+                            href="https://herculesandtheumpire.com/2013/07/19/lighting-the-fuse-it-is-time-to-get-rid-of-court-reporters-in-the-federal-courts/">a
+                            judge's post</a> on a self-published blog where he talks about electronic recording
+                        versus
+                        stenographers. There are lots of pro- and against-comments from both attorneys' and judges'
+                        perspectives posted
+                        there.</p>
+                </section>
+                <section class="stackedRows">
+                    <p>Both methods require the person maintaining the record, the steno or the monitor, to speak up
+                        when
+                        they aren't
+                        hearing things they need to hear. Both charge a per-page rate. Some charge for snail mail
+                        delivery,
+                        e-mail delivery,
+                        indexes, ASCIIs, condensed versions, and some don't.</p>
+                </section>
                 <button type="button" class="btn cancel" onclick="closeForm('difference')">Close</button>
-            </section>
-            <section class="stackedRows">
-                <img src="https://www.aquoco.co/images/RectLogo.png" class="logo" alt="A Quo Co.">
-            </section>
-            <section class="stackedRows" id="formHeading">
-                <h1>What's the difference between transcription and stenography?</h1>
-            </section><br><br>
-            <section class="stackedRows">
-                <p>This is just a general explainer. Some states have different rules/processes to avoid problems listed
-                    here, and this
-                    is not intended to go into that much detail.</p>
-            </section>
-            <section class="stackedRows">
-                <p>The biggest difference is mainly the method in which the record is taken. With stenography, a person
-                    comes in with a
-                    stenography machine, like you might see in the movies, who has been trained in stenography for 18 to
-                    24 months, and
-                    takes the record down. They may possibly have a single microphone at their table in the courtroom as
-                    a back-up
-                    record, purchased by the stenographer. All equipment is purchased and maintained by the
-                    stenographer.</p>
-            </section>
-            <section class="stackedRows">
-                <p>The stenographer keeps the record made and there is generally no back-up stored with the court. If
-                    something happens
-                    to the stenographer or the record they took, there's no other record or third party from which to
-                    obtain a
-                    transcript of the proceedings.</p>
-            </section>
-            <section class="stackedRows">
-                <p>If you don't schedule a stenographer to come to your proceedings, then there will be no record of it.
-                    Further, most but not every stenographer records audio as a back-up, so what the stenographer says
-                    happened is what
-                    happened and there isn't as much of an opportunity to question the accuracy of the transcript as
-                    there is with the
-                    second method I'm about to describe. Generally speaking, you will not be allowed to buy or purchase
-                    a copy of the
-                    stenographer's notes or audio they recorded themselves because it is their work product.</p>
-            </section>
-            <section class="stackedRows">
-                <p>If you want a copy, you have to buy the full transcript. Frequently, these stenographers sometimes
-                    will be 'tied' to
-                    or work for a particular judge and receive some of their salary from the state. Stenographers will
-                    frequently charge
-                    an appearance, a flat fee, just for showing up, not including the charge for the transcript itself.
-                </p>
-            </section>
-            <section class="stackedRows">
-                <p>With transcription, the process is a little bit different. With transcription, the record is
-                    electronically recorded
-                    by a court monitor or clerk who is paid usually an hourly rate by the court to monitor
-                    audio-recorded proceedings,
-                    note speakers, take down appearances, and things like this in something called reporter's notes or a
-                    reporter's log.
-                </p>
-            </section>
-            <section class="stackedRows">
-                <p>The courts who use this method record all proceedings that happen in their court, regardless if they
-                    need a
-                    transcript of it or not, and keep the log or notes as well as the audio, have their own storage
-                    process. The court
-                    purchases and maintains all recording equipment. There are usually, in any given courtroom, four
-                    microphones around
-                    the courtroom; one for each of the witness, judge, and two counsel tables. The audio will have four
-                    corresponding
-                    channels, each of which you can isolate to hear what they're saying.</p>
-            </section>
-            <section class="stackedRows">
-                <p>Then, if the transcript is necessary, someone, such as a party appealing, can order a transcript of
-                    it from a
-                    transcriber, usually from a list of transcribers approved by that particular court. In some
-                    jurisdictions, the audio
-                    has to be transmitted directly from the court to the transcriber; in others, it doesn't. Once a
-                    party orders, then
-                    the transcriber will transcribe the proceedings.</p>
-            </section>
-            <section class="stackedRows">
-                <p>The transcriber only purchases and maintains equipment they need to transcribe, which is usually just
-                    a regular
-                    computer and keyboard, although you can see how these two methods can overlap in some ways. For
-                    example, a
-                    stenographer can hook up their steno machine to a computer and transcribe audio recorded via the
-                    second method.
-                    Unlike the stenographer, the transcriber receives all their income from transcript orders only and
-                    this is part of
-                    the overall cost savings of a transcriber as opposed to a stenographer. A stenographer can do the
-                    job of a
-                    transcriber, but for the reasons described here, a transcriber cannot do the job of a stenographer,
-                    since their
-                    roles are slightly different.</p>
-            </section>
-            <section class="stackedRows">
-                <p>In addition, there is a huge shortage of stenographers nationwide, so courts have been somewhat
-                    forced by
-                    circumstances to adopt the second method. Places that have a strong stenographer lobby (CA, TX,
-                    others) tend to shy
-                    as much as they can from adopting the second method.</p>
-            </section>
-            <section class="stackedRows">
-                <p>Now, AQC wants to be clear. We're transcribers. This has been written from that point of view. There
-                    are a lot of
-                    upsides to transcribing, such as the ability to infinitely listen to a proceeding over and over.
-                    It's also usually
-                    cheaper because there is a greater incentive to be competitive, as there is no monopoly on who holds
-                    the official
-                    audio/notes/log record with the second method. You can review the proceedings via audio before you
-                    order a
-                    transcript with the second method, and when you go back and review audio of a given proceeding, you
-                    can hear the
-                    participants' own voices and are not relying on someone else's characterization of it.</p>
-            </section>
-            <section class="stackedRows">
-                <p>But much like the rest of technology, electronic recording is only as good as its input, so there are
-                    also plenty of
-                    downsides to electronic recording if the people in the courtroom aren't carefully monitoring, such
-                    as using one mic
-                    or people speaking softly while walking away from their mic, that stenographers won't have a problem
-                    with since
-                    they're physically there. The second method requires people to be involved in the process to make a
-                    good audio
-                    record for transcription and for the most part does not involve only machines and no humans. Here's
-                    <a
-                        href="https://herculesandtheumpire.com/2013/07/19/lighting-the-fuse-it-is-time-to-get-rid-of-court-reporters-in-the-federal-courts/">a
-                        judge's post</a> on a self-published blog where he talks about electronic recording
-                    versus
-                    stenographers. There are lots of pro- and against-comments from both attorneys' and judges'
-                    perspectives posted
-                    there.</p>
-            </section>
-            <section class="stackedRows">
-                <p>Both methods require the person maintaining the record, the steno or the monitor, to speak up when
-                    they aren't
-                    hearing things they need to hear. Both charge a per-page rate. Some charge for snail mail delivery,
-                    e-mail delivery,
-                    indexes, ASCIIs, condensed versions, and some don't.</p>
-            </section>
-            <button type="button" class="btn cancel" onclick="closeForm('difference')">Close</button>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="form-popup" id="security">
-        <div class="form-container">
-            <section class="stackedRows">
+        <div class="form-popup" id="security">
+            <div class="form-container">
+                <section class="stackedRows">
+                    <button type="button" class="btn cancel" onclick="closeForm('security')">Close</button>
+                </section>
+                <section class="stackedRows">
+                    <img src="https://www.aquoco.co/images/RectLogo.png" class="logo" alt="A Quo Co.">
+                </section>
+                <section class="stackedRows" id="formHeading">
+                    <h1>Security</h1>
+                </section><br><br>
+                <section class="stackedRows">
+                    <p>
+                        Your security and privacy are very important to us. As part of our overall privacy practices, we
+                        take steps to safeguard
+                        customer information. We restrict access to your personal information and account information to
+                        only those employees
+                        who need to know that information to provide products or services to you. We maintain physical,
+                        electronic, and
+                        procedural safeguards to guard your confidential and personal information.
+                    </p>
+                </section>
                 <button type="button" class="btn cancel" onclick="closeForm('security')">Close</button>
-            </section>
-            <section class="stackedRows">
-                <img src="https://www.aquoco.co/images/RectLogo.png" class="logo" alt="A Quo Co.">
-            </section>
-            <section class="stackedRows" id="formHeading">
-                <h1>Security</h1>
-            </section><br><br>
-            <section class="stackedRows">
-                <p>
-                    Your security and privacy are very important to us. As part of our overall privacy practices, we
-                    take steps to safeguard
-                    customer information. We restrict access to your personal information and account information to
-                    only those employees
-                    who need to know that information to provide products or services to you. We maintain physical,
-                    electronic, and
-                    procedural safeguards to guard your confidential and personal information.
-                </p>
-            </section>
-            <button type="button" class="btn cancel" onclick="closeForm('security')">Close</button>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-    <script>
-        function openForm(hiddenFormID) {
-            document.getElementById(hiddenFormID).style.display = "block";
-        }
+        <script>
+            function openForm(hiddenFormID) {
+                document.getElementById(hiddenFormID).style.display = "block";
+            }
 
-        function closeForm(hiddenFormID) {
-            document.getElementById(hiddenFormID).style.display = "none";
-        }
-    </script>
+            function closeForm(hiddenFormID) {
+                document.getElementById(hiddenFormID).style.display = "none";
+            }
+
+            function toggleFAQDetails(obj) {
+                /* var elementQS = document.getElementById("show1"); */
+                var currentID = obj;
+                var numberID = obj.slice(-2);
+                var showID = "show" + numberID;
+                var hideID = "hide" + numberID;
+                var elementD = document.getElementById("details" + numberID);
+                var elementQS = document.getElementById(showID);
+                var elementQH = document.getElementById(hideID);
+                /* 
+                /if click on show1
+                    then show hide1
+                         hide sho1, details
+                if click on hide1
+                    then show show1, details1
+                         hide hide1
+                
+                */
+                if (currentID === hideID) {
+
+                    elementD.classList.add("show");
+                    elementD.classList.remove("hide");
+                    elementQS.classList.add("show");
+                    elementQS.classList.remove("hide");
+                    elementQH.classList.add("hide");
+                    elementQH.classList.remove("show");
+                    return;
+                } else if (currentID === showID) {
+                    elementD.classList.add("hide");
+                    elementD.classList.remove("show");
+                    elementQS.classList.add("hide");
+                    elementQS.classList.remove("show");
+                    elementQH.classList.add("show");
+                    elementQH.classList.remove("hide");
+                    return;
+                }
+
+            } 
+        </script>
 
 </body>
 

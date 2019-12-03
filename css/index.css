@@ -443,8 +443,7 @@ h2 {
   width: 100%;
   min-width: 100%;
   min-height: 40%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  padding: 2.5% 0 2.5% 0;
   margin: 2% 0 2% 0;
 }
 .row1 {
@@ -542,6 +541,10 @@ h2 {
   font-size: 2.5rem;
   text-align: center;
 }
+#faq {
+  max-width: 30%;
+  padding: 1%;
+}
 #rates {
   order: 2;
   z-index: 200;
@@ -558,8 +561,8 @@ h2 {
   list-style-type: circle;
   font-size: 2rem;
   text-align: left;
-  margin-left: 3%;
-  padding-left: 3%;
+  margin: 0 0 0 3%;
+  padding: 0 0 0 3%;
 }
 #courtTranscription h3 {
   font-size: 2.5rem;
@@ -688,11 +691,44 @@ li {
 .form-container .details,
 .form-container .show,
 .form-container .hide:target {
+  text-align: left;
+  justify-content: left;
   display: none;
 }
 .form-container .hide:target + .show,
 .form-container .hide:target ~ .details {
+  text-align: left;
+  justify-content: left;
   display: block;
+}
+.form-container .stackedRows div .question,
+.form-container .stackedRows div .show,
+.form-container .stackedRows div .hide,
+.form-container .stackedRows div .details {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.form-container .stackedRows div .question:after,
+.form-container .stackedRows div .show:after,
+.form-container .stackedRows div .hide:after,
+.form-container .stackedRows div .details:after {
+  text-align: left;
+}
+.form-container .stackedRows div .question:before,
+.form-container .stackedRows div .show:before,
+.form-container .stackedRows div .hide:before,
+.form-container .stackedRows div .details:before {
+  text-align: left;
+}
+.form-container .stackedRows div a {
+  color: #69be28;
+  text-align: center;
+}
+.form-container .stackedRows div:active {
+  text-align: left;
+}
+.form-container .stackedRows .question {
+  border-top: 1px solid green;
 }
 /* Full-width input fields */
 .form-container input[type=text],
@@ -717,7 +753,7 @@ li {
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   opacity: 0.8;
   background-color: #69be28;
   color: #002244;

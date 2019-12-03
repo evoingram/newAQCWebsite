@@ -16,25 +16,20 @@ Done so far:
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - [X] added hover blur to front showcase image
 - [X] added linear gradient to logo and nav menus
-- [X] add user click menu to courttranscription slide so they can switch between pictures
-- [X] FAQ questions & also FAQ expands to 100% width
 
 Still left to finish: 
 
 - [ ] typos
 - [ ] priceQuote popup
+- [ ] FAQ questions
 - [ ] rates section
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [ ] stop underlining of all body links
 - [ ] add hover blur to background of showcase
-- [ ] sticky nav menu using j30 example
+- [ ] maybe affix header menu
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
 - [ ] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [ ] add empty line/space above green text in showcase image
-- [ ] 45 pages per audio hour added to terms
-- [ ] close all other popups when other one opens
-- [ ] add space between company logo and green text or get rid of green text
-- [ ] change developer section to include appropriate projects, links, etc
-- [ ] add resources page w/ useful law links
+
