@@ -18,6 +18,9 @@ Done so far:
 - [X] added linear gradient to logo and nav menus
 - [X] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [X] FAQ issues fixed (width, padding, and questions/answers not popping out properly)
+- [X] sticky header menu
+- [X] add empty line/space above green text in showcase image
+- [X] stop underlining of all body links
 
 Still left to finish: 
 
@@ -27,9 +30,6 @@ Still left to finish:
 - [ ] ordering pages/popup
 - [ ] select images for placeholders
 - [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
-- [ ] stop underlining of all body links
 - [ ] add hover blur to background of showcase
-- [ ] maybe affix header menu like in j30 project
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
-- [ ] add empty line/space above green text in showcase image
 
