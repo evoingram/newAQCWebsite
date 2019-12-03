@@ -395,7 +395,6 @@ header .navigation a {
   margin: 0 1.5rem;
   color: #a5acaf;
   text-decoration: none;
-  text-transform: uppercase;
 }
 header .navigation a:after {
   content: '';
@@ -592,10 +591,33 @@ h2 {
   font-size: 2rem;
   text-align: center;
 }
+#about li {
+  padding-top: 2rem;
+  line-height: 2;
+}
 #about a {
   background-color: #002244;
-  color: #a5acaf;
   font-weight: bold;
+  position: relative;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1.5rem;
+  color: #a5acaf;
+  text-decoration: none;
+}
+#about a:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #a5acaf;
+  transition: transform 250ms;
+}
+#about a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 #about ul {
   text-align: left;

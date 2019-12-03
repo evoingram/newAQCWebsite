@@ -86,9 +86,39 @@ h2 {
 	.orderZI(4, 200);
 	.fontSize(2rem, center);
 
+	li {
+		padding-top: 2rem;
+		line-height: 2;
+	}
+
 	a {
 		.cBNavyTGray();
 		.fontBold();
+
+		position: relative;
+		padding: 1rem 0 0.5rem;
+		margin: 0 1.5rem;
+		color: @gray;
+		text-decoration: none;
+
+		&:after {
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			transform: translateX(-50%) scaleX(0);
+			transform-origin: 50% 50%;
+			width: 100%;
+			height: 1px;
+			background-color: @gray;
+			transition: transform 250ms;
+		}
+
+		&:hover {
+			&::after {
+				transform: translateX(-50%) scaleX(1);
+			}
+		}
 	}
 
 	ul {
