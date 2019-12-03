@@ -16,6 +16,7 @@ Done so far:
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - [X] added hover blur to front showcase image
 - [X] added linear gradient to logo and nav menus
+- [X] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 
 Still left to finish: 
 
@@ -30,6 +31,5 @@ Still left to finish:
 - [ ] add hover blur to background of showcase
 - [ ] maybe affix header menu
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
-- [ ] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [ ] add empty line/space above green text in showcase image
 
