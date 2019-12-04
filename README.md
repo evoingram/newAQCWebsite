@@ -30,5 +30,11 @@ Done so far:
 Still left to finish: 
 - [ ] proofing
 - [ ] finish rates section
-- [ ] ordering pages/popup
-- [ ] change links on development page, add new/diff projects
+- [ ] order form/popup<br>
+      make clear about when people will pay
+- [ ] change links on development page, add new/diff projects<br>
+    (build week, company, vb projects, digital resume, ericaingram portfolio page)
+- [ ] contact us form maybe
+- [ ] social media icons for contact page
+- [ ] set up ericaingram.com on justhost
+- [ ] maybe do digital resume as placeholder there for now
