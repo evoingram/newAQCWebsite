@@ -35,7 +35,122 @@
 	}
 }
 
-#faq {
+#priceQuote {
+	.form-container {
+		.stackedRows {
+			fieldset {
+				#turnaroundDiv {
+					justify-content: center;
+					text-align: center;
+				}
+
+				#jurisdictionDiv {
+					font-size: 2rem;
+					flex-wrap: wrap;
+					justify-content: center;
+					text-align: center;
+					width: 100%;
+
+					input {
+						width: 100%;
+						padding-top: 2%;
+						margin: 3%;
+						background-color: @navy;
+						color: @green;
+						border-top: transparent;
+						border-left: transparent;
+						border-right: transparent;
+						border-bottom: 1px solid green;
+					}
+				}
+
+				#priceQuoteBox {
+					width: 100%;
+					border-top: 1px solid green;
+					border-bottom: 1px solid green;
+					justify-content: center;
+					color: @green;
+					padding: 2%;
+					background-color: @navy;
+
+					#tPrice2 {
+						padding: 2%;
+						align-self: center;
+						background-color: @navy;
+						color: @green;
+						width: 100%;
+						text-align: center;
+						border: 0;
+					}
+				}
+
+				.pqQuestion {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					padding-top: 2%;
+
+					.left {
+						font-size: 2rem;
+						width: 80%;
+						margin: 0;
+						padding: 0;
+
+						input {
+							background-color: @navy;
+						}
+
+						#turnaround,
+						#p1i1 {
+							background-color: @navy;
+							border: 1px solid @green;
+							padding-top: 3%;
+							color: @green;
+						}
+					}
+
+					.right {
+						width: 25%;
+						font-size: 2rem;
+						margin: 0;
+						padding: 0;
+
+						input {
+							font-size: 1.5rem;
+							width: 98%;
+							background-color: @navy;
+							border-top: transparent;
+							border-left: transparent;
+							border-right: transparent;
+							border-bottom: 1px solid @green;
+							color: @green;
+							text-align: center;
+						}
+
+						select {
+							background-color: @navy;
+							color: @green;
+						}
+
+						#turnaround {
+							background-color: @navy;
+						}
+					}
+				}
+
+				input {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+	.btn {
+		width: 100%;
+		padding: 16px 20px;
+		margin: 3%;
+		.cBGreenTNavy();
+	}
 }
 
 .form-container {
@@ -81,10 +196,12 @@
 				color: @green;
 				text-align: center;
 			}
+
 			&:active {
 				text-align: left;
 			}
 		}
+
 		.question {
 			border-top: 1px solid green;
 		}

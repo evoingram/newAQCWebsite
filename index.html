@@ -548,17 +548,102 @@
                 <h2>Get a price quote on your transcript:</h2>
             </section>
             <section class="stackedRows">
+                <form name="OrderForm" action="https://www.aquoco.co/test-email.php" method="post"
+                    onsubmit="window.location ='www.aquoco.co/Price-Quote.html#six'">
+                    <a href="#one"></a>
+                    <fieldset id="one1">
 
+                        <legend>Screen 1 of 4</legend>
 
-            </section>
-            <section class="stackedRows">
-                <p>
+                        <!-- old jurisdiction location -->
+                        <div class="pqQuestion">
+                            <div class="left">
+                                <label for="p1i2" id="p1i2Label" class="labelPQ">Are we ordering audio?</label>
+                            </div>
+                            <div class="right">
+                                <input title="No, we are not ordering audio" id="p1i2" type="radio" name="p1i2"
+                                    value="No" checked required>No
+                                <input title="Yes, we are ordering audio" id="p1i2" type="radio" name="p1i2" value="Yes"
+                                    required>Yes
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <div class="pqQuestion">
+                            <div class="left"><label for="p1i3">Hard copy (extra charge, $0.25/page + $5/CD)?</label>
+                            </div>
+                            <div class="right"><input title="No hard copy" id="p1i3" type="radio" name="p1i3" value="No"
+                                    checked required>No
 
-                </p>
-            </section>
-            <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
+                                <input title="Yes, hard copy" id="p1i3" type="radio" name="p1i3" value="Yes"
+                                    required>Yes
+                            </div>
+                        </div>
+
+                        <br><br><br><br>
+                        <div class="pqQuestion">
+                            <div class="left"><label for="p1i4">How long is your audio in minutes?</label></div>
+                            <div class="right"> <input title="audio length in minutes" id="p1i4" name="p1i4"
+                                    onChange="calculatePrice()" required /></div>
+                        </div>
+                        <br><br><br>
+                        <div id="turnaroundDiv" class="pqQuestion">
+                            <div class="left"><label for="turnaround">What turnaround? 24-hour turnaround or less
+                                    accepted
+                                    on a
+                                    case-by-case
+                                    basis.</label>
+                                <SELECT NAME="turnaround" onChange="calculatePrice()" id="turnaround" required>
+                                    <Option value="45">45 calendar days</Option>
+                                    <Option value="30">30 calendar days</Option>
+                                    <Option value="14">14 calendar days</Option>
+                                    <Option value="7">7 calendar days</Option>
+                                    <Option value="3">3 calendar days</Option>
+                                    <Option value="1">1 calendar day</Option>
+                                </SELECT>
+                            </div>
+                        </div>
+
+                        <br><br><br><br>
+                        <div class="pqQuestion">
+                            <div class="left">
+                                <label for="p1i5">Do you agree you are ordering a transcript @ above page rate &
+                                    turnaround with a price estimate of:</label></div>
+                            <div class="right">
+                                <input title="No, I do not agree to the terms." id="p1i5" type="radio" name="p1i5"
+                                    value="No" checked required>No
+                                <br><input title="Yes, I agree to the terms" id="p1i5" type="radio" name="p1i5"
+                                    value="Yes" required>Yes</div>
+                        </div>
+                        <br><br><br><br>
+                        <div id="priceQuoteBox" class="pqQuestion">
+                            <input title="price estimate" id="tPrice2" size='8' name="tPrice2">
+                        </div>
+                        <br><br><br>
+                        <div id="jurisdictionDiv" class="pqQuestion">
+                            <label for="p1i1">Enter the court proceeding's jurisdiction to proceed to the next page
+                                (example: none, King County Superior Court, USBC Eastern District of Wisconsin, Seattle
+                                Municipal Court, etc.): </label>
+                            <input title="enter jurisdiction here" id="p1i1" name="p1i1" required />
+                        </div>
+                        <div class="pqQuestion">
+
+                            <div class="left"><br><br><br></div>
+                            <div class="right">
+                                <input title="Go to the next screen" type="button" value="next"
+                                    onclick="return Allow1();">
+                            </div>
+
+                        </div>
+
+                    </fieldset>
 
         </div>
+
+        <section class="stackedRows">
+            <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
+        </section>
+        </section>
+    </div>
     </div>
     <div class="form-popup" id="aboutAQC">
         <div class="form-container">
@@ -1493,7 +1578,51 @@
                 } else {
                     navbar.classList.remove("sticky");
                 }
-            } 
+            }
+
+
+            function calculatePrice(OrderForm) {
+                //Get selected data    
+                var AudioLength = document.forms["OrderForm"]["p1i4"].value;
+                var Turnaround = document.forms["OrderForm"]["turnaround"].value;
+
+                //var PageRate = 2.65;
+                var hours = 0;
+                AudioLength = parseInt(AudioLength);
+
+                if (AudioLength >= 885) {
+                    if (Turnaround == "30") { PageRate = 2.65; }
+                    else if (Turnaround == "45") { PageRate = 2.50; }
+                    else if (Turnaround == "14") { PageRate = 3.25; }
+                    else if (Turnaround == "7") { PageRate = 3.75; }
+                    else if (Turnaround == "3") { PageRate = 4.25; }
+                    else if (Turnaround == "1") { PageRate = 5.25; }
+                }
+                else {
+                    if (Turnaround == "30") { PageRate = 2.65; }
+                    else if (Turnaround == "45") { PageRate = 2.50; }
+                    else if (Turnaround == "14") { PageRate = 3.25; }
+                    else if (Turnaround == "7") { PageRate = 3.75; }
+                    else if (Turnaround == "3") { PageRate = 4.25; }
+                    else if (Turnaround == "1") { PageRate = 5.25; }
+                }
+
+
+                //convert data to integers
+                hours = (AudioLength / 60);
+
+                //calculate total value   
+                var total = (45 * hours * PageRate);
+
+                if (total < 50) {
+                    total = 50;
+                }
+
+                //print value to  tPrice 
+                var dollar = "$";
+                total = total.toFixed(2)
+                document.getElementById("tPrice2").value = dollar.concat(total);
+            }
         </script>
 
 </body>

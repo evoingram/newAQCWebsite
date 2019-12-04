@@ -270,7 +270,6 @@ footer nav a {
   margin: 0 1.5rem;
   color: #a5acaf;
   text-decoration: none;
-  text-transform: uppercase;
 }
 footer nav a:after {
   content: '';
@@ -310,12 +309,12 @@ footer nav #loginLink {
   text-align: center;
   width: 100%;
   margin-top: 0% 0% 5% 0%;
-  z-index: 99002;
+  z-index: 2001;
   transition: all 1000ms;
   background: transparent;
 }
 .showcase .content::hover {
-  z-index: 99002;
+  z-index: 2001;
   transition: all 1000ms;
 }
 .showcase .content #showcaseRow1 {
@@ -340,27 +339,27 @@ footer nav #loginLink {
 .showcase .content .stackedRows {
   display: flex;
   width: 75%;
-  z-index: 99007;
+  z-index: 2003;
   flex-wrap: wrap;
 }
 .showcase .content .stackedRows h1 {
   color: #a5acaf;
   font-weight: bold;
   margin-bottom: 5%;
-  z-index: 99002;
+  z-index: 2001;
 }
 .showcase .content .stackedRows img {
   margin: 5% 1% 5% 1%;
-  z-index: 99002;
+  z-index: 2001;
 }
 .showcase .content .stackedRows p {
-  z-index: 99002;
+  z-index: 2001;
 }
 .showcase .content .aqcLogo {
   padding-top: 3%;
   background-image: linear-gradient(135deg, #002244 0%, #002244 35%, #69be28 100%);
   background-attachment: fixed;
-  z-index: 99007;
+  z-index: 2003;
   background-size: cover;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -378,7 +377,7 @@ footer nav #loginLink {
   content: '';
   flex-direction: column;
   margin: 0%;
-  z-index: 99003;
+  z-index: 2002;
   align-items: center;
   color: #69be28;
   font-weight: bold;
@@ -395,6 +394,7 @@ footer nav #loginLink {
 header .navigation {
   margin: 5% 0 0 0;
   align-items: baseline;
+  z-index: 2500;
 }
 header .navigation a {
   position: relative;
@@ -820,6 +820,102 @@ li {
 }
 .form-popup h3 {
   font-size: 2rem;
+}
+#priceQuote .form-container .stackedRows fieldset #turnaroundDiv {
+  justify-content: center;
+  text-align: center;
+}
+#priceQuote .form-container .stackedRows fieldset #jurisdictionDiv {
+  font-size: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+#priceQuote .form-container .stackedRows fieldset #jurisdictionDiv input {
+  width: 100%;
+  padding-top: 2%;
+  margin: 3%;
+  background-color: #002244;
+  color: #69be28;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid green;
+}
+#priceQuote .form-container .stackedRows fieldset #priceQuoteBox {
+  width: 100%;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+  justify-content: center;
+  color: #69be28;
+  padding: 2%;
+  background-color: #002244;
+}
+#priceQuote .form-container .stackedRows fieldset #priceQuoteBox #tPrice2 {
+  padding: 2%;
+  align-self: center;
+  background-color: #002244;
+  color: #69be28;
+  width: 100%;
+  text-align: center;
+  border: 0;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 2%;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .left {
+  font-size: 2rem;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .left input {
+  background-color: #002244;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .left #turnaround,
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .left #p1i1 {
+  background-color: #002244;
+  border: 1px solid #69be28;
+  padding-top: 3%;
+  color: #69be28;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .right {
+  width: 25%;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .right input {
+  font-size: 1.5rem;
+  width: 98%;
+  background-color: #002244;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid #69be28;
+  color: #69be28;
+  text-align: center;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .right select {
+  background-color: #002244;
+  color: #69be28;
+}
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .right #turnaround {
+  background-color: #002244;
+}
+#priceQuote .form-container .stackedRows fieldset input {
+  font-size: 2rem;
+}
+#priceQuote .btn {
+  width: 100%;
+  padding: 16px 20px;
+  margin: 3%;
+  background-color: #69be28;
+  color: #002244;
 }
 .form-container {
   /* Add styles to the form container */
