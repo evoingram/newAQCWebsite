@@ -3,7 +3,7 @@ new company website using what i've learned in Lambda
 
 Still left to finish: 
 - [ ] proofing
-- [ ] order form/popup
+- [ ] fix up transferred order form
 - [ ] set up ericaingram.com on justhost
 - [ ] digital resume as placeholder there for now
 

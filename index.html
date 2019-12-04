@@ -443,7 +443,6 @@
                     In</a></div>
         </nav>
     </footer>
-    <!-- Need popups for contact form contactus -->
 
 
 
@@ -641,146 +640,142 @@
             <section class="stackedRows">
                 <form name="OrderForm" action="https://www.aquoco.co/test-email.php" method="post"
                     onsubmit="window.location ='www.aquoco.co/Price-Quote.html#six'">
-                    <a href="#one"></a>
-                    <fieldset id="one1">
+                    <div class="startOF" width="50%">
+                        <a href="#one"></a>
+                        <fieldset id="one1">
 
-                        <legend>Screen 1 of 4</legend>
+                            <legend>Screen 1 of 4</legend>
 
-                        <!-- old jurisdiction location -->
-                        <div class="pqQuestion">
-                            <div class="left">
-                                <label for="p1i2" id="p1i2Label" class="labelPQ">Are we ordering audio?</label>
+                            <!-- old jurisdiction location -->
+                            <div class="pqQuestion">
+                                <div class="left">
+                                    <label for="p1i2" id="p1i2Label" class="labelPQ">Are we ordering audio?</label>
+                                </div>
+                                <div class="right">
+                                    <input title="No, we are not ordering audio" id="p1i2" type="radio" name="p1i2"
+                                        value="No" checked required>No
+                                    <input title="Yes, we are ordering audio" id="p1i2" type="radio" name="p1i2"
+                                        value="Yes" required>Yes
+                                </div>
                             </div>
-                            <div class="right">
-                                <input title="No, we are not ordering audio" id="p1i2" type="radio" name="p1i2"
-                                    value="No" checked required>No
-                                <input title="Yes, we are ordering audio" id="p1i2" type="radio" name="p1i2" value="Yes"
-                                    required>Yes
-                            </div>
-                        </div>
-                        <br><br><br>
-                        <div class="pqQuestion">
-                            <div class="left"><label for="p1i3">Hard copy (extra charge, $0.25/page + $5/CD)?</label>
-                            </div>
-                            <div class="right"><input title="No hard copy" id="p1i3" type="radio" name="p1i3" value="No"
-                                    checked required>No
+                            <br><br><br>
+                            <div class="pqQuestion">
+                                <div class="left"><label for="p1i3">Hard copy (extra charge, $0.25/page +
+                                        $5/CD)?</label>
+                                </div>
+                                <div class="right"><input title="No hard copy" id="p1i3" type="radio" name="p1i3"
+                                        value="No" checked required>No
 
-                                <input title="Yes, hard copy" id="p1i3" type="radio" name="p1i3" value="Yes"
-                                    required>Yes
-                            </div>
-                        </div>
-
-                        <br><br><br><br>
-                        <div class="pqQuestion">
-                            <div class="left"><label for="p1i4">How long is your audio in minutes?</label></div>
-                            <div class="right"> <input title="audio length in minutes" id="p1i4" name="p1i4"
-                                    onChange="calculatePrice()" required /></div>
-                        </div>
-                        <br><br><br>
-                        <div id="turnaroundDiv" class="pqQuestion">
-                            <div class="left"><label for="turnaround">What turnaround? 24-hour turnaround or less
-                                    accepted
-                                    on a
-                                    case-by-case
-                                    basis.</label>
-                                <SELECT NAME="turnaround" onChange="calculatePrice()" id="turnaround" required>
-                                    <Option value="45">45 calendar days</Option>
-                                    <Option value="30">30 calendar days</Option>
-                                    <Option value="14">14 calendar days</Option>
-                                    <Option value="7">7 calendar days</Option>
-                                    <Option value="3">3 calendar days</Option>
-                                    <Option value="1">1 calendar day</Option>
-                                </SELECT>
-                            </div>
-                        </div>
-
-                        <br><br><br><br>
-                        <div class="pqQuestion">
-                            <div class="left">
-                                <label for="p1i5">Do you agree you are ordering a transcript @ above page rate &
-                                    turnaround with a price estimate of:</label></div>
-                            <div class="right">
-                                <input title="No, I do not agree to the terms." id="p1i5" type="radio" name="p1i5"
-                                    value="No" checked required>No
-                                <br><input title="Yes, I agree to the terms" id="p1i5" type="radio" name="p1i5"
-                                    value="Yes" required>Yes</div>
-                        </div>
-                        <br><br><br><br>
-                        <div id="priceQuoteBox" class="pqQuestion">
-                            <input title="price estimate" id="tPrice2" size='8' name="tPrice2">
-                        </div>
-                        <br><br><br>
-                        <div id="jurisdictionDiv" class="pqQuestion">
-                            <label for="p1i1">Enter the court proceeding's jurisdiction to proceed to the next page
-                                (example: none, King County Superior Court, USBC Eastern District of Wisconsin, Seattle
-                                Municipal Court, etc.): </label>
-                            <input title="enter jurisdiction here" id="p1i1" name="p1i1" required />
-                        </div>
-                        <div class="pqQuestion">
-
-                            <div class="left"><br><br><br></div>
-                            <div class="right">
-                                <input title="Go to the next screen" type="button" value="next"
-                                    onclick="return Allow1();">
+                                    <input title="Yes, hard copy" id="p1i3" type="radio" name="p1i3" value="Yes"
+                                        required>Yes
+                                </div>
                             </div>
 
-                        </div>
+                            <br><br><br><br>
+                            <div class="pqQuestion">
+                                <div class="left"><label for="p1i4">How long is your audio in minutes?</label></div>
+                                <div class="right"> <input title="audio length in minutes" id="p1i4" name="p1i4"
+                                        onChange="calculatePrice()" required /></div>
+                            </div>
+                            <br><br><br>
+                            <div id="turnaroundDiv" class="pqQuestion">
+                                <div class="left"><label for="turnaround">What turnaround? 24-hour turnaround or less
+                                        accepted
+                                        on a
+                                        case-by-case
+                                        basis.</label>
+                                    <SELECT NAME="turnaround" onChange="calculatePrice()" id="turnaround" required>
+                                        <Option value="45">45 calendar days</Option>
+                                        <Option value="30">30 calendar days</Option>
+                                        <Option value="14">14 calendar days</Option>
+                                        <Option value="7">7 calendar days</Option>
+                                        <Option value="3">3 calendar days</Option>
+                                        <Option value="1">1 calendar day</Option>
+                                    </SELECT>
+                                </div>
+                            </div>
 
-                    </fieldset>
+                            <br><br><br><br>
+                            <div class="pqQuestion">
+                                <div class="left">
+                                    <label for="p1i5">Do you agree you are ordering a transcript @ above page rate &
+                                        turnaround with a price estimate of:</label></div>
+                                <div class="right">
+                                    <input title="No, I do not agree to the terms." id="p1i5" type="radio" name="p1i5"
+                                        value="No" checked required>No
+                                    <br><input title="Yes, I agree to the terms" id="p1i5" type="radio" name="p1i5"
+                                        value="Yes" required>Yes</div>
+                            </div>
+                            <br><br><br><br>
+                            <div id="priceQuoteBox" class="pqQuestion">
+                                <input title="price estimate" id="tPrice2" size='8' name="tPrice2">
+                            </div>
+                            <br><br><br>
+                            <div id="jurisdictionDiv" class="pqQuestion">
+                                <label for="p1i1">Enter the court proceeding's jurisdiction to proceed to the next page
+                                    (example: none, King County Superior Court, USBC Eastern District of Wisconsin,
+                                    Seattle
+                                    Municipal Court, etc.): </label>
+                                <input title="enter jurisdiction here" id="p1i1" name="p1i1" required />
+                            </div>
+                            <div class="pqQuestion">
 
-                    <section class="stackedRows">
-                        <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                    </section>
+                                <div class="left"><br><br><br></div>
+                                <div class="right">
+                                    <input title="Go to the next screen" type="button" value="next"
+                                        onclick="return Allow1();">
+                                </div>
 
+                            </div>
 
+                        </fieldset>
+                    </div>
                     <!--<a href="#one">Screen 2 of 5</a>-->
                     <fieldset id="two">
 
                         <legend>Screen 2 of 4</legend>
-
-                        <div class="left"><label for="p3i2">A deposit of 100 percent of the price estimate is required
-                                prior to the
-                                turnaround beginning unless you have made arrangements with us.
-                                If you are a business, do you wish to be considered for <a
-                                    href="Application-Template.pdf" target="_blank">billing terms</a>? <br>
-                                <br>
-                                We do not run a credit check that results in an inquiry on your report.<br><br>
-
-                                If you are not a business, you will not be considered regardless of your answer.
+                        <div class="pqQuestion">
+                            <p>If you are not a business, you will not be considered regardless of your answer.
                                 <br><br>
 
                                 If you are a government agency, we will bill according to your jurisdiction's
-                                procedures.</label>
+                                procedures.<br><br>A deposit of 100 percent of the price estimate is
+                                required
+                                prior to the
+                                turnaround beginning unless you have made arrangements with us.</p>
                         </div>
-                        <div class="center1"><input title="no billing terms" id="p3i2" type="radio" name="p3i2"
-                                value="No" checked>No</div>
-                        <div class="right"><input title="Yes, we would like to be considered for billing terms"
-                                id="p3i2" type="radio" name="p3i2" value="Yes">Yes</div>
-
-                        <br><br><br><br><br><br><br><br><br><br><br><br>
-
-                        <div class="left"><br><label for="p3i3">Do you agree to the <a href="ServiceA.html"
-                                    target="_blank">terms of
-                                    service</a>?</label></div>
-                        <div class="center1"><br><input title="No, I do not agree to the terms." id="p3i3" type="radio"
-                                name="p3i3" value="No" checked required>No</div>
-                        <div class="right"><br><input title="Yes, I agree to the terms." id="p3i3" type="radio"
-                                name="p3i3" value="Yes" required>Yes</div>
-
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-                        <div class="left"><br></div>
-                        <div class="center1"><input title="Go to next screen." type="button" value="next"
-                                onclick="return Allow2();"></div>
-                        <div class="right">
-                            <center><input title="Go to previous screen." type="button" value="back"
-                                    onclick="window.location.href='#one';">
-                            </center>
+                        <div class="pqQuestion">
+                            <div class="left"><label for="p3i2">
+                                    If you are a business, do you wish to be considered for <a
+                                        href="Application-Template.pdf" target="_blank">billing terms</a>? <br>
+                                    <br>
+                                    We do not run a credit check that results in an inquiry on your
+                                    report.<br><br></label>
+                            </div>
+                            <div class="right"><input title="no billing terms" id="p3i2" type="radio" name="p3i2"
+                                    value="No" checked>No<input
+                                    title="Yes, we would like to be considered for billing terms" id="p3i2" type="radio"
+                                    name="p3i2" value="Yes">Yes</div>
                         </div>
+                        <div class="pqQuestion">
+
+                            <div class="left"><br><label for="p3i3">Do you agree to the <a href="ServiceA.html"
+                                        target="_blank">terms of
+                                        service</a>?</label></div>
+                            <div class="right"><br><input title="No, I do not agree to the terms." id="p3i3"
+                                    type="radio" name="p3i3" value="No" checked required>No<input
+                                    title="Yes, I agree to the terms." id="p3i3" type="radio" name="p3i3" value="Yes"
+                                    required>Yes</div>
+                        </div>
+                        <br><br><br>
+                        <div class="pqQuestion">
+                            <div class="left">
+                                <input title="Go to previous screen." type="button" value="back"
+                                    onclick="window.location.href='#one';"></div>
+                            <div class="right"><input title="Go to next screen." type="button" value="next"
+                                    onclick="return Allow2();">
+                            </div>
                     </fieldset>
-                    <section class="stackedRows">
-                        <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                    </section>
                     <!--<a href="#three">Screen 3 of 5</a>-->
                     <fieldset id="three">
 
@@ -796,9 +791,6 @@
                                         </center>-->
 
                     </fieldset>
-                    <section class="stackedRows">
-                        <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                    </section>
 
                     <!--<a href="#four">Screen 4 of 5</a>-->
                     <fieldset id="four">
@@ -873,9 +865,6 @@
                                 onclick="window.location.href='#four';"></div>
 
                     </fieldset>
-                    <section class="stackedRows">
-                        <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                    </section>
                     <!--<a href="#five">Screen 5 of 5</a>-->
                     <fieldset id="five">
 
@@ -960,9 +949,6 @@
                         </center>
 
                     </fieldset>
-                    <section class="stackedRows">
-                        <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                    </section>
                     <!--<a href="#six">Screen 6 of 6</a>-->
                     <fieldset id="six">
 
@@ -975,82 +961,82 @@
                         confirm and finish processing your order.<br><br>If you have any questions, please e-mail us at
                         inquiries@aquoco.co
                         or call us at 206-478-5028. You will receive an order confirmation soon.
+                        <section class="stackedRows">
+                            <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
+                        </section>
 
                     </fieldset>
-                    <section class="stackedRows">
-                        <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                    </section>
                 </form>
+            </section>
 
-                <script type="text/javascript">
+            <script type="text/javascript">
 
-                    // Captcha Script
+                // Captcha Script
 
-                    function checkform(theform) {
-                        var why = "";
+                function checkform(theform) {
+                    var why = "";
 
-                        if (theform.CaptchaInput.value == "") {
-                            why += "- Please Enter CAPTCHA Code.\n";
-                        }
-                        if (theform.CaptchaInput.value != "") {
-                            if (ValidCaptcha(theform.CaptchaInput.value) == false) {
-                                why += "- The CAPTCHA Code Does Not Match.\n";
-                            }
-                        }
-                        if (why != "") {
-                            alert(why);
-                            return false;
+                    if (theform.CaptchaInput.value == "") {
+                        why += "- Please Enter CAPTCHA Code.\n";
+                    }
+                    if (theform.CaptchaInput.value != "") {
+                        if (ValidCaptcha(theform.CaptchaInput.value) == false) {
+                            why += "- The CAPTCHA Code Does Not Match.\n";
                         }
                     }
-
-                    var a = Math.ceil(Math.random() * 9) + '';
-                    var b = Math.ceil(Math.random() * 9) + '';
-                    var c = Math.ceil(Math.random() * 9) + '';
-                    var d = Math.ceil(Math.random() * 9) + '';
-                    var e = Math.ceil(Math.random() * 9) + '';
-
-                    var code = a + b + c + d + e;
-                    document.getElementById("txtCaptcha").value = code;
-                    document.getElementById("CaptchaDiv").innerHTML = code;
-
-                    // Validate input against the generated number
-                    function ValidCaptcha() {
-                        var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-                        var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-                        if (str1 == str2) { return true; }
-                        else { return false; }
+                    if (why != "") {
+                        alert(why);
+                        return false;
                     }
+                }
 
-                    // Remove the spaces from the entered and generated code
-                    function removeSpaces(string) {
-                        return string.split(' ').join('');
+                var a = Math.ceil(Math.random() * 9) + '';
+                var b = Math.ceil(Math.random() * 9) + '';
+                var c = Math.ceil(Math.random() * 9) + '';
+                var d = Math.ceil(Math.random() * 9) + '';
+                var e = Math.ceil(Math.random() * 9) + '';
+
+                var code = a + b + c + d + e;
+                document.getElementById("txtCaptcha").value = code;
+                document.getElementById("CaptchaDiv").innerHTML = code;
+
+                // Validate input against the generated number
+                function ValidCaptcha() {
+                    var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+                    var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+                    if (str1 == str2) { return true; }
+                    else { return false; }
+                }
+
+                // Remove the spaces from the entered and generated code
+                function removeSpaces(string) {
+                    return string.split(' ').join('');
+                }
+
+                function calculatePrice(OrderForm) {
+                    //Get selected data    
+                    var AudioLength = document.forms["OrderForm"]["p1i4"].value;
+                    var Turnaround = document.forms["OrderForm"]["turnaround"].value;
+
+                    //var PageRate = 2.65;
+                    var hours = 0;
+                    AudioLength = parseInt(AudioLength);
+
+                    if (AudioLength >= 885) {
+                        if (Turnaround == "30") { PageRate = 2.65; }
+                        else if (Turnaround == "45") { PageRate = 2.50; }
+                        else if (Turnaround == "14") { PageRate = 3.25; }
+                        else if (Turnaround == "7") { PageRate = 3.75; }
+                        else if (Turnaround == "3") { PageRate = 4.25; }
+                        else if (Turnaround == "1") { PageRate = 5.25; }
                     }
-
-                    function calculatePrice(OrderForm) {
-                        //Get selected data    
-                        var AudioLength = document.forms["OrderForm"]["p1i4"].value;
-                        var Turnaround = document.forms["OrderForm"]["turnaround"].value;
-
-                        //var PageRate = 2.65;
-                        var hours = 0;
-                        AudioLength = parseInt(AudioLength);
-
-                        if (AudioLength >= 885) {
-                            if (Turnaround == "30") { PageRate = 2.65; }
-                            else if (Turnaround == "45") { PageRate = 2.50; }
-                            else if (Turnaround == "14") { PageRate = 3.25; }
-                            else if (Turnaround == "7") { PageRate = 3.75; }
-                            else if (Turnaround == "3") { PageRate = 4.25; }
-                            else if (Turnaround == "1") { PageRate = 5.25; }
-                        }
-                        else {
-                            if (Turnaround == "30") { PageRate = 2.65; }
-                            else if (Turnaround == "45") { PageRate = 2.50; }
-                            else if (Turnaround == "14") { PageRate = 3.25; }
-                            else if (Turnaround == "7") { PageRate = 3.75; }
-                            else if (Turnaround == "3") { PageRate = 4.25; }
-                            else if (Turnaround == "1") { PageRate = 5.25; }
-                        }
+                    else {
+                        if (Turnaround == "30") { PageRate = 2.65; }
+                        else if (Turnaround == "45") { PageRate = 2.50; }
+                        else if (Turnaround == "14") { PageRate = 3.25; }
+                        else if (Turnaround == "7") { PageRate = 3.75; }
+                        else if (Turnaround == "3") { PageRate = 4.25; }
+                        else if (Turnaround == "1") { PageRate = 5.25; }
                     }
 
 
@@ -1066,11 +1052,11 @@
 
                     //print value to  tPrice 
                     var dollar = "$";
-                    total = total.toFixed(2)
+                    total = total.toFixed(2);
                     document.getElementById("tPrice2").value = dollar.concat(total);
-                                    }
+                }
 
-                </script>
+            </script>
 
 
 
@@ -2077,7 +2063,9 @@
             else {
                 var vStartOF = document.getElementById("one1"); vStartOF.style.visibility = 'hidden';
                 window.location.href = '#two';
-
+                var vNextFS = document.getElementById("two");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
             }
         }
 
@@ -2089,15 +2077,24 @@
                 return false;
             } else {
                 window.location.href = '#four';
+                var vNextFS = document.getElementById("four");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
             }
         }
 
         function Allow3() {
             var v = document.forms["OrderForm"]["p4i1"].value;
             if (v == "") {
+                var vNextFS = document.getElementById("four");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
                 window.location.href = '#four';
             } else {
                 window.location.href = '#five';
+                var vNextFS = document.getElementById("five");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
             }
         }
 
@@ -2134,6 +2131,9 @@
             }
             else {
                 window.location.href = '#five';
+                var vNextFS = document.getElementById("five");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
             }
         }
 
@@ -2183,7 +2183,12 @@
                 alert("Email:  Please enter a valid e-mail address.");
                 return false;
             }
-            else { window.location.href = '#six'; }
+            else {
+                window.location.href = '#six';
+                var vNextFS = document.getElementById("six");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+            }
         }
 
 
@@ -2229,15 +2234,43 @@
 
             //print value to  tPrice 
             var dollar = "$";
-            total = total.toFixed(2)
+            total = total.toFixed(2);
             document.getElementById("tPrice2").value = dollar.concat(total);
         }
-    </script>
 
-    <script src="https://widget.flowxo.com/embed.js"
+    </script>
+    <!--google analytics-->
+    <script>
+
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-76190959-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+    </script>
+    <!--facebook verify-->
+    <meta property="fb:admins" content="1523316217" />
+
+    <!--bing verify-->
+    <meta name="msvalidate.01" content="CB92119ADE7D55FC1089353F4CB0D372" />
+
+    <!--yandex verify-->
+    <meta name="yandex-verification" content="390c20ccf474ad0b" />
+    <meta name="yandex-verification" content="5ed4907b3bee51eb" />
+    <!--<script src="https://widget.flowxo.com/embed.js"
         data-fxo-widget="eyJ0aGVtZSI6IiM2OWJlMjgiLCJ3ZWIiOnsiYm90SWQiOiI1YzBkNDRjZDQyNDMyYzAwMTI0NjQyMzgiLCJ0aGVtZSI6IiM2OWJlMjgiLCJsYWJlbCI6IldlbGNvbWUgdG8gQSBRdW8gQ28uICJ9LCJ3ZWxjb21lVGV4dCI6IkkgY2FuIHByb3ZpZGUgeW91IHdpdGggaW5mb3JtYXRpb24gYWJvdXQgb3VyIHNlcnZpY2VzLCBwcmljZSBxdW90ZXMsIG9yIHRha2UgYW4gb3JkZXIgZG93biBpZiB5b3UnZCBsaWtlLiJ9"
-        async defer>function botmove(this) {.css(.iframe.fxo - widget { position: absolute; bottom: 15px; right: 0; }); }
-        </script>
+        async defer>
+            function botmove(this) {
+            .css(.iframe.fxo - widget { position: absolute; bottom: 15px; right: 0; }
+            );
+            }
+        </script>-->
 </body>
 
 </html>
