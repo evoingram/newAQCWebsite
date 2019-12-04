@@ -688,6 +688,28 @@ h2 {
   order: 2;
   z-index: 200;
 }
+#rates a {
+  position: relative;
+  padding: 1rem 0 0.5rem;
+  margin: 0 1.5rem;
+  color: #002244;
+  text-decoration: none;
+}
+#rates a:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #002244;
+  transition: transform 250ms;
+}
+#rates a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
 #courtTranscription {
   order: 1;
   z-index: 100;
