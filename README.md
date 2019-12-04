@@ -34,6 +34,7 @@ Still left to finish:
       make clear about when people will pay
 - [ ] change links on development page, add new/diff projects<br>
     (build week, company, vb projects, digital resume, ericaingram portfolio page)
+- [ ] development page goes too far down when you click development links
 - [ ] contact us form maybe
 - [ ] social media icons for contact page
 - [ ] use separate js page for javascript functions
