@@ -13,20 +13,38 @@
 		.vCenter();
 		margin-top: 0% 0% 5% 0%;
 		z-index: 99002;
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
 		transition: all 1000ms;
 		background: transparent;
 	}
 
 	.content::hover {
 		z-index: 99002;
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
 		transition: all 1000ms;
 	}
 
 	.content {
+		#showcaseRow1 {
+			-webkit-animation: blurFadeIn 2s ease-in 0s backwards;
+			-moz-animation: blurFadeIn 2s ease-in 0s backwards;
+			-ms-animation: blurFadeIn 2s ease-in 0s backwards;
+			animation: blurFadeIn 2s ease-in 0s backwards;
+			color: transparent;
+		}
+
+		#showcaseRow2 {
+			-webkit-animation: blurFadeIn 2s ease-in 1s backwards;
+			-moz-animation: blurFadeIn 2s ease-in 1s backwards;
+			-ms-animation: blurFadeIn 2s ease-in 1s backwards;
+			animation: blurFadeIn 2s ease-in 1s backwards;
+		}
+
+		#showcaseRow3 {
+			-webkit-animation: blurFadeIn 2s ease-in 2s backwards;
+			-moz-animation: blurFadeIn 2s ease-in 2s backwards;
+			-ms-animation: blurFadeIn 2s ease-in 2s backwards;
+			animation: blurFadeIn 2s ease-in 2s backwards;
+		}
+
 		.stackedRows {
 			display: flex;
 			width: 75%;
@@ -76,21 +94,15 @@
 		color: @green;
 		.fontBold();
 		overflow-x: hidden;
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
 		transition: all 1000ms;
 		.vCenter();
 	}
 
 	&:hover::after {
 		z-index: 99003;
-		filter: blur(10px);
-		-webkit-filter: blur(10px);
 	}
 
 	&:hover .content {
-		filter: blur(0px);
-		-webkit-filter: blur(10px);
 	}
 }
 
