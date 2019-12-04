@@ -16,20 +16,22 @@ Done so far:
 - [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - [X] added hover blur to front showcase image
 - [X] added linear gradient to logo and nav menus
+
+12/3/2019:
 - [X] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
 - [X] FAQ issues fixed (width, padding, and questions/answers not popping out properly)
+- [X] added clickable image carousel, removed timed image shuffle
+- [X] sticky header menu
+- [X] add empty line/space above green text in showcase image
+- [X] stop underlining of all body links
+- [X] sub real images for placeholders
+- [X] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
+- [X] add blur transition fade-in to showcase
 
 Still left to finish: 
-
 - [ ] typos
 - [ ] priceQuote popup
 - [ ] rates section
 - [ ] ordering pages/popup
-- [ ] select images for placeholders
-- [ ] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
-- [ ] stop underlining of all body links
-- [ ] add hover blur to background of showcase
-- [ ] maybe affix header menu like in j30 project
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
-- [ ] add empty line/space above green text in showcase image
 
