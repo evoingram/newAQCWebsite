@@ -36,8 +36,7 @@ Still left to finish:
     (build week, company, vb projects, digital resume, ericaingram portfolio page)
 - [ ] contact us form maybe
 - [ ] social media icons for contact page
-- [ ] set up ericaingram.com on justhost
-- [ ] maybe do digital resume as placeholder there for now
 - [ ] use separate js page for javascript functions
 - [ ] refactor whole website for best LESS pages/functions
+- [ ] set up ericaingram.com with maybe digital resume as placeholder there for now
 
