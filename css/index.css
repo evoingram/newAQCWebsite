@@ -749,6 +749,14 @@ h2 {
   font-size: 2rem;
   text-align: left;
 }
+#softwareDevelopment ul li {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+#softwareDevelopment .devdetails {
+  width: 55%;
+  justify-content: left;
+}
 #softwareDevelopment h3 {
   font-size: 2.5rem;
   text-align: center;
@@ -833,6 +841,7 @@ li {
   background-color: #002244;
   color: #a5acaf;
   font-size: 1.5rem;
+  width: 50%;
 }
 .form-popup a {
   font-weight: bold;

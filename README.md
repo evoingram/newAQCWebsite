@@ -3,15 +3,10 @@ new company website using what i've learned in Lambda
 
 Still left to finish: 
 - [ ] proofing
-- [X] finish rates section
 - [ ] order form/popup<br>
       make clear about when people will pay
-- [ ] change links on development page, add new/diff projects<br>
-    (build week, company, vb projects, digital resume, ericaingram portfolio page)
-- [ ] contact us form maybe
-- [ ] social media icons for contact page
 - [ ] set up ericaingram.com on justhost
-- [ ] maybe do digital resume as placeholder there for now
+- [ ] digital resume as placeholder there for now
 
 
 Done so far:
@@ -38,3 +33,9 @@ Done so far:
 - [X] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [X] add blur transition fade-in to showcase
 - [X] priceQuote popup
+
+- [X] finish rates section
+- [X] social media icons for contact page (NO)
+- [X] change links on development page, add new/diff projects<br>
+    (build week, company, vb projects, digital resume, ericaingram portfolio page)
+- [X] contact us form (NO)
