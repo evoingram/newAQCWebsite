@@ -3,8 +3,7 @@ new company website using what i've learned in Lambda
 
 Still left to finish: 
 - [ ] proofing
-- [ ] order form/popup<br>
-      make clear about when people will pay
+- [ ] order form/popup
 - [ ] set up ericaingram.com on justhost
 - [ ] digital resume as placeholder there for now
 
@@ -39,3 +38,4 @@ Done so far:
 - [X] change links on development page, add new/diff projects<br>
     (build week, company, vb projects, digital resume, ericaingram portfolio page)
 - [X] contact us form (NO)
+- [X] make clear about when people will pay on order form/page

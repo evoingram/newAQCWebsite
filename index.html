@@ -197,8 +197,8 @@
             </section>
 
             <section class="stackedRows">
-                <p><a href="#tos" onclick="openForm('tos')"></a>By ordering, you are agreeing to the linked terms of
-                    service here.</a></p>
+                <p><a href="#tos" onclick="openForm('tos')">By ordering, you are agreeing to the linked terms of
+                        service here.</a></p>
             </section>
             <section class="stackedRows">
                 <p>If you do not agree, do not order.</p>
@@ -268,7 +268,7 @@
                 <p><a
                         href="mailto:inquiries@aquoco.co?subject=Transcript%20Order&body=%0AHello%20there%2C%0A%0AI%20would%20like%20to%20order%20a%20transcript%3A%0A%0AIs%20this%20for%20an%20appeal%3F%20%20Yes%2FNo%0ATurnaround%3A%20%203%2F7%2F14%2F30%2F45%20calendar%20days%0ANeed%20a%20statement%20of%20arrangements%20template%20pre-filled%20out%20with%20our%20info%3F%20%20Yes%2Fno%0AExact%20case%20caption%20as%20should%20appear%20on%20transcript%3A%0AExact%20case%20number(s)%20as%20appears%20on%20transcript%3A%0AAdversary%20or%20COA%20number%20if%20applicable%3A%0AJurisdiction%3A%0AChapter%20if%20applicable%3A%0AJudge%2FHearing%20Officer%E2%80%99s%20Name%3A%0AAppearances%20(only%20need%20names%20of%20attorneys%20or%20parties%20%0Aappearing%20on%20their%20behalf%20at%20the%20hearing%3B%20can%20look%20up%20rest%20%0Aof%20contact%20info%20as%20necessary)%3A%0AAny%20other%20information%20you%20feel%20is%20relevant%3A%0A%0A%0AIt's%20helpful%20though%20not%20necessary%20to%20include%20the%20reporter's%20log%20notes%2C%20statement%20of%20arrangements%2C%20%0Aor%20minute%2Fdocket%20entry%20related%20to%20the%20transcribed%20audio.%20%20Payment%20arrangements%20will%20not%20be%20%0Aconsidered%20made%20until%20you%20either%20request%20to%20be%20billed%20(business%2Fgovernment%20agencies%20only)%20and%20%0Aare%20approved%20or%20pay%20the%20required%20deposit%20amount.%0A%0ALet%20me%20know%20if%20you%20have%20any%20questions.%20%20Thank%20you%20very%20much%20and%20have%20a%20great%20day.%0A%0ASincerely%2C%0A%0A%20%0AErica%20L%20Ingram%0ACERT**D-521%20%20%20%7C%20%20%20Notary%20Public%20%20%20%20%7C%20%20%20Microsoft%20Office%20Master%202016%0AOwner%2C%20A%20Quo%20Co.%0A320%20W%20Republican%2C%20Suite%20207%20%7C%20Seattle%2C%20WA%2098119%0Ap%20206%20478%205028%20%7C%20f%20866%20220%200887%0AMSN%2FSkype%20inquiries%40aquoco.co%0AFacebook%20http%3A%2F%2Fwww.facebook.com%2Faquocotranscripts%0ATwitter%20http%3A%2F%2Fwww.twitter.com%2Faquocotrans%0A%0A%0A%0A%0A">You
                         may order
-                        via e-mail here</a>; just fill out the form that pops up.</p>
+                        via e-mail here.</a> Just fill out the form that pops up.</p>
             </section>
         </section>
 
@@ -1988,14 +1988,17 @@
         </div>
     </div>
     <script>
+        //open one of the hidden pages
         function openForm(hiddenFormID) {
             document.getElementById(hiddenFormID).style.display = "block";
         }
 
+        // close one of the hidden pages
         function closeForm(hiddenFormID) {
             document.getElementById(hiddenFormID).style.display = "none";
         }
 
+        // toggle faq answer
         function toggleFAQDetails(obj) {
             /* var elementQS = document.getElementById("show1"); */
             var currentID = obj;
@@ -2035,6 +2038,7 @@
 
         }
 
+        // sticky nav
         window.onscroll = function () { stickyNav() };
         var navbar = document.querySelector(".navigation");
         var sticky = navbar.offsetTop;
@@ -2046,8 +2050,146 @@
                 navbar.classList.remove("sticky");
             }
         }
+        var titleInput = document.getElementById("p1i1");
+
+        function Allow1() {
+            var w = document.forms["OrderForm"]["p1i1"].value;
+            var z = document.forms["OrderForm"]["p1i4"].value;
+            var ww = document.forms["OrderForm"]["turnaround"].value;
+            var s = document.forms["OrderForm"]["p1i5"].value;
+            var vStartOF = document.getElementById("one1");
+            if (w == "") {
+                alert("You must enter the jurisdiction where the hearing took place before we can proceed.");
+                return false;
+            }
+            else if (z == "") {
+                alert("You must enter audio length in minutes.");
+                return false;
+            }
+            else if (z < 1) {
+                alert("You must enter audio length in minutes.");
+                return false;
+            }
+            else if (s == "No") {
+                alert("You must agree to the listed page rate before we can proceed.");
+                return false;
+            }
+            else {
+                var vStartOF = document.getElementById("one1"); vStartOF.style.visibility = 'hidden';
+                window.location.href = '#two';
+
+            }
+        }
+
+        function Allow2() {
+            var t = document.forms["OrderForm"]["p3i2"].value;
+            var u = document.forms["OrderForm"]["p3i3"].value;
+            if (u == "No") {
+                alert("If you do not agree to the terms of service, we will be unable to accept your order at this time.");
+                return false;
+            } else {
+                window.location.href = '#four';
+            }
+        }
+
+        function Allow3() {
+            var v = document.forms["OrderForm"]["p4i1"].value;
+            if (v == "") {
+                window.location.href = '#four';
+            } else {
+                window.location.href = '#five';
+            }
+        }
+
+        function ClearFields(fieldID) {
+            document.getElementById(fieldID).value = "";
+        }
+
+        function Allow4() {
+            var g = document.forms["OrderForm"]["p5i1"].value;
+            var h = document.forms["OrderForm"]["p5i2"].value;
+            var i = document.forms["OrderForm"]["p5i3"].value;
+            var k = document.forms["OrderForm"]["p5i5"].value;
+            var l = document.forms["OrderForm"]["p5i6"].value;
+            var m = document.forms["OrderForm"]["p5i7"].value;
+            var n = document.forms["OrderForm"]["p5i8"].value;
+            var o = document.forms["OrderForm"]["p5i9"].value;
+            var p = document.forms["OrderForm"]["p5i10"].value;
+            var q = document.forms["OrderForm"]["p5i11"].value;
+            if (g == "") {
+                alert("Please enter the case caption exactly as it should appear on the transcript.");
+                return false;
+            }
+            else if (h == "") {
+                alert("Please enter the case number as it should appear on the transcript.");
+                return false;
+            }
+            else if (k == "") {
+                alert("Please enter the hearing date.");
+                return false;
+            }
+            else if (l == "") {
+                alert("Please enter the judge or hearing officer's name.");
+                return false;
+            }
+            else {
+                window.location.href = '#five';
+            }
+        }
+
+        function Allow5() {
+            var xx = document.forms["OrderForm"]["p6i1"].value;
+            var yy = document.forms["OrderForm"]["p6i2"].value;
+            var zz = document.forms["OrderForm"]["p6i3"].value;
+            var a = document.forms["OrderForm"]["p6i4"].value;
+            var b = document.forms["OrderForm"]["p6i5"].value;
+            var c = document.forms["OrderForm"]["p6i6"].value;
+            var d = document.forms["OrderForm"]["p6i7"].value;
+            var e = document.forms["OrderForm"]["p6i8"].value;
+            var f = document.forms["OrderForm"]["p6i9"].value;
+            if (!xx.match(/^[a-zA-Z0-9., ]+$/)) {
+                alert("Your Name:  Please use only alphanumeric characters, commas, or periods.");
+                return false;
+            }
+            else if (!yy.match(/^[a-zA-Z0-9., ]+$/)) {
+                alert("Attorney's Name:  Please use only alphanumeric characters, commas, or periods.");
+                return false;
+            }
+            else if (zz == "") {
+                alert("Company Name:  Please use only alphanumeric characters, commas, or periods.");
+                return false;
+            }
+            else if (!a.match(/^[a-zA-Z0-9., ]+$/)) {
+                alert("Address1:  Please use only alphanumeric characters, commas, or periods.");
+                return false;
+            }
+            else if (!b.match(/^[a-zA-Z0-9., ]*$/)) {
+                alert("Address2:  Please use only alphanumeric characters, commas, or periods.");
+                return false;
+            }
+            else if (!c.match(/^[a-zA-Z. ]+$/)) {
+                alert("City:  Please use only alphabetic characters or periods.");
+                return false;
+            }
+            else if (!d.match(/^[a-zA-Z ]+$/)) {
+                alert("State:  Please use only alphabetic characters.");
+                return false;
+            }
+            else if (!e.match(/(^\d{5}$)|(^\d{5}-\d{4}$)/)) {
+                alert("ZIP:  Please enter a five-digit ZIP code.");
+                return false;
+            }
+            else if (!f.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+                alert("Email:  Please enter a valid e-mail address.");
+                return false;
+            }
+            else { window.location.href = '#six'; }
+        }
 
 
+
+
+        // calculate and display price estimate
         function calculatePrice(OrderForm) {
             //Get selected data    
             var AudioLength = document.forms["OrderForm"]["p1i4"].value;
