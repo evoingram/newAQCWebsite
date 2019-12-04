@@ -39,3 +39,5 @@ Still left to finish:
 - [ ] set up ericaingram.com on justhost
 - [ ] maybe do digital resume as placeholder there for now
 - [ ] use separate js page for javascript functions
+- [ ] refactor whole website for best LESS pages/functions
+
