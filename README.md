@@ -26,12 +26,12 @@ Done so far:
 - [X] stop underlining of all body links
 - [X] sub real images for placeholders
 - [X] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
+- [X] add blur transition fade-in to showcase
 
 Still left to finish: 
 - [ ] typos
 - [ ] priceQuote popup
 - [ ] rates section
 - [ ] ordering pages/popup
-- [ ] add hover blur to background of showcase
 - [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
 
