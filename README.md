@@ -27,11 +27,10 @@ Done so far:
 - [X] sub real images for placeholders
 - [X] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [X] add blur transition fade-in to showcase
+- [X] priceQuote popup
 
 Still left to finish: 
 - [ ] typos
-- [ ] priceQuote popup
 - [ ] rates section
 - [ ] ordering pages/popup
-- [ ] add backwards smoky text effect to page load when clicking nav link from https://codepen.io/evoingram/pen/NWWzqyr?editors=1100
-
+- [ ] change links on development page, add new/diff projects
