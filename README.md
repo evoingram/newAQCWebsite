@@ -38,3 +38,4 @@ Still left to finish:
 - [ ] social media icons for contact page
 - [ ] set up ericaingram.com on justhost
 - [ ] maybe do digital resume as placeholder there for now
+- [ ] use separate js page for javascript functions
