@@ -4,13 +4,11 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] proofing
 - [ ] test order form
 - [ ] set up ericaingram.com on host
 - [ ] digital resume as placeholder there for now
-- [ ] development page goes too far down when you click development links
-- [ ] use separate js page for javascript functions
-- [ ] refactor whole website for best LESS pages/functions
+- [ ] proofing
+- [ ] mobile/tablet versions
 
 
 Done so far:
@@ -45,3 +43,6 @@ Done so far:
 - [X] contact us form (NO)
 - [X] make clear about when people will pay on order form/page
 - [X] transfer order form from old to new
+- [X] development page goes too far down when you click development links
+- [X] refactor whole website for best LESS pages/functions
+- [X] use separate js page for javascript functions

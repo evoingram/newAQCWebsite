@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <title>Welcome to A Quo Co. court transcription services.</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -70,7 +71,7 @@
 
     <section id="bodyContent" class="bodyContent">
 
-        <section id="courtTranscription" class="row row1">
+        <section id="courtTranscription" class="row row1 pageRow">
 
             <section class="stackedRows">
                 <h2>A Quo Co. Court Transcription Services</h2>
@@ -78,35 +79,6 @@
             <br><br>
             <section class="stackedRows">
                 <section id="leftHalf" class="quarter">
-                    <!--
-                    <script>
-                        var i = 0; 			// Start Point
-                        var images = [];	// Images Array
-                        var time = 7000;	// Time Between Switch
-                        // Image List
-                        images[0] = "img/table-of-authorities.jpg";
-                        images[1] = "img/TOA-HeadingLinks.jpg";
-                        images[2] = "img/word-index.jpg";
-                        // Change Image
-                        function changeImg() {
-                            document.slide.src = images[i];
-                            // Check If Index Is Under Max
-                            if (i < images.length - 1) {
-                                // Add 1 to Index
-                                i++;
-                            } else {
-                                // Reset Back To O
-                                i = 0;
-                            }
-                            // Run function every x seconds
-                            setTimeout("changeImg()", time);
-                        }
-                        // Run function when page loads
-                        window.onload = changeImg;
-
-                    </script><br><br>
-                    <img name="slide" alt="A Quo Co., Seattle, Washington court transcription services features"
-                        title="A Quo Co., Seattle, Washington court transcription services features" />-->
 
                     <div class="carouselContainer">
                         <div id="transcriptCarousel" class="carousel slide" data-ride="carousel">
@@ -157,7 +129,8 @@
                         <li>Condensed versions, two and four per page</li>
                         <li>Hyperlinked table of contents & headers where applicable</li>
                         <li><a href="https://www.ned.uscourts.gov/internetDocs/cmecf/LinkBuilderforMSWord.pdf"
-                                target="_blank">Linkbuilder</a> on all USBC transcripts where possible</li>
+                                target="_blank">Linkbuilder on all USBC transcripts where
+                                possible</a></li>
                         <li>A "working copy" of your court transcript, an
                             uncertified copy that makes normal Microsoft Word features usable.</li>
                         <li>Certified PDF comes with linked bookmarks to reflect tables of contents and authorities.
@@ -173,27 +146,27 @@
             <section class="stackedRows">
                 <p>Rates start as low as $2.50 per page. A deposit of 100 percent of the quote is required up front for
                     court & any balance/refund due upon completion of the
-                    transcript prior to delivery. <a href="#requestAudio" onclick="openForm('requestAudio')">We can
+                    transcript prior to delivery.<br><a href="#requestAudio" onclick="openForm('requestAudio')">We can
                         request your audio
-                        at no or for an additional charge</a>, depending on the circumstance. We currently accept check
-                    or money order. We provide terms to government agencies and approved businesses; you may <a
-                        href="Application-Template.pdf">apply here</a>.</p>
-            </section>
-            <section class="stackedRows">
-                <p>For an extensive list of jurisdictions where we are approved, please <a href="#jurisdictions"
-                        onclick="openForm('jurisdictions')">click here</a>.</p>
+                        at no or for an additional charge depending on the circumstance.</a><br>
+                    We currently accept check
+                    or money order. <br>We provide terms to government agencies and approved businesses. <a
+                        href="Application-Template.pdf">You may apply here.</a><br>
+                    For an extensive list of jurisdictions where we are approved,<a href="#jurisdictions"
+                        onclick="openForm('jurisdictions')">please click here.</a>
+                </p>
             </section>
         </section>
 
-        <section id="rates" class="row row2">
+        <section id="rates" class="row row2 pageRow">
 
             <section class="stackedRows">
                 <h1>Rates</h1>
             </section>
             <section class="stackedRows">
-                <p>Looking to log in to upload files? <a href="https://www.aquoco.co/Files/" class="navLink"
+                <p>Looking to log in to upload files?<a href="https://www.aquoco.co/Files/" class="navLink"
                         target="_blank">Log in
-                        here</a>.</p>
+                        here.</a></p>
             </section>
 
             <section class="stackedRows">
@@ -206,7 +179,7 @@
             <section class="stackedRows">
                 <p> <a href="#tos" onclick="openForm('priceQuote')">Click here to
                         get a
-                        price quote and order a transcript</a>.
+                        price quote and order a transcript.</a>
                 </p>
             </section>
             <section class="stackedRows">
@@ -272,8 +245,7 @@
             </section>
         </section>
 
-        <section id="softwareDevelopment" class="row row3">
-
+        <section id="softwareDevelopment" class="row row3 pageRow">
             <section class="stackedRows">
                 <h2>Software Development by Erica Ingram</h2>
             </section>
@@ -281,10 +253,10 @@
             <section class="stackedRows">
 
                 <section id="leftHalf" class="quarter">
-                    <br><br><br><br>
-                    <p>Check out my work samples at the following links. If you like what you see, <a
-                            href="#contact">contact me</a> and let
-                        me help you create amazing software solutions.</p><br><br>
+                    <br><br>
+                    <p>Check out my work samples at the following links. <br>If you like what you see,<br><a
+                            href="#contact">contact me</a><br>and let
+                        me help you create amazing software solutions.</p><br>
                     <ul>
                         <li>Currently enrolled at Lambda School's full-stack web development track</li>
                         <li><a href="https://www.github.com/evoingram/vbprojects/database" target="_blank">VB code from
@@ -295,7 +267,8 @@
                                     | VBA | MySQL | Batch | Acrobat |<br>| Word | Excel | Access | Outlook |<br>| WinSCP
                                     |<br>|
                                     <a href="https://www.github.com/evoingram/vbprojects/database" target="_blank">code
-                                        on GitHub</a> |</center>
+                                        on GitHub</a> |
+                                </center>
                             </div>
                         </li>
                         <li><a href="https://www.aquoco.co" target="_blank">this website</a>:<br>
@@ -334,7 +307,7 @@
 
         </section>
 
-        <section id="about" class="row row4">
+        <section id="about" class="row row4 pageRow">
 
             <section class="stackedRows">
                 <section id="abouth" class="row">
@@ -379,7 +352,7 @@
 
         </section>
 
-        <section id="contact" class="row row5">
+        <section id="contact" class="row row5 pageRow">
 
             <section class="stackedRows">
                 <h2>Contact</h2>
@@ -635,7 +608,7 @@
                 <h1>Price Quote Calculator:</h1>
             </section><br><br>
             <section class="stackedRows">
-                <h2>Get a price quote on your transcript:</h2>
+                <h3>Get a price quote on your transcript:</h3>
             </section>
             <section class="stackedRows">
                 <form name="OrderForm" action="https://www.aquoco.co/test-email.php" method="post"
@@ -748,11 +721,12 @@
                         <div class="pqQuestion">
                             <div class="left">
                                 <label for="p3i2">
-                                    If you are a business, do you wish to be considered for <a
-                                        href="Application-Template.pdf" target="_blank">billing terms</a>?
-                                    <br><br>
-                                    We do not run a credit check that results in an inquiry on your
+                                    If you are a business, do you wish to be considered for <br><a
+                                        href="Application-Template.pdf" target="_blank">billing terms</a>? We do not run
+                                    a credit check that results in an inquiry on your
                                     report.
+                                    <br><br>
+
                                 </label>
                             </div>
                             <div class="right">
@@ -778,7 +752,8 @@
                         <br><br><br>
                         <div class="pqQuestion">
                             <div class="left">
-                                <input title="Go to previous screen." type="button" value="back" onclick="back('two')">
+                                <input class="backButton" title="Go to previous screen." type="button" value="back"
+                                    onclick="back('two')">
                             </div>
                             <div class=" right">
                                 <input title="Go to next screen." type="button" value="next" onclick="return Allow2();">
@@ -794,7 +769,7 @@
                                         <input title="" id="p4i1" type="file" name="SkipCaseInfo" accept="application/pdf,text/plain" /><br><Br>
                                         <center>
                                         <button type="button" onclick="ClearFields('p4i1');">Clear File Submission</button>
-                                        <input type="button" value="back" onclick="window.location.href='#two';">
+                                        <input class="backButton" type="button" value="back" onclick="window.location.href='#two';">
                                         <input type="button" value="next" onclick="return Allow3();">
                                         </center>-->
 
@@ -859,7 +834,7 @@
                         </div>
                         <div class="pqQuestion pqTextField">
                             <div class="left">
-                                <input title="Go to previous screen." type="button" value="back"
+                                <input class="backButton" title="Go to previous screen." type="button" value="back"
                                     onclick="back('three')">
                             </div>
                             <div class="right">
@@ -931,7 +906,8 @@
                             <br><br>
 
                             <!-- END CAPTCHA -->
-                            <input title="Go to previous screen." type="button" value="back" onclick="back('five')">
+                            <input class="backButton" title="Go to previous screen." type="button" value="back"
+                                onclick="back('five')">
                             <input title="Submit Order" type="submit" name="submit" value="Submit Order"
                                 onclick="return Allow5();" onSubmit=window.location='Price-Quote.html#six'>
                             <input title="" type="hidden" name="redirect" value="Price-Quote.html#six">
@@ -956,13 +932,6 @@
                     </fieldset>
                 </form>
             </section>
-
-            <!--captcha + price quote calculator-->
-            <script type="text/javascript">
-
-
-            </script>
-
 
         </div>
 
@@ -1885,6 +1854,7 @@
             return string.split(' ').join('');
         }
 
+        // price quote calculator
         function calculatePrice(OrderForm) {
             //Get selected data    
             var AudioLength = document.forms["OrderForm"]["p1i4"].value;
@@ -2269,14 +2239,6 @@
     <!--yandex verify-->
     <meta name="yandex-verification" content="390c20ccf474ad0b" />
     <meta name="yandex-verification" content="5ed4907b3bee51eb" />
-    <!--<script src="https://widget.flowxo.com/embed.js"
-        data-fxo-widget="eyJ0aGVtZSI6IiM2OWJlMjgiLCJ3ZWIiOnsiYm90SWQiOiI1YzBkNDRjZDQyNDMyYzAwMTI0NjQyMzgiLCJ0aGVtZSI6IiM2OWJlMjgiLCJsYWJlbCI6IldlbGNvbWUgdG8gQSBRdW8gQ28uICJ9LCJ3ZWxjb21lVGV4dCI6IkkgY2FuIHByb3ZpZGUgeW91IHdpdGggaW5mb3JtYXRpb24gYWJvdXQgb3VyIHNlcnZpY2VzLCBwcmljZSBxdW90ZXMsIG9yIHRha2UgYW4gb3JkZXIgZG93biBpZiB5b3UnZCBsaWtlLiJ9"
-        async defer>
-            function botmove(this) {
-            .css(.iframe.fxo - widget { position: absolute; bottom: 15px; right: 0; }
-            );
-            }
-        </script>-->
 </body>
 
 </html>

@@ -38,12 +38,11 @@
 
 #priceQuote {
 	.form-popup {
-		max-height: 75vh;
 		overflow-y: scroll;
 	}
 
 	.form-container {
-		max-height: 75vh;
+		height: 75vh;
 		overflow-y: scroll;
 
 		.stackedRows {
@@ -138,6 +137,16 @@
 
 						input {
 							background-color: @navy;
+							color: @green;
+							border-top: transparent;
+							border-left: transparent;
+							border-right: transparent;
+							border-bottom: 1px solid green;
+
+							&.backButton {
+								align-self: left;
+								text-align: left;
+							}
 						}
 
 						#turnaround,
