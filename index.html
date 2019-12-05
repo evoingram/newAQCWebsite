@@ -711,7 +711,7 @@
                                 <input title="price estimate" id="tPrice2" size='8' name="tPrice2">
                             </div>
                             <br><br><br>
-                            <div id="jurisdictionDiv" class="pqQuestion">
+                            <div id="jurisdictionDiv" class="pqQuestion pqTextField">
                                 <label for="p1i1">Enter the court proceeding's jurisdiction to proceed to the next page
                                     (example: none, King County Superior Court, USBC Eastern District of Wisconsin,
                                     Seattle
@@ -737,43 +737,51 @@
                         <div class="pqQuestion">
                             <p>If you are not a business, you will not be considered regardless of your answer.
                                 <br><br>
-
                                 If you are a government agency, we will bill according to your jurisdiction's
-                                procedures.<br><br>A deposit of 100 percent of the price estimate is
+                                procedures.
+                                <br><br>
+                                A deposit of 100 percent of the price estimate is
                                 required
                                 prior to the
                                 turnaround beginning unless you have made arrangements with us.</p>
                         </div>
                         <div class="pqQuestion">
-                            <div class="left"><label for="p3i2">
+                            <div class="left">
+                                <label for="p3i2">
                                     If you are a business, do you wish to be considered for <a
-                                        href="Application-Template.pdf" target="_blank">billing terms</a>? <br>
-                                    <br>
+                                        href="Application-Template.pdf" target="_blank">billing terms</a>?
+                                    <br><br>
                                     We do not run a credit check that results in an inquiry on your
-                                    report.<br><br></label>
+                                    report.
+                                </label>
                             </div>
-                            <div class="right"><input title="no billing terms" id="p3i2" type="radio" name="p3i2"
-                                    value="No" checked>No<input
-                                    title="Yes, we would like to be considered for billing terms" id="p3i2" type="radio"
-                                    name="p3i2" value="Yes">Yes</div>
+                            <div class="right">
+                                <input title="no billing terms" id="p3i2" type="radio" name="p3i2" value="No" checked>No
+                                <input title="Yes, we would like to be considered for billing terms" id="p3i2"
+                                    type="radio" name="p3i2" value="Yes">Yes
+                            </div>
                         </div>
                         <div class="pqQuestion">
 
-                            <div class="left"><br><label for="p3i3">Do you agree to the <a href="ServiceA.html"
-                                        target="_blank">terms of
-                                        service</a>?</label></div>
-                            <div class="right"><br><input title="No, I do not agree to the terms." id="p3i3"
-                                    type="radio" name="p3i3" value="No" checked required>No<input
-                                    title="Yes, I agree to the terms." id="p3i3" type="radio" name="p3i3" value="Yes"
-                                    required>Yes</div>
+                            <div class="left">
+                                <label for="p3i3">Do you agree to the <a href="ServiceA.html" target="_blank">terms of
+                                        service</a>?
+                                </label>
+                            </div>
+                            <div class="right">
+                                <input title="No, I do not agree to the terms." id="p3i3" type="radio" name="p3i3"
+                                    value="No" checked required>No
+                                <input title="Yes, I agree to the terms." id="p3i3" type="radio" name="p3i3" value="Yes"
+                                    required>Yes
+                            </div>
                         </div>
                         <br><br><br>
                         <div class="pqQuestion">
                             <div class="left">
-                                <input title="Go to previous screen." type="button" value="back"
-                                    onclick="window.location.href='#one';"></div>
-                            <div class="right"><input title="Go to next screen." type="button" value="next"
-                                    onclick="return Allow2();">
+                                <input title="Go to previous screen." type="button" value="back" onclick="back('two')">
+                            </div>
+                            <div class=" right">
+                                <input title="Go to next screen." type="button" value="next" onclick="return Allow2();">
                             </div>
                     </fieldset>
                     <!--<a href="#three">Screen 3 of 5</a>-->
@@ -796,127 +804,111 @@
                     <fieldset id="four">
 
                         <legend>Screen 3 of 4</legend>
-
-                        <div class="left"><label for="p5i1">Exact case caption as it should appear on the
-                                transcript:</label></div>
-                        <div class="center1" style="margin-top: -5%"><input
-                                title="Exact case caption as it should appear on the transcript" id="p5i1"
-                                name="p5i1" /></div>
-                        <div class="right"><br></div>
-
-                        <br><br>
-
-                        <div class="left"><label for="p5i2"><br>Case Number: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Case Number 1" id="p5i2"
-                                name="p5i2" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i3">Second Case Number (Adversary, Court of Appeals, etc.):
-                            </label></div>
-                        <div class="center1" style="margin-top: -4%"><input
-                                title="Second Case Number (Adversary, Court of Appeals, etc.)" id="p5i3" name="p5i3" />
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i1">Exact case caption as it should appear on the transcript:</label>
+                            <input title="Exact case caption as it should appear on the transcript" id="p5i1"
+                                name="p5i1" />
                         </div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i5"><br>Hearing Date: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Hearing Date MM/DD/YYYY" id="p5i5"
-                                name="p5i5" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i6">Judge/Hearing Officer's Name: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Judge/Hearing Officer's Name"
-                                id="p5i6" name="p5i6" />
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i2">Case Number: </label>
+                            <input title="Case Number 1" id="p5i2" name="p5i2" />
                         </div>
-                        <div class="right"><br></div>
-
-
-                        <div class="left"><label for="p5i7">SpeakerNames: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Speaker Names" id="p5i7"
-                                name="p5i7" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i8">Relevant Spellings: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Relevant Spellings" id="p5i8"
-                                name="p5i8" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i9">Other: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Other Relevant Info" id="p5i9"
-                                name="p5i9" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i10">Chapter: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="Bankruptcy chapter, if applicable"
-                                id="p5i10" name="p5i10" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p5i11">For appeal y/n: </label><br></div>
-                        <div class="center1"><input title="No, this is not for an appeal." id="p5i11" type="radio"
-                                name="ForAppeal" value="No" checked>No</div>
-                        <div class="right"><input title="Yes.  This is for an appeal." id="p5i11" type="radio"
-                                name="ForAppeal" value="Yes">Yes<br><br><br><br><br><br></div>
-
-                        <br><br>
-
-                        <div class="left"><br><br></div>
-                        <div class="center1"><input title="Go to next screen." type="button" value="next"
-                                onclick="return Allow4();"></div>
-                        <div class="right"><input title="Go to previous screen." type="button" value="back"
-                                onclick="window.location.href='#four';"></div>
-
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i3">Second Case Number (Adversary, Court of Appeals, etc.):</label>
+                            <input title="Second Case Number (Adversary, Court of Appeals, etc.)" id="p5i3"
+                                name="p5i3" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i5">Hearing Date: </label>
+                            <input title="Hearing Date MM/DD/YYYY" id="p5i5" name="p5i5" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i6">Judge/Hearing Officer's Name: </label>
+                            <input title="Judge/Hearing Officer's Name" id="p5i6" name="p5i6" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i7">SpeakerNames: </label>
+                            <input title="Speaker Names" id="p5i7" name="p5i7" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i8">Relevant Spellings: </label>
+                            <input title="Relevant Spellings" id="p5i8" name="p5i8" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p5i9">Other: </label>
+                            <input title="Other Relevant Info" id="p5i9" name="p5i9" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <div class="left">
+                                <label for="p5i10">Chapter: </label>
+                            </div>
+                            <div class="right">
+                                <input title="Bankruptcy chapter, if applicable" id="p5i10" name="p5i10" />
+                            </div>
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <div class="left">
+                                <label for="p5i11">For appeal y/n: </label>
+                            </div>
+                            <div class="right">
+                                <input title="No, this is not for an appeal." id="p5i11" type="radio" name="ForAppeal"
+                                    value="No" checked>No
+                                <input title="Yes.  This is for an appeal." id="p5i11" type="radio" name="ForAppeal"
+                                    value="Yes">Yes
+                            </div>
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <div class="left">
+                                <input title="Go to previous screen." type="button" value="back"
+                                    onclick="back('three')">
+                            </div>
+                            <div class="right">
+                                <input title="Go to next screen." type="button" value="next" onclick="return Allow4();">
+                            </div>
+                        </div>
                     </fieldset>
                     <!--<a href="#five">Screen 5 of 5</a>-->
                     <fieldset id="five">
 
-                        <br>
-
                         <legend>Screen 4 of 4</legend>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i1">Your Name: </label>
+                            <input title="your full name" id="p6i1" name="p6i1" required />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i2">Attorney's Name: </label>
+                            <input title="attorney's name if applicable" id="p6i2" name="p6i2" required />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i3">Company/Firm: </label>
+                            <input title="company/firm" id="p6i3" name="p6i3" required />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i4">Address1: </label>
+                            <input title="address line 1" id="p6i4" name="p6i4" required />
+                        </div>
 
-                        <div class="left"><label for="p6i1">Your Name: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="your full name" id="p6i1" name="p6i1"
-                                required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i2">Attorney's Name: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="attorney's name if applicable"
-                                id="p6i2" name="p6i2" required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i3">Company/Firm: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="company/firm" id="p6i3" name="p6i3"
-                                required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i4">Address1: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="address line 1" id="p6i4" name="p6i4"
-                                required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i5">Address2: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="address line 2" id="p6i5"
-                                name="p6i5" /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i6">City: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="city" id="p6i6" name="p6i6"
-                                pattern="[a-zA-Z]+" required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i7">State: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="state" id="p6i7" pattern="[A-Za-z]+"
-                                name="p6i7" required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i8">ZIP Code</label></div>
-                        <div class="center1" style="margin-top: -3%"><input title="ZIP code" id="p6i8" name="p6i8"
-                                pattern="^[0-9], {4, 4}$" required /></div>
-                        <div class="right"><br></div>
-
-                        <div class="left"><label for="p6i9">Email: </label></div>
-                        <div class="center1" style="margin-top: -3%"><input
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i5">Address2: </label>
+                            <input title="address line 2" id="p6i5" name="p6i5" />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i6">City: </label>
+                            <input title="city" id="p6i6" name="p6i6" pattern="[a-zA-Z]+" required />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i7">State: </label>
+                            <input title="state" id="p6i7" pattern="[A-Za-z]+" name="p6i7" required />
+                        </div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i8">ZIP Code</label>
+                            <input title="ZIP code" id="p6i8" name="p6i8" pattern="^[0-9], {4, 4}$" required /></div>
+                        <div class="pqQuestion pqTextField">
+                            <label for="p6i9">Email: </label>
+                            <input
                                 title="e-mail address only used for contact regarding this job.  We do not sign you up for any newsletters, send sales-emails, or sell it to third parties."
-                                id="p6i9" name="p6i9" required /></div>
-                        <div class="right"><br></div>
+                                id="p6i9" name="p6i9" required />
+                        </div>
 
                         <center>
                             <!-- START CAPTCHA -->
@@ -939,9 +931,7 @@
                             <br><br>
 
                             <!-- END CAPTCHA -->
-
-                            <input title="Go back to previous order" type="button" value="back"
-                                onclick="window.location.href='#four';">
+                            <input title="Go to previous screen." type="button" value="back" onclick="back('five')">
                             <input title="Submit Order" type="submit" name="submit" value="Submit Order"
                                 onclick="return Allow5();" onSubmit=window.location='Price-Quote.html#six'>
                             <input title="" type="hidden" name="redirect" value="Price-Quote.html#six">
@@ -951,8 +941,6 @@
                     </fieldset>
                     <!--<a href="#six">Screen 6 of 6</a>-->
                     <fieldset id="six">
-
-                        <br><br><br><br><br>
 
                         <legend></legend>
 
@@ -969,132 +957,11 @@
                 </form>
             </section>
 
+            <!--captcha + price quote calculator-->
             <script type="text/javascript">
 
-                // Captcha Script
-
-                function checkform(theform) {
-                    var why = "";
-
-                    if (theform.CaptchaInput.value == "") {
-                        why += "- Please Enter CAPTCHA Code.\n";
-                    }
-                    if (theform.CaptchaInput.value != "") {
-                        if (ValidCaptcha(theform.CaptchaInput.value) == false) {
-                            why += "- The CAPTCHA Code Does Not Match.\n";
-                        }
-                    }
-                    if (why != "") {
-                        alert(why);
-                        return false;
-                    }
-                }
-
-                var a = Math.ceil(Math.random() * 9) + '';
-                var b = Math.ceil(Math.random() * 9) + '';
-                var c = Math.ceil(Math.random() * 9) + '';
-                var d = Math.ceil(Math.random() * 9) + '';
-                var e = Math.ceil(Math.random() * 9) + '';
-
-                var code = a + b + c + d + e;
-                document.getElementById("txtCaptcha").value = code;
-                document.getElementById("CaptchaDiv").innerHTML = code;
-
-                // Validate input against the generated number
-                function ValidCaptcha() {
-                    var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-                    var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-                    if (str1 == str2) { return true; }
-                    else { return false; }
-                }
-
-                // Remove the spaces from the entered and generated code
-                function removeSpaces(string) {
-                    return string.split(' ').join('');
-                }
-
-                function calculatePrice(OrderForm) {
-                    //Get selected data    
-                    var AudioLength = document.forms["OrderForm"]["p1i4"].value;
-                    var Turnaround = document.forms["OrderForm"]["turnaround"].value;
-
-                    //var PageRate = 2.65;
-                    var hours = 0;
-                    AudioLength = parseInt(AudioLength);
-
-                    if (AudioLength >= 885) {
-                        if (Turnaround == "30") { PageRate = 2.65; }
-                        else if (Turnaround == "45") { PageRate = 2.50; }
-                        else if (Turnaround == "14") { PageRate = 3.25; }
-                        else if (Turnaround == "7") { PageRate = 3.75; }
-                        else if (Turnaround == "3") { PageRate = 4.25; }
-                        else if (Turnaround == "1") { PageRate = 5.25; }
-                    }
-                    else {
-                        if (Turnaround == "30") { PageRate = 2.65; }
-                        else if (Turnaround == "45") { PageRate = 2.50; }
-                        else if (Turnaround == "14") { PageRate = 3.25; }
-                        else if (Turnaround == "7") { PageRate = 3.75; }
-                        else if (Turnaround == "3") { PageRate = 4.25; }
-                        else if (Turnaround == "1") { PageRate = 5.25; }
-                    }
-
-
-                    //convert data to integers
-                    hours = (AudioLength / 60);
-
-                    //calculate total value   
-                    var total = (45 * hours * PageRate);
-
-                    if (total < 50) {
-                        total = 50;
-                    }
-
-                    //print value to  tPrice 
-                    var dollar = "$";
-                    total = total.toFixed(2);
-                    document.getElementById("tPrice2").value = dollar.concat(total);
-                }
 
             </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         </div>
@@ -1973,7 +1840,93 @@
             </form>
         </div>
     </div>
-    <script>
+
+    <script type="text/javascript">
+
+        // Captcha Script
+
+        function checkform(theform) {
+            var why = "";
+
+            if (theform.CaptchaInput.value == "") {
+                why += "- Please Enter CAPTCHA Code.\n";
+            }
+            if (theform.CaptchaInput.value != "") {
+                if (ValidCaptcha(theform.CaptchaInput.value) == false) {
+                    why += "- The CAPTCHA Code Does Not Match.\n";
+                }
+            }
+            if (why != "") {
+                alert(why);
+                return false;
+            }
+        }
+
+        var a = Math.ceil(Math.random() * 9) + '';
+        var b = Math.ceil(Math.random() * 9) + '';
+        var c = Math.ceil(Math.random() * 9) + '';
+        var d = Math.ceil(Math.random() * 9) + '';
+        var e = Math.ceil(Math.random() * 9) + '';
+
+        var code = a + b + c + d + e;
+        document.getElementById("txtCaptcha").value = code;
+        document.getElementById("CaptchaDiv").innerHTML = code;
+
+        // Validate input against the generated number
+        function ValidCaptcha() {
+            var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+            var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+            if (str1 == str2) { return true; }
+            else { return false; }
+        }
+
+        // Remove the spaces from the entered and generated code
+        function removeSpaces(string) {
+            return string.split(' ').join('');
+        }
+
+        function calculatePrice(OrderForm) {
+            //Get selected data    
+            var AudioLength = document.forms["OrderForm"]["p1i4"].value;
+            var Turnaround = document.forms["OrderForm"]["turnaround"].value;
+
+            //var PageRate = 2.65;
+            var hours = 0;
+            AudioLength = parseInt(AudioLength);
+
+            if (AudioLength >= 885) {
+                if (Turnaround == "30") { PageRate = 2.65; }
+                else if (Turnaround == "45") { PageRate = 2.50; }
+                else if (Turnaround == "14") { PageRate = 3.25; }
+                else if (Turnaround == "7") { PageRate = 3.75; }
+                else if (Turnaround == "3") { PageRate = 4.25; }
+                else if (Turnaround == "1") { PageRate = 5.25; }
+            }
+            else {
+                if (Turnaround == "30") { PageRate = 2.65; }
+                else if (Turnaround == "45") { PageRate = 2.50; }
+                else if (Turnaround == "14") { PageRate = 3.25; }
+                else if (Turnaround == "7") { PageRate = 3.75; }
+                else if (Turnaround == "3") { PageRate = 4.25; }
+                else if (Turnaround == "1") { PageRate = 5.25; }
+            }
+
+
+            //convert data to integers
+            hours = (AudioLength / 60);
+
+            //calculate total value   
+            var total = (45 * hours * PageRate);
+
+            if (total < 50) {
+                total = 50;
+            }
+
+            //print value to  tPrice 
+            var dollar = "$";
+            total = total.toFixed(2);
+            document.getElementById("tPrice2").value = dollar.concat(total);
+        }
         //open one of the hidden pages
         function openForm(hiddenFormID) {
             document.getElementById(hiddenFormID).style.display = "block";
@@ -2037,7 +1990,7 @@
             }
         }
         var titleInput = document.getElementById("p1i1");
-
+        // screen one form validation
         function Allow1() {
             var w = document.forms["OrderForm"]["p1i1"].value;
             var z = document.forms["OrderForm"]["p1i4"].value;
@@ -2069,6 +2022,7 @@
             }
         }
 
+        // screen two form validation
         function Allow2() {
             var t = document.forms["OrderForm"]["p3i2"].value;
             var u = document.forms["OrderForm"]["p3i3"].value;
@@ -2083,6 +2037,7 @@
             }
         }
 
+        // screen three form validation
         function Allow3() {
             var v = document.forms["OrderForm"]["p4i1"].value;
             if (v == "") {
@@ -2098,10 +2053,12 @@
             }
         }
 
+
         function ClearFields(fieldID) {
             document.getElementById(fieldID).value = "";
         }
 
+        // screen four form validation
         function Allow4() {
             var g = document.forms["OrderForm"]["p5i1"].value;
             var h = document.forms["OrderForm"]["p5i2"].value;
@@ -2137,6 +2094,7 @@
             }
         }
 
+        // screen five form validation
         function Allow5() {
             var xx = document.forms["OrderForm"]["p6i1"].value;
             var yy = document.forms["OrderForm"]["p6i2"].value;
@@ -2191,7 +2149,55 @@
             }
         }
 
+        // go back when you click back button
+        function Back(id) {
+            var vNextFS;
+            if (id === "two") {
+                vNextFS = document.getElementById("two");
+                vNextFS.style.display = "none";
+                vNextFS.style.overflow = "hidden";
+                vNextFS = document.getElementById("one");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
 
+            }
+            else if (id === "three") {
+                vNextFS = document.getElementById("three");
+                vNextFS.style.display = "none";
+                vNextFS.style.overflow = "hidden";
+                vNextFS = document.getElementById("two");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+
+            }
+            else if (id === "four") {
+                vNextFS = document.getElementById("four");
+                vNextFS.style.display = "none";
+                vNextFS.style.overflow = "hidden";
+                vNextFS = document.getElementById("three");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+
+            }
+            else if (id === "five") {
+                vNextFS = document.getElementById("five");
+                vNextFS.style.display = "none";
+                vNextFS.style.overflow = "hidden";
+                vNextFS = document.getElementById("four");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+
+            }
+            else if (id === "six") {
+                vNextFS = document.getElementById("six");
+                vNextFS.style.display = "none";
+                vNextFS.style.overflow = "hidden";
+                vNextFS = document.getElementById("five");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+
+            };
+        }
 
 
         // calculate and display price estimate
