@@ -1,9 +1,11 @@
 # newAQCWebsite
+
 new company website using what i've learned in Lambda
 
-Still left to finish: 
+Still left to finish:
+
 - [ ] proofing
-- [ ] fix up transferred order form
+- [ ] test order form
 - [ ] set up ericaingram.com on justhost
 - [ ] digital resume as placeholder there for now
 
@@ -39,3 +41,4 @@ Done so far:
     (build week, company, vb projects, digital resume, ericaingram portfolio page)
 - [X] contact us form (NO)
 - [X] make clear about when people will pay on order form/page
+- [X] transfer order form from old to new
