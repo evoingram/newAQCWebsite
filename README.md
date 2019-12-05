@@ -8,6 +8,9 @@ Still left to finish:
 - [ ] test order form
 - [ ] set up ericaingram.com on justhost
 - [ ] digital resume as placeholder there for now
+- [ ] development page goes too far down when you click development links
+- [ ] use separate js page for javascript functions
+- [ ] refactor whole website for best LESS pages/functions
 
 
 Done so far:
