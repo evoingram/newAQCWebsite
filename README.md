@@ -1,5 +1,16 @@
 # newAQCWebsite
+
 new company website using what i've learned in Lambda
+
+Still left to finish:
+
+- [ ] proofing
+- [ ] test order form
+- [ ] set up ericaingram.com on justhost
+- [ ] digital resume as placeholder there for now
+- [ ] development page goes too far down when you click development links
+- [ ] use separate js page for javascript functions
+- [ ] refactor whole website for best LESS pages/functions
 
 
 Done so far:
@@ -27,17 +38,10 @@ Done so far:
 - [X] add blur transition fade-in to showcase
 - [X] priceQuote popup
 
-Still left to finish: 
-- [ ] proofing
-- [ ] finish rates section
-- [ ] order form/popup<br>
-      make clear about when people will pay
-- [ ] change links on development page, add new/diff projects<br>
+- [X] finish rates section
+- [X] social media icons for contact page (NO)
+- [X] change links on development page, add new/diff projects<br>
     (build week, company, vb projects, digital resume, ericaingram portfolio page)
-- [ ] development page goes too far down when you click development links
-- [ ] contact us form maybe
-- [ ] social media icons for contact page
-- [ ] use separate js page for javascript functions
-- [ ] refactor whole website for best LESS pages/functions
-- [ ] set up ericaingram.com with maybe digital resume as placeholder there for now
-
+- [X] contact us form (NO)
+- [X] make clear about when people will pay on order form/page
+- [X] transfer order form from old to new

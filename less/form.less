@@ -22,6 +22,7 @@
 		font-weight: bold;
 		.cBNavyTGray();
 		font-size: 1.5rem;
+		width: 50%;
 	}
 
 	a {
@@ -36,9 +37,36 @@
 }
 
 #priceQuote {
+	.form-popup {
+		max-height: 75vh;
+		overflow-y: scroll;
+	}
+
 	.form-container {
+		max-height: 75vh;
+		overflow-y: scroll;
+
 		.stackedRows {
 			fieldset {
+				height: 0;
+				display: none;
+				overflow: hidden;
+				margin-right: 0%;
+				margin-left: 0%;
+				-o-transition: all 2s linear;
+				-webkit-transition: all 2s linear;
+				-ms-transition: all 2s linear;
+				-moz-transition: all 2s linear;
+				transition: all 2s linear;
+
+				&:target {
+					-o-transition: all 2s linear;
+					-webkit-transition: all 2s linear;
+					-ms-transition: all 2s linear;
+					-moz-transition: all 2s linear;
+					transition: all 2s linear;
+				}
+
 				#turnaroundDiv {
 					justify-content: center;
 					text-align: center;
@@ -50,6 +78,18 @@
 					justify-content: center;
 					text-align: center;
 					width: 100%;
+
+					input {
+						width: 100%;
+						padding-top: 2%;
+						margin: 3%;
+						background-color: @navy;
+						color: @green;
+						border-top: transparent;
+						border-left: transparent;
+						border-right: transparent;
+						border-bottom: 1px solid green;
+					}
 
 					input {
 						width: 100%;
@@ -141,6 +181,16 @@
 				input {
 					font-size: 2rem;
 				}
+			}
+
+			.startOF fieldset {
+				display: inherit;
+				overflow: visible;
+				-o-transition: all 2s linear;
+				-webkit-transition: all 2s linear;
+				-ms-transition: all 2s linear;
+				-moz-transition: all 2s linear;
+				transition: all 2s linear;
 			}
 		}
 	}
