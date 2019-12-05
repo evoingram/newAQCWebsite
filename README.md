@@ -6,7 +6,7 @@ Still left to finish:
 
 - [ ] proofing
 - [ ] test order form
-- [ ] set up ericaingram.com on justhost
+- [ ] set up ericaingram.com on host
 - [ ] digital resume as placeholder there for now
 - [ ] development page goes too far down when you click development links
 - [ ] use separate js page for javascript functions
