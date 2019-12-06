@@ -4,13 +4,11 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
+- [ ] figure out why submitted order form is redirecting to php page
+- [ ] add button to order another when complete
+- [ ] set up digital resume on ericaingram.com as placeholder for now
+- [ ] mobile/tablet versions
 - [ ] proofing
-- [ ] test order form
-- [ ] set up ericaingram.com on host
-- [ ] digital resume as placeholder there for now
-- [ ] development page goes too far down when you click development links
-- [ ] use separate js page for javascript functions
-- [ ] refactor whole website for best LESS pages/functions
 
 
 Done so far:
@@ -45,3 +43,8 @@ Done so far:
 - [X] contact us form (NO)
 - [X] make clear about when people will pay on order form/page
 - [X] transfer order form from old to new
+- [X] development page goes too far down when you click development links
+- [X] refactor whole website for best LESS pages/functions
+- [X] use separate js page for javascript functions
+- [X] test order form
+- [X] change wording on pq calculator to reflect ordering also

@@ -1,302 +1,402 @@
 .open-button {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 /* The popup form - hidden by default */
 .form-popup {
-	display: none;
-	position: fixed;
-	z-index: 99006;
-	bottom: 0px;
-	right: 15px;
-	border: 3px solid @green;
-	.cBNavyTGray();
-	max-height: 75vh;
-	overflow-y: scroll;
+    display: none;
+    position: fixed;
+    z-index: 99006;
+    bottom: 0px;
+    right: 15px;
+    border: 3px solid @green;
+    .cBNavyTGray();
+    max-height: 75vh;
+    overflow-y: scroll;
 
-	p {
-		font-size: 1.5rem;
-	}
+    p {
+        font-size: 1.5rem;
+    }
 
-	li {
-		font-weight: bold;
-		.cBNavyTGray();
-		font-size: 1.5rem;
-		width: 50%;
-	}
+    li {
+        font-weight: bold;
+        .cBNavyTGray();
+        font-size: 1.5rem;
+        width: 50%;
+    }
 
-	a {
-		font-weight: bold;
-		.cBNavyTGray();
-		font-size: 1.5rem;
-	}
+    a {
+        font-weight: bold;
+        .cBNavyTGray();
+        font-size: 1.5rem;
+    }
 
-	h3 {
-		font-size: 2rem;
-	}
+    h3 {
+        font-size: 2rem;
+    }
 }
 
 #priceQuote {
-	.form-popup {
-		max-height: 75vh;
-		overflow-y: scroll;
-	}
 
-	.form-container {
-		max-height: 75vh;
-		overflow-y: scroll;
+    .form-container {
+        height: 75vh;
 
-		.stackedRows {
-			fieldset {
-				height: 0;
-				display: none;
-				overflow: hidden;
-				margin-right: 0%;
-				margin-left: 0%;
-				-o-transition: all 2s linear;
-				-webkit-transition: all 2s linear;
-				-ms-transition: all 2s linear;
-				-moz-transition: all 2s linear;
-				transition: all 2s linear;
+        .stackedRows {
+            fieldset {
+                height: 0;
+                display: none;
+                overflow: hidden;
+                margin-right: 0%;
+                margin-left: 0%;
+                -o-transition: all 2s linear;
+                -webkit-transition: all 2s linear;
+                -ms-transition: all 2s linear;
+                -moz-transition: all 2s linear;
+                transition: all 2s linear;
 
-				&:target {
-					-o-transition: all 2s linear;
-					-webkit-transition: all 2s linear;
-					-ms-transition: all 2s linear;
-					-moz-transition: all 2s linear;
-					transition: all 2s linear;
-				}
+                legend {
+                    color: green;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                }
 
-				#turnaroundDiv {
-					justify-content: center;
-					text-align: center;
-				}
+                &:target {
+                    -o-transition: all 2s linear;
+                    -webkit-transition: all 2s linear;
+                    -ms-transition: all 2s linear;
+                    -moz-transition: all 2s linear;
+                    transition: all 2s linear;
+                }
 
-				#jurisdictionDiv {
-					font-size: 2rem;
-					flex-wrap: wrap;
-					justify-content: center;
-					text-align: center;
-					width: 100%;
+                #turnaroundDiv {
+                    justify-content: center;
+                    text-align: center;
 
-					input {
-						width: 100%;
-						padding-top: 2%;
-						margin: 3%;
-						background-color: @navy;
-						color: @green;
-						border-top: transparent;
-						border-left: transparent;
-						border-right: transparent;
-						border-bottom: 1px solid green;
-					}
+                    #insideTAD {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
 
-					input {
-						width: 100%;
-						padding-top: 2%;
-						margin: 3%;
-						background-color: @navy;
-						color: @green;
-						border-top: transparent;
-						border-left: transparent;
-						border-right: transparent;
-						border-bottom: 1px solid green;
-					}
-				}
+                #jurisdictionDiv {
+                    display: flex;
+                    font-size: 2rem;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    text-align: center;
+                    width: 100%;
 
-				#priceQuoteBox {
-					width: 100%;
-					border-top: 1px solid green;
-					border-bottom: 1px solid green;
-					justify-content: center;
-					color: @green;
-					padding: 2%;
-					background-color: @navy;
+                    input {
+                        width: 100%;
+                        padding-top: 2%;
+                        margin: 3%;
+                        background-color: @navy;
+                        color: @green;
+                        border-top: transparent;
+                        border-left: transparent;
+                        border-right: transparent;
+                        border-bottom: 1px solid green;
+                    }
 
-					#tPrice2 {
-						padding: 2%;
-						align-self: center;
-						background-color: @navy;
-						color: @green;
-						width: 100%;
-						text-align: center;
-						border: 0;
-					}
-				}
+                    input {
+                        width: 100%;
+                        padding-top: 2%;
+                        margin: 3%;
+                        background-color: @navy;
+                        color: @green;
+                        border-top: transparent;
+                        border-left: transparent;
+                        border-right: transparent;
+                        border-bottom: 1px solid green;
+                    }
+                }
 
-				.pqQuestion {
-					display: flex;
-					flex-direction: row;
-					flex-wrap: nowrap;
-					padding-top: 2%;
+                #priceQuoteBox {
+                    width: 100%;
+                    border-top: 1px solid green;
+                    border-bottom: 1px solid green;
+                    justify-content: center;
+                    color: @green;
+                    padding: 2%;
+                    background-color: @navy;
 
+                    #tPrice2 {
+                        padding: 2%;
+                        align-self: center;
+                        background-color: @navy;
+                        color: @green;
+                        width: 100%;
+                        text-align: center;
+                        border: 0;
+                    }
+                }
+
+                .buttonsBN {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    margin-top: 6%;
+                    padding-top: 6%;
+                    padding-bottom: 8%;
+                    border-top: 1px solid green;
+
+                    #submitBackButton, #submitButton{
+						width: 50%;
+						flex-wrap: nowrap;
+					} 
 					.left {
-						font-size: 2rem;
-						width: 80%;
-						margin: 0;
-						padding: 0;
+                        display: flex;
+                        width: 50%;
+                        align-items: center;
+                        padding-top: 6%;
+                        padding-bottom: 8%;
 
-						input {
-							background-color: @navy;
-						}
+                        .backButton {
+                            text-align: left;
+                            margin: 0;
+                            padding: 0;
+                            padding-left: 2%;
+                            font-size: 1.5rem;
+                            border: none;
+                        }
+                    }
 
-						#turnaround,
-						#p1i1 {
-							background-color: @navy;
-							border: 1px solid @green;
-							padding-top: 3%;
-							color: @green;
-						}
-					}
+                    .right {
+                        display: flex;
+                        width: 50%;
+                        align-items: center;
+                        padding-top: 6%;
+                        padding-bottom: 8%;
+                        border: none;
 
-					.right {
-						width: 25%;
-						font-size: 2rem;
-						margin: 0;
-						padding: 0;
+                        .nextButton {
+                            text-align: right;
+                            margin: 0;
+                            padding: 0;
+                            padding-right: 2%;
+                            font-size: 1.5rem;
+                            border: none;
+                        }
 
-						input {
-							font-size: 1.5rem;
-							width: 98%;
-							background-color: @navy;
-							border-top: transparent;
-							border-left: transparent;
-							border-right: transparent;
-							border-bottom: 1px solid @green;
-							color: @green;
-							text-align: center;
-						}
+                    }
 
-						select {
-							background-color: @navy;
-							color: @green;
-						}
+                }
 
-						#turnaround {
-							background-color: @navy;
-						}
-					}
-				}
+                .pqQuestion {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    padding-top: 2%;
 
-				input {
-					font-size: 2rem;
-				}
-			}
+                    .left {
+                        display: flex;
+                        flex-direction: wrap;
+                        font-size: 2rem;
+                        width: 80%;
+                        margin: 0;
+                        padding-bottom: 2%;
+                        justify-content: left;
 
-			.startOF fieldset {
-				display: inherit;
-				overflow: visible;
-				-o-transition: all 2s linear;
-				-webkit-transition: all 2s linear;
-				-ms-transition: all 2s linear;
-				-moz-transition: all 2s linear;
-				transition: all 2s linear;
-			}
-		}
-	}
+                        input {
+                            background-color: @navy;
+                            color: @green;
+                            border-top: transparent;
+                            border-left: transparent;
+                            border-right: transparent;
+                            border-bottom: 1px solid green;
 
-	.btn {
-		width: 100%;
-		padding: 16px 20px;
-		margin: 3%;
-		.cBGreenTNavy();
-	}
+                        }
+
+                        #turnaround,
+                        #p1i1 {
+                            background-color: @navy;
+                            border: 1px solid @green;
+                            padding-top: 3%;
+                            color: @green;
+                        }
+                    }
+
+                    .right {
+                        width: 25%;
+                        font-size: 1.8rem;
+                        margin: 0;
+                        padding: 0;
+
+                        input {
+                            font-size: 1.5rem;
+                            width: 98%;
+                            background-color: @navy;
+                            border-top: transparent;
+                            border-left: transparent;
+                            border-right: transparent;
+                            border-bottom: 1px solid @green;
+                            color: @green;
+                            text-align: center;
+                        }
+
+                        select {
+                            background-color: @navy;
+                            color: @green;
+                        }
+
+                        #turnaround {
+                            background-color: @navy;
+                        }
+
+                        #CaptchaInput {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+
+                input {
+                    font-size: 2rem;
+                }
+
+                .pqTextField {
+                    display: flex;
+                    flex-wrap: wrap;
+                    font-size: 1.5rem;
+                    width: 98%;
+                    background-color: @navy;
+                    border-top: transparent;
+                    border-left: transparent;
+                    border-right: transparent;
+                    color: @green;
+                    text-align: center;
+                    padding-bottom: 5%;
+
+                    input {
+                        background-color: @navy;
+                        border-top: transparent;
+                        border-left: transparent;
+                        border-right: transparent;
+                        border-bottom: 1px solid @green;
+                        width: 100%;
+                    }
+
+                    label {
+                        text-align: left;
+                        color: @gray;
+                    }
+                }
+            }
+
+            .startOF fieldset {
+                display: inherit;
+                overflow: visible;
+                -o-transition: all 2s linear;
+                -webkit-transition: all 2s linear;
+                -ms-transition: all 2s linear;
+                -moz-transition: all 2s linear;
+                transition: all 2s linear;
+            }
+        }
+    }
+
+    .btn {
+        width: 100%;
+        padding: 16px 20px;
+        margin: 3%;
+        .cBGreenTNavy();
+    }
 }
 
 .form-container {
-	/* Add styles to the form container */
-	max-width: 300px;
-	padding: 10px;
-	background-color: @navy;
+    /* Add styles to the form container */
+    max-width: 300px;
+    padding: 10px;
+    background-color: @navy;
 
-	.details,
-	.show,
-	.hide:target {
-		text-align: left;
-		justify-content: left;
-		display: none;
-	}
+    .details,
+    .show,
+    .hide:target {
+        text-align: left;
+        justify-content: left;
+        display: none;
+    }
 
-	.hide:target + .show,
-	.hide:target ~ .details {
-		text-align: left;
-		justify-content: left;
-		display: block;
-	}
+    .hide:target+.show,
+    .hide:target~.details {
+        text-align: left;
+        justify-content: left;
+        display: block;
+    }
 
-	.stackedRows {
-		div {
-			.question,
-			.show,
-			.hide,
-			.details {
-				padding-top: 2%;
-				padding-bottom: 2%;
+    .stackedRows {
+        div {
 
-				&:after {
-					text-align: left;
-				}
+            .question,
+            .show,
+            .hide,
+            .details {
+                padding-top: 2%;
+                padding-bottom: 2%;
 
-				&:before {
-					text-align: left;
-				}
-			}
+                &:after {
+                    text-align: left;
+                }
 
-			a {
-				color: @green;
-				text-align: center;
-			}
+                &:before {
+                    text-align: left;
+                }
+            }
 
-			&:active {
-				text-align: left;
-			}
-		}
+            a {
+                color: @green;
+                text-align: center;
+            }
 
-		.question {
-			border-top: 1px solid green;
-		}
-	}
+            &:active {
+                text-align: left;
+            }
+        }
+
+        .question {
+            border-top: 1px solid green;
+        }
+    }
 }
 
 /* Full-width input fields */
 .form-container input[type=text],
 .form-container input[type=password] {
-	width: 100%;
-	padding: 15px;
-	margin: 5px 0 22px 0;
-	border: none;
-	.cBGrayTNavy();
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    .cBGrayTNavy();
 }
 
 /* When the inputs get focus, do something */
 .form-container input[type=text]:focus,
 .form-container input[type=password]:focus {
-	.cBGrayTNavy();
-	outline: none;
+    .cBGrayTNavy();
+    outline: none;
 }
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-	padding: 16px 20px;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-	margin: 0 0 10px 0;
-	opacity: 0.8;
-	.cBGreenTNavy();
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 0 10px 0;
+    opacity: 0.8;
+    .cBGreenTNavy();
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-	.cBGreenTNavy();
+    .cBGreenTNavy();
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover,
 .open-button:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 #formHeading {
-	border-bottom: 1px solid @green;
+    border-bottom: 1px solid @green;
 }
