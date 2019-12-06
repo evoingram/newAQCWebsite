@@ -260,34 +260,66 @@
                         <li>Currently enrolled at Lambda School's full-stack web development track</li>
                         <li><a href="https://www.github.com/evoingram/vbprojects/database" target="_blank">VB code from
                                 AQC's Access
-                                database</a>:<br>
-                            <div class="devdetails">
-                                <center>
-                                    | VBA | MySQL | Batch | Acrobat |<br>| Word | Excel | Access | Outlook |<br>| WinSCP
-                                    |<br>|
+                                database</a><br>
+                            <center>
+                                <div class="devdetails">
+                                    <div class="codeItem">VBA</div>
+                                    <div class="codeItem">MySQL</div>
+                                    <div class="codeItem">Batch</div>
+                                    <div class="codeItem">Acrobat</div>
+                                </div>
+                                <div class="devdetails">
+                                    <div class="codeItem">Word</div>
+                                    <div class="codeItem">Excel</div>
+                                    <div class="codeItem">Access</div>
+                                    <div class="codeItem">Outlook</div>
+                                </div>
+                                <div class="devdetails">
+                                    <div class="codeItem">WinSCP</div>
+                                </div>
+                                <div class="devdetails">
                                     <a href="https://www.github.com/evoingram/vbprojects/database" target="_blank">code
-                                        on GitHub</a> |
-                                </center>
-                            </div>
+                                        on GitHub</a>
+                                </div>
+                            </center>
                         </li>
-                        <li><a href="https://www.aquoco.co" target="_blank">this website</a>:<br>
-                            <div class="devdetails">
-                                <center>
-                                    | HTML | CSS | JavaScript | LESS |<br>| Bootstrap |<br>| <a
-                                        href="https://github.com/evoingram/newAQCWebsite" target="_blank">code on
+                        <li><a href="https://www.aquoco.co" target="_blank">this website</a><br>
+                            <center>
+                                <div class="devdetails">
+                                    <div class="codeItem">HTML</div>
+                                    <div class="codeItem">CSS</div>
+                                    <div class="codeItem">JavaScript</div>
+                                    <div class="codeItem">LESS</div>
+                                </div>
+                                <div class="devdetails">
+                                    <div class="codeItem">Bootstrap</div>
+                                </div>
+                                <div class="devdetails">
+                                    <a href="https://github.com/evoingram/newAQCWebsite" target="_blank">code on
                                         GitHub</a>
-                                    |</center>
-                            </div>
+                                </div>
+                            </center>
                         </li>
                         <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Build Week Project
-                                developed at Lambda</a>:<br>
-                            <div class="devdetails">
-                                <center>
-                                    | HTML | CSS | JavaScript | LESS |<br>| SVG animation | GSAP | Bootstrap |<br>| <a
-                                        href="https://github.com/BW-PartyPlannerFT/Marketing-page/tree/html-erica-ingram"
+                                developed at Lambda</a><br>
+                            <center>
+                                <div class="devdetails">
+                                    <div class="codeItem">HTML</div>
+                                    <div class="codeItem">CSS</div>
+                                    <div class="codeItem">JavaScript</div>
+                                    <div class="codeItem">LESS</div>
+                                </div>
+                                <div class="devdetails">
+                                    <div class="codeItem">SVG</div>
+                                    <div class="codeItem">GSAP</div>
+                                    <div class="codeItem">Bootstrap</div>
+                                </div>
+                                <div class="devdetails">
+                                    <a href="https://github.com/BW-PartyPlannerFT/Marketing-page/tree/html-erica-ingram"
                                         target="_blank">code
-                                        on GitHub</a> |</center>
-                            </div>
+                                        on GitHub</a>
+                                </div>
+                            </center>
                         </li>
                         <li><a href="https://www.ericaingram.com" target="_blank">Portfolio coming soon</a></li>
                         <li><a href="https://www.github.com/evoingram" target="_blank">GitHub profile</a></li>
@@ -418,7 +450,9 @@
 
 
 
-    <div class="form-popup" id="requestAudio">
+
+
+    <div id="requestAudio" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('requestAudio')">Close</button>
@@ -462,7 +496,7 @@
             <button type="button" class="btn cancel" onclick="closeForm('requestAudio')">Close</button>
         </div>
     </div>
-    <div class="form-popup" id="jurisdictions">
+    <div id="jurisdictions" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('jurisdictions')">Close</button>
@@ -595,7 +629,7 @@
 
         </div>
     </div>
-    <div class="form-popup" id="priceQuote">
+    <div id="priceQuote" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
@@ -614,7 +648,8 @@
                 </section>
             </h3>
             <section class="stackedRows">
-                <form name="OrderForm" action="test-email.php" method="post" onsubmit="window.location ='#six'">
+                <form id="orderForm" name="OrderForm" action="test-email.php" method="post"
+                    onsubmit="window.location ='#six'">
                     <div class="startOF" width="50%">
                         <a href="#one"></a>
                         <fieldset id="one1">
@@ -851,39 +886,39 @@
                     <fieldset id="five">
 
                         <legend>Screen 4 of 4</legend>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i1">Your Name: </label>
                             <input title="your full name" id="p6i1" name="p6i1" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i2">Attorney's Name: </label>
                             <input title="attorney's name if applicable" id="p6i2" name="p6i2" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i3">Company/Firm: </label>
                             <input title="company/firm" id="p6i3" name="p6i3" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i4">Address1: </label>
                             <input title="address line 1" id="p6i4" name="p6i4" required />
                         </div>
 
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i5">Address2: </label>
                             <input title="address line 2" id="p6i5" name="p6i5" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i6">City: </label>
                             <input title="city" id="p6i6" name="p6i6" pattern="[a-zA-Z]+" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i7">State: </label>
                             <input title="state" id="p6i7" pattern="[A-Za-z]+" name="p6i7" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i8">ZIP Code</label>
                             <input title="ZIP code" id="p6i8" name="p6i8" pattern="^[0-9], {4, 4}$" required /></div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i9">Email: </label>
                             <input
                                 title="e-mail address only used for contact regarding this job.  We do not sign you up for any newsletters, send sales-emails, or sell it to third parties."
@@ -903,7 +938,7 @@
                                         <div class="left">
                                             <input type="hidden" id="txtCaptcha"></div>
                                         <div class="right">
-                                            <input title="captcha box" type="text" name="CaptchaInput" id="CaptchaInput"
+                                            <input title="captcha box" type="text" name="captchaInput" id="captchaInput"
                                                 size="15"><br>
                                         </div>
                                     </div>
@@ -913,13 +948,13 @@
                                 <br><br>
 
                                 <!-- END CAPTCHA -->
-                                <div class="pqQuestion buttonsBN">
+                                <div class="pqQuestion buttonsBN pq5">
                                     <div id="submitBackButton" class="left">
                                         <input class="backButton" title="Go to previous screen." type="button"
                                             value="back" onclick="backClicked('five')"></div>
                                     <div id="submitButton" class="right">
                                         <input title="Submit Order" type="submit" name="submit" value="Submit Order"
-                                            onclick="return Allow5();">
+                                            onclick="return !!(checkForm(this) & Allow5());">
                                         <!-- <input title="" type="hidden" name="redirect" value="#six">-->
                                     </div>
                                 </div>
@@ -929,14 +964,22 @@
                     <!--<a href="#six">Screen 6 of 6</a>-->
                     <fieldset id="six">
 
-                        <legend></legend>
+                        <legend>Thank you!</legend>
+                        <section class="stackedRows pq6">
+                            Thank you very much for selecting A Quo Co. for your transcription needs. We will be in
+                            touch very shortly to confirm and finish processing your order.<br><br>If you have any
+                            questions, please e-mail us at inquiries@aquoco.co or call us at 206-478-5028. You will
+                            receive an order confirmation soon.
+                        </section>
+                        <section class="stackedRows pq6">
+                            <div id="orderAgain" class="buttonsBN left">
+                                <input id="orderAgainButton" class="backButton" title="Place another order."
+                                    type="button" value="Order Again" onclick="resetForm();">
+                            </div>
 
-                        Thank you very much for selecting A Quo Co. for your transcription needs. We will be in touch
-                        very shortly to
-                        confirm and finish processing your order.<br><br>If you have any questions, please e-mail us at
-                        inquiries@aquoco.co
-                        or call us at 206-478-5028. You will receive an order confirmation soon.
-                        <section class="stackedRows">
+
+                        </section>
+                        <section class="stackedRows pq6">
                             <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
                         </section>
 
@@ -948,8 +991,7 @@
 
         </section>
     </div>
-
-    <div class="form-popup" id="aboutAQC">
+    <div id="aboutAQC" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('aboutAQC')">Close</button>
@@ -961,33 +1003,10 @@
                 <h1>About AQC</h1>
             </section><br><br>
             <section class="stackedRows">
-                <h2>Why should you care if your transcriber is AAERT-certified?</h2>
-            </section>
-            <section class="stackedRows">
-                <p>AAERT, the American Association of Electronic Reporters and Transcribers, established in 1995, is an
-                    industry
-                    association that certifies electronic reporters and transcribers after they pass a test and requires
-                    recertification
-                    every three years. AAERT trains their members on best practices in the industry.</p>
-            </section>
-            <section class="stackedRows">
-                <p>Using an AAERT-certified transcriber means you know you are getting a certain level of quality and
-                    AQC is committed
-                    to providing only AAERT-certified transcribers. This certification is recognized by many, many
-                    courts and businesses
-                    throughout the United States and Canada, including the Administrative Office of the United States
-                    Courts, bankruptcy
-                    courts, and is a requirement in King County, Washington in order to be on their <a
-                        href="https://www.kingcounty.gov/courts/clerk/programs/transcriptionists.aspx"
-                        target="_blank">court-approved transcriber list (or as an alternative to AAERT
-                        certification, licensed court
-                        reporter)</a>.</p>
-            </section>
-            <section class="stackedRows">
                 <h2>About A Quo Co.</h2>
             </section>
             <section class="stackedRows">
-                <p>Washington Rapid Transcription Service has now been renamed A Quo Co. We are a Seattle-based
+                <p>A Quo Co., previously known as Washington Rapid Transcription Service, is a Seattle-based
                     transcription company
                     that specializes in legal transcription and court transcription. All our transcribers are AAERT
                     certified and based
@@ -1030,11 +1049,34 @@
                     corporate member of
                     AAERT.</p>
             </section>
+            <section class="stackedRows">
+                <h2>Why should you care if your transcriber is AAERT-certified?</h2>
+            </section>
+            <section class="stackedRows">
+                <p>AAERT, the American Association of Electronic Reporters and Transcribers, established in 1995, is an
+                    industry
+                    association that certifies electronic reporters and transcribers after they pass a test and requires
+                    recertification
+                    every three years. AAERT trains their members on best practices in the industry.</p>
+            </section>
+            <section class="stackedRows">
+                <p>Using an AAERT-certified transcriber means you know you are getting a certain level of quality and
+                    AQC is committed
+                    to providing only AAERT-certified transcribers. This certification is recognized by many, many
+                    courts and businesses
+                    throughout the United States and Canada, including the Administrative Office of the United States
+                    Courts, bankruptcy
+                    courts, and is a requirement in King County, Washington in order to be on their <a
+                        href="https://www.kingcounty.gov/courts/clerk/programs/transcriptionists.aspx"
+                        target="_blank">court-approved transcriber list (or as an alternative to AAERT
+                        certification, licensed court
+                        reporter)</a>.</p>
+            </section>
             <button type="button" class="btn cancel" onclick="closeForm('aboutAQC')">Close</button>
             </form>
         </div>
     </div>
-    <div class="form-popup" id="aboutELI">
+    <div id="aboutELI" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('aboutELI')">Close</button>
@@ -1048,14 +1090,30 @@
             <section class="stackedRows">
                 <h2>Erica's profiles</h2>
             </section>
-            <section class="stackedRows">
-                <ul>
-                    <li>GitHub</li>
-                    <li>Hackerrank</li>
-                    <li>freeCodeCamp</li>
-                    <li>MOS Master 2016</li>
-                    <li>LinkedIn</li>
-                    <li>AAERT</li>
+            <section class="stackedRows meLinks">
+                <ul id="linkList">
+                    <li class="meLink">
+                        <a class="aMeLink" href="https://www.github.com/evoingram" target="_blank">GitHub</a>
+                    </li>
+                    <li class="meLink">
+                        <a class="aMeLink" href="#softwareDevelopment">My Projects</a>
+                    </li>
+                    <li class="meLink">
+                        <a class="aMeLink" href="https://www.freeCodeCamp.org/evoingram"
+                            target="_blank">freeCodeCamp</a>
+                    </li>
+                    <li class="meLink">
+                        <a class="aMeLink"
+                            href="https://www.youracclaim.com/badges/6e7740dd-ee50-43fe-b1af-124a8f4f872b/embedded"
+                            target="_blank">MOS Master 2016</a>
+                    </li>
+                    <li class="meLink">
+                        <a class="aMeLink" href="https://www.linkedin.com/in/aquocotrans" target="_blank">LinkedIn</a>
+                    </li>
+                    <li class="meLink">
+                        <a class="aMeLink" href="https://www.aaert.org/member/aquocotranscripts"
+                            target="_blank">AAERT</a>
+                    </li>
                 </ul>
 
             </section><br><bR>
@@ -1125,7 +1183,7 @@
             </form>
         </div>
     </div>
-    <div class="form-popup" id="tos">
+    <div id="tos" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('tos')">Close</button>
@@ -1142,15 +1200,15 @@
                     to jump down to that section.
                 </p>
             </section>
-            <section class="stackedRows">
-                <ul>
-                    <li><a href="#orderAudio">Ordering Audio</a></li>
-                    <li><a href="#refundCancel">Refunds and Cancellations</a></li>
-                    <li><a href="#turnaround">Turnaround Times</a></li>
-                    <li><a href="#deposit">Deposit</a></li>
-                    <li><a href="#format">Format</a></li>
-                    <li><a href="#minOrder">Minimum Order</a></li>
-                    <li><a href="#tosRates">Rates</a></li>
+            <section class="stackedRows meLinks">
+                <ul id="linkList">
+                    <li class="meLink"><a href="#orderAudio">Ordering Audio</a></li>
+                    <li class="meLink"><a href="#refundCancel">Refunds and Cancellations</a></li>
+                    <li class="meLink"><a href="#turnaround">Turnaround Times</a></li>
+                    <li class="meLink"><a href="#deposit">Deposit</a></li>
+                    <li class="meLink"><a href="#format">Format</a></li>
+                    <li class="meLink"><a href="#minOrder">Minimum Order</a></li>
+                    <li class="meLink"><a href="#tosRates">Rates</a></li>
                 </ul>
 
             </section><br><br>
@@ -1291,25 +1349,25 @@
             <section class="stackedRows">
                 <h3>Non-Court Transcription:</h3>
             </section>
-            <section class="stackedRows">
-                <ul>
-                    <li>10 calendar-day, $2.00/audio minute</li>
-                    <li>same day/overnight, $5.25 per page</li>
+            <section class="stackedRows meLinks">
+                <ul id="linkList">
+                    <li class="liItem">10 calendar-day, $2.00/audio minute</li>
+                    <li class="liItem">same day/overnight, $5.25 per page</li>
                 </ul>
             </section><br><br>
             < <section class="stackedRows">
                 <h3>Court Transcription:</h3>
                 </section>
-                <section class="stackedRows">
-                    <ul>
-                        <li>electronic copy only</li>
-                        <li>45 pages per audio hour</li>
-                        <li>45 calendar-day, $2.50/page</li>
-                        <li>30 calendar-day, $2.65/page</li>
-                        <li>14 calendar-day, $3.25/page</li>
-                        <li>07 calendar-day, $3.75/page</li>
-                        <li>03 calendar-day, $4.25/page</li>
-                        <li>same day/overnight, $5.25 per page</li>
+                <section class="stackedRows meLinks">
+                    <ul id="linkList">
+                        <li class="liItem">electronic copy only</li>
+                        <li class="liItem">45 pages per audio hour</li>
+                        <li class="liItem">45 calendar-day, $2.50/page</li>
+                        <li class="liItem">30 calendar-day, $2.65/page</li>
+                        <li class="liItem">14 calendar-day, $3.25/page</li>
+                        <li class="liItem">07 calendar-day, $3.75/page</li>
+                        <li class="liItem">03 calendar-day, $4.25/page</li>
+                        <li class="liItem">same day/overnight, $5.25 per page</li>
                     </ul>
                 </section><br><br>
                 <section class="stackedRows">
@@ -1317,22 +1375,22 @@
                         Click to jump back up to that section.
                     </p>
                 </section>
-                <section class="stackedRows">
-                    <ul>
-                        <li><a href="#orderAudio">Ordering Audio</a></li>
-                        <li><a href="#refundCancel">Refunds and Cancellations</a></li>
-                        <li><a href="#turnaround">Turnaround Times</a></li>
-                        <li><a href="#deposit">Deposit</a></li>
-                        <li><a href="#format">Format</a></li>
-                        <li><a href="#minOrder">Minimum Order</a></li>
-                        <li><a href="#tosRates">Rates</a></li>
+                <section class="stackedRows meLinks">
+                    <ul id="linkList">
+                        <li class="meLink"><a href="#orderAudio">Ordering Audio</a></li>
+                        <li class="meLink"><a href="#refundCancel">Refunds and Cancellations</a></li>
+                        <li class="meLink"><a href="#turnaround">Turnaround Times</a></li>
+                        <li class="meLink"><a href="#deposit">Deposit</a></li>
+                        <li class="meLink"><a href="#format">Format</a></li>
+                        <li class="meLink"><a href="#minOrder">Minimum Order</a></li>
+                        <li class="meLink"><a href="#tosRates">Rates</a></li>
                     </ul>
                 </section><br><br>
                 <button type="button" class="btn cancel" onclick="closeForm('tos')">Close</button>
                 </form>
         </div>
     </div>
-    <div class="form-popup" id="faq">
+    <div id="faq" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('faq')">Close</button>
@@ -1615,8 +1673,7 @@
             <button type="button" class="btn cancel" onclick="closeForm('faq')">Close</button>
         </div>
     </div>
-
-    <div class="form-popup" id="difference">
+    <div id="difference" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('difference')">Close</button>
@@ -1791,10 +1848,7 @@
             </form>
         </div>
     </div>
-
-
-
-    <div class="form-popup" id="security">
+    <div id="security" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('security')">Close</button>
@@ -1820,6 +1874,7 @@
             </form>
         </div>
     </div>
+
     <script>
         // sticky nav
         window.onscroll = function () { stickyNav() };

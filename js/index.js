@@ -1,14 +1,14 @@
 
         // Captcha Script
 
-        function checkform(theform) {
+        function checkForm(theForm) {
             var why = "";
 
-            if (theform.CaptchaInput.value == "") {
+            if (document.getElementsByName("captchaInput")[0].value == "") {
                 why += "- Please Enter CAPTCHA Code.\n";
             }
-            if (theform.CaptchaInput.value != "") {
-                if (ValidCaptcha(theform.CaptchaInput.value) == false) {
+            if (document.getElementsByName("captchaInput")[0].value != "") {
+                if (ValidCaptcha(document.getElementsByName("captchaInput")[0].value) == false) {
                     why += "- The CAPTCHA Code Does Not Match.\n";
                 }
             }
@@ -31,7 +31,7 @@
         // Validate input against the generated number
         function ValidCaptcha() {
             var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-            var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+            var str2 = removeSpaces(document.getElementById('captchaInput').value);
             if (str1 == str2) { return true; }
             else { return false; }
         }
@@ -84,9 +84,13 @@
             total = total.toFixed(2);
             document.getElementById("tPrice2").value = dollar.concat(total);
         }
-        //open one of the hidden pages
+        //open one of the hidden pages and close all others
         function openForm(hiddenFormID) {
-            document.getElementById(hiddenFormID).style.display = "block";
+            var allFormPopups = document.getElementsByClassName('form-popup');
+            for (x = 0; x < allFormPopups.length;x++) {
+                document.getElementsByClassName('form-popup')[x].style.display = "none";
+            }
+                document.getElementById(hiddenFormID).style.display = "block";
         }
 
         // close one of the hidden pages
@@ -143,8 +147,10 @@
             } else {
                 navbar.classList.remove("sticky");
             }
-        }
-        var titleInput = document.getElementById("p1i1");
+}
+        
+        // var titleInput = document.getElementById("p1i1");
+
         // screen one form validation
         function Allow1() {
             var w = document.forms["OrderForm"]["p1i1"].value;
@@ -262,7 +268,6 @@
                 */
             }
         }
-
 
         function ClearFields(fieldID) {
             document.getElementById(fieldID).value = "";
@@ -389,8 +394,6 @@
             }
         }
 
-
-
         // calculate and display price estimate
         function calculatePrice(OrderForm) {
             //Get selected data    
@@ -435,6 +438,24 @@
             document.getElementById("tPrice2").value = dollar.concat(total);
         }
 
+        // reset form and go back to page one price quote area
+        function resetForm() {
+            document.getElementById("orderForm").reset();
+            var vNextFS = document.getElementById("six");
+            vNextFS.style.display = 'none';
+            vNextFS.style.height = "0";
+            vNextFS = document.getElementById("one1");
+            vNextFS.style.display = "block";
+            vNextFS.style.overflow = "visible";
+            vNextFS.style.height = "100%";
+            var form1Elements = document.getElementsByClassName('.pq6');
+            console.log("form1elements next:  " + form1Elements);
+            for (x = 0; x < form1Elements.length; x++) {
+                console.log("collapsing" + item);
+                form1Elements[x].style.height = "0px";
+            }
+            
+        }
         // go back when you click back button
         function backClicked(id) {
             var vNextFS;
@@ -513,4 +534,12 @@
                 vNextFS.style.display = "block";
                 vNextFS.style.height = "100%";
             };
+}
+        
+        // close open divs w/ class form-popup
+function closeFPOpenCurrent(id) {
+    if(document.getElementsByClassName('form-popup').style.display != "none") {
+        document.getElementsByClassName('form-popup').style.display = "none";
+        document.getElementById(id).style.display = "block";
+    }
         }

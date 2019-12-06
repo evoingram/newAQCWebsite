@@ -736,10 +736,17 @@ h2 {
 #softwareDevelopment ul li {
   padding-top: 3%;
   padding-bottom: 3%;
+  line-height: 1.75;
 }
 #softwareDevelopment .devdetails {
-  width: 55%;
-  justify-content: left;
+  display: flex;
+  width: 60%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+#softwareDevelopment .devdetails .codeItem {
+  padding-left: 3%;
+  padding-right: 3%;
 }
 #softwareDevelopment h3 {
   font-size: 2.5rem;
@@ -781,6 +788,45 @@ h2 {
 }
 #ratesi {
   width: 70%;
+}
+.meLinks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 98%;
+  position: relative;
+  padding: 1rem 0 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 1.75;
+}
+.meLinks .liItem {
+  color: #a5acaf;
+  width: 98%;
+}
+.meLinks .meLink {
+  color: #69be28;
+  width: 98%;
+}
+.meLinks .meLink:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 1px;
+  background-color: #002244;
+  transition: transform 250ms;
+}
+.meLinks .meLink:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+.meLinks #linkList {
+  width: 98%;
+  margin-top: 3%;
 }
 .quarter {
   width: 45%;
@@ -931,6 +977,14 @@ li {
 #priceQuote .form-container .stackedRows fieldset .buttonsBN #submitButton {
   width: 50%;
   flex-wrap: nowrap;
+}
+#priceQuote .form-container .stackedRows fieldset .buttonsBN #orderAgainButton {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid green;
+  background-color: #002244;
+  color: #69be28;
 }
 #priceQuote .form-container .stackedRows fieldset .buttonsBN .left {
   display: flex;
