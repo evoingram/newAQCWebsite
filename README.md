@@ -7,7 +7,6 @@ Still left to finish:
 - [ ] redo content on about pages
 - [ ] fix tos links
 - [ ] fix rates on tos
-- [ ] fix spacing on li links
 - [ ] close other sub-windows when you open another one
 - [ ] reformat languages in development section; flex, nowrap
 - [ ] set up digital resume on ericaingram.com as placeholder for now
@@ -54,3 +53,4 @@ Done so far:
 - [X] add button to order another when complete
 - [X] fixed recaptcha
 - [X] figure out why submitted order form is redirecting to php page
+- [X] fix spacing on li links

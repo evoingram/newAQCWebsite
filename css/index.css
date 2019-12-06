@@ -736,10 +736,17 @@ h2 {
 #softwareDevelopment ul li {
   padding-top: 3%;
   padding-bottom: 3%;
+  line-height: 1.75;
 }
 #softwareDevelopment .devdetails {
-  width: 55%;
-  justify-content: left;
+  display: flex;
+  width: 60%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+#softwareDevelopment .devdetails .codeItem {
+  padding-left: 3%;
+  padding-right: 3%;
 }
 #softwareDevelopment h3 {
   font-size: 2.5rem;
