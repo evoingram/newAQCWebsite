@@ -1,14 +1,14 @@
 
         // Captcha Script
 
-        function checkform(theform) {
+        function checkForm(theForm) {
             var why = "";
 
-            if (theform.CaptchaInput.value == "") {
+            if (theForm.CaptchaInput.value == "") {
                 why += "- Please Enter CAPTCHA Code.\n";
             }
-            if (theform.CaptchaInput.value != "") {
-                if (ValidCaptcha(theform.CaptchaInput.value) == false) {
+            if (theForm.CaptchaInput.value != "") {
+                if (ValidCaptcha(theForm.CaptchaInput.value) == false) {
                     why += "- The CAPTCHA Code Does Not Match.\n";
                 }
             }
@@ -143,8 +143,10 @@
             } else {
                 navbar.classList.remove("sticky");
             }
-        }
-        var titleInput = document.getElementById("p1i1");
+}
+        
+        // var titleInput = document.getElementById("p1i1");
+
         // screen one form validation
         function Allow1() {
             var w = document.forms["OrderForm"]["p1i1"].value;
@@ -262,7 +264,6 @@
                 */
             }
         }
-
 
         function ClearFields(fieldID) {
             document.getElementById(fieldID).value = "";
@@ -389,8 +390,6 @@
             }
         }
 
-
-
         // calculate and display price estimate
         function calculatePrice(OrderForm) {
             //Get selected data    
@@ -435,6 +434,24 @@
             document.getElementById("tPrice2").value = dollar.concat(total);
         }
 
+        // reset form and go back to page one price quote area
+        function resetForm() {
+            document.getElementById("OrderForm").reset();
+            var vNextFS = document.getElementById("six");
+            vNextFS.style.display = 'none';
+            vNextFS.style.height = "0";
+            vNextFS = document.getElementById("one1");
+            vNextFS.style.display = "block";
+            vNextFS.style.overflow = "visible";
+            vNextFS.style.height = "100%";
+            var form1Elements = document.getElementsByClassName('.pq6');
+            console.log("form1elements next:  " + form1Elements);
+            for (x = 0; x < form1Elements.length; x++) {
+                console.log("collapsing" + item);
+                form1Elements[x].style.height = "0px";
+            }
+            
+        }
         // go back when you click back button
         function backClicked(id) {
             var vNextFS;

@@ -851,39 +851,39 @@
                     <fieldset id="five">
 
                         <legend>Screen 4 of 4</legend>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i1">Your Name: </label>
                             <input title="your full name" id="p6i1" name="p6i1" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i2">Attorney's Name: </label>
                             <input title="attorney's name if applicable" id="p6i2" name="p6i2" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i3">Company/Firm: </label>
                             <input title="company/firm" id="p6i3" name="p6i3" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i4">Address1: </label>
                             <input title="address line 1" id="p6i4" name="p6i4" required />
                         </div>
 
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i5">Address2: </label>
                             <input title="address line 2" id="p6i5" name="p6i5" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i6">City: </label>
                             <input title="city" id="p6i6" name="p6i6" pattern="[a-zA-Z]+" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i7">State: </label>
                             <input title="state" id="p6i7" pattern="[A-Za-z]+" name="p6i7" required />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i8">ZIP Code</label>
                             <input title="ZIP code" id="p6i8" name="p6i8" pattern="^[0-9], {4, 4}$" required /></div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq5">
                             <label for="p6i9">Email: </label>
                             <input
                                 title="e-mail address only used for contact regarding this job.  We do not sign you up for any newsletters, send sales-emails, or sell it to third parties."
@@ -913,13 +913,13 @@
                                 <br><br>
 
                                 <!-- END CAPTCHA -->
-                                <div class="pqQuestion buttonsBN">
+                                <div class="pqQuestion buttonsBN pq5">
                                     <div id="submitBackButton" class="left">
                                         <input class="backButton" title="Go to previous screen." type="button"
                                             value="back" onclick="backClicked('five')"></div>
                                     <div id="submitButton" class="right">
                                         <input title="Submit Order" type="submit" name="submit" value="Submit Order"
-                                            onclick="return Allow5();">
+                                            onclick="return !!(Allow5() & checkForm(this));">
                                         <!-- <input title="" type="hidden" name="redirect" value="#six">-->
                                     </div>
                                 </div>
@@ -929,16 +929,22 @@
                     <!--<a href="#six">Screen 6 of 6</a>-->
                     <fieldset id="six">
 
-                        <legend></legend>
-
-                        Thank you very much for selecting A Quo Co. for your transcription needs. We will be in touch
-                        very shortly to
-                        confirm and finish processing your order.<br><br>If you have any questions, please e-mail us at
-                        inquiries@aquoco.co
-                        or call us at 206-478-5028. You will receive an order confirmation soon.
-                        <section class="stackedRows">
-                            <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
-                        </section>
+                        <legend>Thank you!</legend>
+                        <section class="stackedRows pq6">
+                            Thank you very much for selecting A Quo Co. for your transcription needs. We will be in
+                            touch very shortly to confirm and finish processing your order.<br><br>If you have any
+                            questions, please e-mail us at inquiries@aquoco.co or call us at 206-478-5028. You will
+                            receive an order confirmation soon.
+                            <section class="stackedRows pq6">
+                                <div id="orderAgain" class="left">
+                                    <input class="backButton" title="Place another order." type="button"
+                                        value="Order Again" onclick="resetForm();">
+                                </div>
+                            </section>
+                            <section class="stackedRows pq6">
+                                <button type="button" class="btn cancel"
+                                    onclick="closeForm('priceQuote')">Close</button>
+                            </section>
 
                     </fieldset>
                 </form>
@@ -1820,6 +1826,7 @@
             </form>
         </div>
     </div>
+
     <script>
         // sticky nav
         window.onscroll = function () { stickyNav() };
