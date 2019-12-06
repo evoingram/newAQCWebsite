@@ -623,6 +623,8 @@ h2 {
   margin: 0 auto;
   align-self: center;
   align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .pageRow {
   padding-top: 7%;

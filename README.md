@@ -4,9 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] fix court transcription narrow rates para width
-- [ ] fix rates narrow payment-arr/govt-agen para width
-- [ ] fix tos links turnaround & rates
 - [ ] change softwaredev contact-me link
 - [ ] mobile/tablet versions
 
@@ -61,3 +58,6 @@ Done so far:
 - [X] fix FAQ: payment accepted, pricequote link
 - [X] fix jurisdictions hidden page list
 - [X] fix contact SM list to look like dev tech list
+- [X] fix court transcription narrow rates para width
+- [X] fix rates narrow payment-arr/govt-agen para width
+- [X] fix tos links turnaround & rates
