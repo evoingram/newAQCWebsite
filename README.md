@@ -4,7 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] change softwaredev contact-me link
 - [ ] mobile/tablet versions
 
 
@@ -61,3 +60,4 @@ Done so far:
 - [X] fix court transcription narrow rates para width
 - [X] fix rates narrow payment-arr/govt-agen para width
 - [X] fix tos links turnaround & rates
+- [X] change softwaredev contact-me link
