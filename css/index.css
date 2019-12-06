@@ -791,19 +791,23 @@ h2 {
 }
 .meLinks {
   width: 100%;
-  justify-content: center;
-}
-.meLinks .meLink {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 98%;
   position: relative;
   padding: 1rem 0 0.5rem;
-  color: #69be28;
   text-decoration: none;
   font-weight: bold;
   line-height: 1.75;
+}
+.meLinks .liItem {
+  color: #a5acaf;
+  width: 98%;
+}
+.meLinks .meLink {
+  color: #69be28;
+  width: 98%;
 }
 .meLinks .meLink:after {
   content: '';

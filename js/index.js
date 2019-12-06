@@ -84,9 +84,13 @@
             total = total.toFixed(2);
             document.getElementById("tPrice2").value = dollar.concat(total);
         }
-        //open one of the hidden pages
+        //open one of the hidden pages and close all others
         function openForm(hiddenFormID) {
-            document.getElementById(hiddenFormID).style.display = "block";
+            var allFormPopups = document.getElementsByClassName('form-popup');
+            for (x = 0; x < allFormPopups.length;x++) {
+                document.getElementsByClassName('form-popup')[x].style.display = "none";
+            }
+                document.getElementById(hiddenFormID).style.display = "block";
         }
 
         // close one of the hidden pages
@@ -530,4 +534,12 @@
                 vNextFS.style.display = "block";
                 vNextFS.style.height = "100%";
             };
+}
+        
+        // close open divs w/ class form-popup
+function closeFPOpenCurrent(id) {
+    if(document.getElementsByClassName('form-popup').style.display != "none") {
+        document.getElementsByClassName('form-popup').style.display = "none";
+        document.getElementById(id).style.display = "block";
+    }
         }

@@ -4,9 +4,7 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] fix rates on tos
 - [ ] close other sub-windows when you open another one
-- [ ] reformat languages in development section; flex, nowrap
 - [ ] set up digital resume on ericaingram.com as placeholder for now
 - [ ] proofing
 - [ ] mobile/tablet versions
@@ -54,3 +52,5 @@ Done so far:
 - [X] fix spacing on li links
 - [X] redo content on about pages
 - [X] fix tos links
+- [X] fix rates on tos
+- [X] reformat languages in development section

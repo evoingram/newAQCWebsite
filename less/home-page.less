@@ -276,17 +276,24 @@ h2 {
 .meLinks {
 	width: 100%;
 	justify-content: center;
-	.meLink {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 98%;
+	position: relative;
+	padding: 1rem 0 0.5rem;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1.75;
+
+	.liItem {
+		color: @gray;
 		width: 98%;
-		position: relative;
-		padding: 1rem 0 0.5rem;
+	}
+
+	.meLink {
 		color: @green;
-		text-decoration: none;
-		font-weight: bold;
-		line-height: 1.75;
+		width: 98%;
 
 		&:after {
 			content: '';
