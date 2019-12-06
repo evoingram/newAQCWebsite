@@ -70,7 +70,6 @@
     </header>
 
     <section id="bodyContent" class="bodyContent">
-
         <section id="courtTranscription" class="row row1 pageRow">
 
             <section class="stackedRows">
@@ -611,8 +610,7 @@
                 <h3>Get a price quote on your transcript:</h3>
             </section>
             <section class="stackedRows">
-                <form name="OrderForm" action="https://www.aquoco.co/test-email.php" method="post"
-                    onsubmit="window.location ='www.aquoco.co/Price-Quote.html#six'">
+                <form name="OrderForm" action="test-email.php" method="post" onsubmit="window.location ='#six'">
                     <div class="startOF" width="50%">
                         <a href="#one"></a>
                         <fieldset id="one1">
@@ -632,7 +630,7 @@
                                 </div>
                             </div>
                             <br><br><br>
-                            <div class="pqQuestion">
+                            <div class="pqQuestion pq1">
                                 <div class="left"><label for="p1i3">Hard copy (extra charge, $0.25/page +
                                         $5/CD)?</label>
                                 </div>
@@ -645,14 +643,15 @@
                             </div>
 
                             <br><br><br><br>
-                            <div class="pqQuestion">
+                            <div class="pqQuestion pq1">
                                 <div class="left"><label for="p1i4">How long is your audio in minutes?</label></div>
                                 <div class="right"> <input title="audio length in minutes" id="p1i4" name="p1i4"
                                         onChange="calculatePrice()" required /></div>
                             </div>
                             <br><br><br>
-                            <div id="turnaroundDiv" class="pqQuestion">
-                                <div class="left"><label for="turnaround">What turnaround? 24-hour turnaround or less
+                            <div id="turnaroundDiv" class="pqQuestion pq1">
+                                <div id="insideTAD" class="left">
+                                    <label for="turnaround">What turnaround? 24-hour turnaround or less
                                         accepted
                                         on a
                                         case-by-case
@@ -669,7 +668,7 @@
                             </div>
 
                             <br><br><br><br>
-                            <div class="pqQuestion">
+                            <div class="pqQuestion pq1">
                                 <div class="left">
                                     <label for="p1i5">Do you agree you are ordering a transcript @ above page rate &
                                         turnaround with a price estimate of:</label></div>
@@ -680,23 +679,23 @@
                                         value="Yes" required>Yes</div>
                             </div>
                             <br><br><br><br>
-                            <div id="priceQuoteBox" class="pqQuestion">
+                            <div id="priceQuoteBox" class="pqQuestion pq1">
                                 <input title="price estimate" id="tPrice2" size='8' name="tPrice2">
                             </div>
                             <br><br><br>
-                            <div id="jurisdictionDiv" class="pqQuestion pqTextField">
+                            <div id="jurisdictionDiv" class="pqQuestion pqTextField pq1">
                                 <label for="p1i1">Enter the court proceeding's jurisdiction to proceed to the next page
                                     (example: none, King County Superior Court, USBC Eastern District of Wisconsin,
                                     Seattle
                                     Municipal Court, etc.): </label>
                                 <input title="enter jurisdiction here" id="p1i1" name="p1i1" required />
                             </div>
-                            <div class="pqQuestion">
+                            <div class="pqQuestion pq1 buttonsBN">
 
                                 <div class="left"><br><br><br></div>
                                 <div class="right">
                                     <input title="Go to the next screen" type="button" value="next"
-                                        onclick="return Allow1();">
+                                        onclick="return Allow1();" class="nextButton">
                                 </div>
 
                             </div>
@@ -707,7 +706,7 @@
                     <fieldset id="two">
 
                         <legend>Screen 2 of 4</legend>
-                        <div class="pqQuestion">
+                        <div class="pqQuestion pq2">
                             <p>If you are not a business, you will not be considered regardless of your answer.
                                 <br><br>
                                 If you are a government agency, we will bill according to your jurisdiction's
@@ -718,7 +717,7 @@
                                 prior to the
                                 turnaround beginning unless you have made arrangements with us.</p>
                         </div>
-                        <div class="pqQuestion">
+                        <div class="pqQuestion pq2">
                             <div class="left">
                                 <label for="p3i2">
                                     If you are a business, do you wish to be considered for <br><a
@@ -735,7 +734,7 @@
                                     type="radio" name="p3i2" value="Yes">Yes
                             </div>
                         </div>
-                        <div class="pqQuestion">
+                        <div class="pqQuestion pq2">
 
                             <div class="left">
                                 <label for="p3i3">Do you agree to the <a href="ServiceA.html" target="_blank">terms of
@@ -749,15 +748,16 @@
                                     required>Yes
                             </div>
                         </div>
-                        <br><br><br>
-                        <div class="pqQuestion">
+                        <div class="pqQuestion pq2 buttonsBN">
                             <div class="left">
-                                <input class="backButton" title="Go to previous screen." type="button" value="back"
-                                    onclick="back('two')">
+                                <input title="Go to previous screen." type="button" value="back"
+                                    onclick="backClicked('two');" class="backButton">
                             </div>
-                            <div class=" right">
-                                <input title="Go to next screen." type="button" value="next" onclick="return Allow2();">
+                            <div class="right">
+                                <input title="Go to next screen." type="button" value="next" onclick="return Allow2();"
+                                    class="nextButton"><br><br>
                             </div>
+                        </div>
                     </fieldset>
                     <!--<a href="#three">Screen 3 of 5</a>-->
                     <fieldset id="three">
@@ -770,7 +770,7 @@
                                         <center>
                                         <button type="button" onclick="ClearFields('p4i1');">Clear File Submission</button>
                                         <input class="backButton" type="button" value="back" onclick="window.location.href='#two';">
-                                        <input type="button" value="next" onclick="return Allow3();">
+                                        <input type="button" value="next" onclick="return Allow3();"class="nextButton">
                                         </center>-->
 
                     </fieldset>
@@ -779,49 +779,49 @@
                     <fieldset id="four">
 
                         <legend>Screen 3 of 4</legend>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq4">
                             <label for="p5i1">Exact case caption as it should appear on the transcript:</label>
                             <input title="Exact case caption as it should appear on the transcript" id="p5i1"
                                 name="p5i1" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq4">
                             <label for="p5i2">Case Number: </label>
                             <input title="Case Number 1" id="p5i2" name="p5i2" />
                         </div>
-                        <div class="pqQuestion pqTextField">
-                            <label for="p5i3">Second Case Number (Adversary, Court of Appeals, etc.):</label>
+                        <div class="pqQuestion pqTextField pq4">
+                            <label for="p5i3">Second Case Number <br>(Adversary, Court of Appeals, etc.):</label>
                             <input title="Second Case Number (Adversary, Court of Appeals, etc.)" id="p5i3"
                                 name="p5i3" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq4">
                             <label for="p5i5">Hearing Date: </label>
                             <input title="Hearing Date MM/DD/YYYY" id="p5i5" name="p5i5" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq4">
                             <label for="p5i6">Judge/Hearing Officer's Name: </label>
                             <input title="Judge/Hearing Officer's Name" id="p5i6" name="p5i6" />
                         </div>
-                        <div class="pqQuestion pqTextField">
-                            <label for="p5i7">SpeakerNames: </label>
+                        <div class="pqQuestion pqTextField pq4">
+                            <label for="p5i7">Speaker Names: </label>
                             <input title="Speaker Names" id="p5i7" name="p5i7" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pqTextField pq4">
                             <label for="p5i8">Relevant Spellings: </label>
                             <input title="Relevant Spellings" id="p5i8" name="p5i8" />
                         </div>
-                        <div class="pqQuestion pqTextField">
-                            <label for="p5i9">Other: </label>
+                        <div class="pqQuestion pqTextField pq4">
+                            <label for="p5i9">Other Relevant Info: </label>
                             <input title="Other Relevant Info" id="p5i9" name="p5i9" />
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pq4">
                             <div class="left">
-                                <label for="p5i10">Chapter: </label>
+                                <label for="p5i10">Bankruptcy Chapter, If Applicable: </label>
                             </div>
                             <div class="right">
                                 <input title="Bankruptcy chapter, if applicable" id="p5i10" name="p5i10" />
                             </div>
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion pq4">
                             <div class="left">
                                 <label for="p5i11">For appeal y/n: </label>
                             </div>
@@ -832,13 +832,14 @@
                                     value="Yes">Yes
                             </div>
                         </div>
-                        <div class="pqQuestion pqTextField">
+                        <div class="pqQuestion buttonsBN">
                             <div class="left">
                                 <input class="backButton" title="Go to previous screen." type="button" value="back"
-                                    onclick="back('three')">
+                                    onclick="backClicked('three')">
                             </div>
                             <div class="right">
-                                <input title="Go to next screen." type="button" value="next" onclick="return Allow4();">
+                                <input title="Go to next screen." type="button" value="next" onclick="return Allow4();"
+                                    class="nextButton">
                             </div>
                         </div>
                     </fieldset>
@@ -893,25 +894,31 @@
 
                                 <div id="CaptchaDiv"></div>
 
-                                <div class="capbox-inner">Type the above number:<br>
-
-                                    <input type="hidden" id="txtCaptcha">
-                                    <input title="captcha box" type="text" name="CaptchaInput" id="CaptchaInput"
-                                        size="15"><br>
+                                <div class="capbox-inner">Type the above number in the right-hand box below:<br>
+                                    <div class="pqQuestion buttonsBN">
+                                        <div class="left">
+                                            <input type="hidden" id="txtCaptcha"></div>
+                                        <div class="right">
+                                            <input title="captcha box" type="text" name="CaptchaInput" id="CaptchaInput"
+                                                size="15"><br>
+                                        </div>
+                                    </div>
 
                                 </div>
 
-                            </div>
+                                <br><br>
 
-                            <br><br>
-
-                            <!-- END CAPTCHA -->
-                            <input class="backButton" title="Go to previous screen." type="button" value="back"
-                                onclick="back('five')">
-                            <input title="Submit Order" type="submit" name="submit" value="Submit Order"
-                                onclick="return Allow5();" onSubmit=window.location='Price-Quote.html#six'>
-                            <input title="" type="hidden" name="redirect" value="Price-Quote.html#six">
-
+                                <!-- END CAPTCHA -->
+                                <div class="pqQuestion buttonsBN">
+                                    <div id="submitBackButton" class="left">
+                                        <input class="backButton" title="Go to previous screen." type="button"
+                                            value="back" onclick="backClicked('five')"></div>
+                                    <div id="submitButton" class="right">
+                                        <input title="Submit Order" type="submit" name="submit" value="Submit Order"
+                                            onclick="return Allow5();">
+                                        <!-- <input title="" type="hidden" name="redirect" value="#six">-->
+                                    </div>
+                                </div>
                         </center>
 
                     </fieldset>
@@ -1809,27 +1816,9 @@
             </form>
         </div>
     </div>
-
-    <script type="text/javascript">
-
-        // Captcha Script
-
-        function checkform(theform) {
-            var why = "";
-
-            if (theform.CaptchaInput.value == "") {
-                why += "- Please Enter CAPTCHA Code.\n";
-            }
-            if (theform.CaptchaInput.value != "") {
-                if (ValidCaptcha(theform.CaptchaInput.value) == false) {
-                    why += "- The CAPTCHA Code Does Not Match.\n";
-                }
-            }
-            if (why != "") {
-                alert(why);
-                return false;
-            }
-        }
+    <script>
+        // sticky nav
+        window.onscroll = function () { stickyNav() };
 
         var a = Math.ceil(Math.random() * 9) + '';
         var b = Math.ceil(Math.random() * 9) + '';
@@ -1840,380 +1829,6 @@
         var code = a + b + c + d + e;
         document.getElementById("txtCaptcha").value = code;
         document.getElementById("CaptchaDiv").innerHTML = code;
-
-        // Validate input against the generated number
-        function ValidCaptcha() {
-            var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-            var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
-            if (str1 == str2) { return true; }
-            else { return false; }
-        }
-
-        // Remove the spaces from the entered and generated code
-        function removeSpaces(string) {
-            return string.split(' ').join('');
-        }
-
-        // price quote calculator
-        function calculatePrice(OrderForm) {
-            //Get selected data    
-            var AudioLength = document.forms["OrderForm"]["p1i4"].value;
-            var Turnaround = document.forms["OrderForm"]["turnaround"].value;
-
-            //var PageRate = 2.65;
-            var hours = 0;
-            AudioLength = parseInt(AudioLength);
-
-            if (AudioLength >= 885) {
-                if (Turnaround == "30") { PageRate = 2.65; }
-                else if (Turnaround == "45") { PageRate = 2.50; }
-                else if (Turnaround == "14") { PageRate = 3.25; }
-                else if (Turnaround == "7") { PageRate = 3.75; }
-                else if (Turnaround == "3") { PageRate = 4.25; }
-                else if (Turnaround == "1") { PageRate = 5.25; }
-            }
-            else {
-                if (Turnaround == "30") { PageRate = 2.65; }
-                else if (Turnaround == "45") { PageRate = 2.50; }
-                else if (Turnaround == "14") { PageRate = 3.25; }
-                else if (Turnaround == "7") { PageRate = 3.75; }
-                else if (Turnaround == "3") { PageRate = 4.25; }
-                else if (Turnaround == "1") { PageRate = 5.25; }
-            }
-
-
-            //convert data to integers
-            hours = (AudioLength / 60);
-
-            //calculate total value   
-            var total = (45 * hours * PageRate);
-
-            if (total < 50) {
-                total = 50;
-            }
-
-            //print value to  tPrice 
-            var dollar = "$";
-            total = total.toFixed(2);
-            document.getElementById("tPrice2").value = dollar.concat(total);
-        }
-        //open one of the hidden pages
-        function openForm(hiddenFormID) {
-            document.getElementById(hiddenFormID).style.display = "block";
-        }
-
-        // close one of the hidden pages
-        function closeForm(hiddenFormID) {
-            document.getElementById(hiddenFormID).style.display = "none";
-        }
-
-        // toggle faq answer
-        function toggleFAQDetails(obj) {
-            /* var elementQS = document.getElementById("show1"); */
-            var currentID = obj;
-            var numberID = obj.slice(-2);
-            var showID = "show" + numberID;
-            var hideID = "hide" + numberID;
-            var elementD = document.getElementById("details" + numberID);
-            var elementQS = document.getElementById(showID);
-            var elementQH = document.getElementById(hideID);
-            /* 
-            /if click on show1
-                then show hide1
-                     hide sho1, details
-            if click on hide1
-                then show show1, details1
-                     hide hide1
-            
-            */
-            if (currentID === hideID) {
-
-                elementD.classList.add("show");
-                elementD.classList.remove("hide");
-                elementQS.classList.add("show");
-                elementQS.classList.remove("hide");
-                elementQH.classList.add("hide");
-                elementQH.classList.remove("show");
-                return;
-            } else if (currentID === showID) {
-                elementD.classList.add("hide");
-                elementD.classList.remove("show");
-                elementQS.classList.add("hide");
-                elementQS.classList.remove("show");
-                elementQH.classList.add("show");
-                elementQH.classList.remove("hide");
-                return;
-            }
-
-        }
-
-        // sticky nav
-        window.onscroll = function () { stickyNav() };
-        var navbar = document.querySelector(".navigation");
-        var sticky = navbar.offsetTop;
-
-        function stickyNav() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-        var titleInput = document.getElementById("p1i1");
-        // screen one form validation
-        function Allow1() {
-            var w = document.forms["OrderForm"]["p1i1"].value;
-            var z = document.forms["OrderForm"]["p1i4"].value;
-            var ww = document.forms["OrderForm"]["turnaround"].value;
-            var s = document.forms["OrderForm"]["p1i5"].value;
-            var vStartOF = document.getElementById("one1");
-            if (w == "") {
-                alert("You must enter the jurisdiction where the hearing took place before we can proceed.");
-                return false;
-            }
-            else if (z == "") {
-                alert("You must enter audio length in minutes.");
-                return false;
-            }
-            else if (z < 1) {
-                alert("You must enter audio length in minutes.");
-                return false;
-            }
-            else if (s == "No") {
-                alert("You must agree to the listed page rate before we can proceed.");
-                return false;
-            }
-            else {
-                var vStartOF = document.getElementById("one1"); vStartOF.style.visibility = 'hidden';
-                window.location.href = '#two';
-                var vNextFS = document.getElementById("two");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-            }
-        }
-
-        // screen two form validation
-        function Allow2() {
-            var t = document.forms["OrderForm"]["p3i2"].value;
-            var u = document.forms["OrderForm"]["p3i3"].value;
-            if (u == "No") {
-                alert("If you do not agree to the terms of service, we will be unable to accept your order at this time.");
-                return false;
-            } else {
-                window.location.href = '#four';
-                var vNextFS = document.getElementById("four");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-            }
-        }
-
-        // screen three form validation
-        function Allow3() {
-            var v = document.forms["OrderForm"]["p4i1"].value;
-            if (v == "") {
-                var vNextFS = document.getElementById("four");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-                window.location.href = '#four';
-            } else {
-                window.location.href = '#five';
-                var vNextFS = document.getElementById("five");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-            }
-        }
-
-
-        function ClearFields(fieldID) {
-            document.getElementById(fieldID).value = "";
-        }
-
-        // screen four form validation
-        function Allow4() {
-            var g = document.forms["OrderForm"]["p5i1"].value;
-            var h = document.forms["OrderForm"]["p5i2"].value;
-            var i = document.forms["OrderForm"]["p5i3"].value;
-            var k = document.forms["OrderForm"]["p5i5"].value;
-            var l = document.forms["OrderForm"]["p5i6"].value;
-            var m = document.forms["OrderForm"]["p5i7"].value;
-            var n = document.forms["OrderForm"]["p5i8"].value;
-            var o = document.forms["OrderForm"]["p5i9"].value;
-            var p = document.forms["OrderForm"]["p5i10"].value;
-            var q = document.forms["OrderForm"]["p5i11"].value;
-            if (g == "") {
-                alert("Please enter the case caption exactly as it should appear on the transcript.");
-                return false;
-            }
-            else if (h == "") {
-                alert("Please enter the case number as it should appear on the transcript.");
-                return false;
-            }
-            else if (k == "") {
-                alert("Please enter the hearing date.");
-                return false;
-            }
-            else if (l == "") {
-                alert("Please enter the judge or hearing officer's name.");
-                return false;
-            }
-            else {
-                window.location.href = '#five';
-                var vNextFS = document.getElementById("five");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-            }
-        }
-
-        // screen five form validation
-        function Allow5() {
-            var xx = document.forms["OrderForm"]["p6i1"].value;
-            var yy = document.forms["OrderForm"]["p6i2"].value;
-            var zz = document.forms["OrderForm"]["p6i3"].value;
-            var a = document.forms["OrderForm"]["p6i4"].value;
-            var b = document.forms["OrderForm"]["p6i5"].value;
-            var c = document.forms["OrderForm"]["p6i6"].value;
-            var d = document.forms["OrderForm"]["p6i7"].value;
-            var e = document.forms["OrderForm"]["p6i8"].value;
-            var f = document.forms["OrderForm"]["p6i9"].value;
-            if (!xx.match(/^[a-zA-Z0-9., ]+$/)) {
-                alert("Your Name:  Please use only alphanumeric characters, commas, or periods.");
-                return false;
-            }
-            else if (!yy.match(/^[a-zA-Z0-9., ]+$/)) {
-                alert("Attorney's Name:  Please use only alphanumeric characters, commas, or periods.");
-                return false;
-            }
-            else if (zz == "") {
-                alert("Company Name:  Please use only alphanumeric characters, commas, or periods.");
-                return false;
-            }
-            else if (!a.match(/^[a-zA-Z0-9., ]+$/)) {
-                alert("Address1:  Please use only alphanumeric characters, commas, or periods.");
-                return false;
-            }
-            else if (!b.match(/^[a-zA-Z0-9., ]*$/)) {
-                alert("Address2:  Please use only alphanumeric characters, commas, or periods.");
-                return false;
-            }
-            else if (!c.match(/^[a-zA-Z. ]+$/)) {
-                alert("City:  Please use only alphabetic characters or periods.");
-                return false;
-            }
-            else if (!d.match(/^[a-zA-Z ]+$/)) {
-                alert("State:  Please use only alphabetic characters.");
-                return false;
-            }
-            else if (!e.match(/(^\d{5}$)|(^\d{5}-\d{4}$)/)) {
-                alert("ZIP:  Please enter a five-digit ZIP code.");
-                return false;
-            }
-            else if (!f.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-                alert("Email:  Please enter a valid e-mail address.");
-                return false;
-            }
-            else {
-                window.location.href = '#six';
-                var vNextFS = document.getElementById("six");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-            }
-        }
-
-        // go back when you click back button
-        function Back(id) {
-            var vNextFS;
-            if (id === "two") {
-                vNextFS = document.getElementById("two");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("one");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "three") {
-                vNextFS = document.getElementById("three");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("two");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "four") {
-                vNextFS = document.getElementById("four");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("three");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "five") {
-                vNextFS = document.getElementById("five");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("four");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "six") {
-                vNextFS = document.getElementById("six");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("five");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            };
-        }
-
-
-        // calculate and display price estimate
-        function calculatePrice(OrderForm) {
-            //Get selected data    
-            var AudioLength = document.forms["OrderForm"]["p1i4"].value;
-            var Turnaround = document.forms["OrderForm"]["turnaround"].value;
-
-            //var PageRate = 2.65;
-            var hours = 0;
-            AudioLength = parseInt(AudioLength);
-
-            if (AudioLength >= 885) {
-                if (Turnaround == "30") { PageRate = 2.65; }
-                else if (Turnaround == "45") { PageRate = 2.50; }
-                else if (Turnaround == "14") { PageRate = 3.25; }
-                else if (Turnaround == "7") { PageRate = 3.75; }
-                else if (Turnaround == "3") { PageRate = 4.25; }
-                else if (Turnaround == "1") { PageRate = 5.25; }
-            }
-            else {
-                if (Turnaround == "30") { PageRate = 2.65; }
-                else if (Turnaround == "45") { PageRate = 2.50; }
-                else if (Turnaround == "14") { PageRate = 3.25; }
-                else if (Turnaround == "7") { PageRate = 3.75; }
-                else if (Turnaround == "3") { PageRate = 4.25; }
-                else if (Turnaround == "1") { PageRate = 5.25; }
-            }
-
-
-            //convert data to integers
-            hours = (AudioLength / 60);
-
-            //calculate total value   
-            var total = (45 * hours * PageRate);
-
-            if (total < 50) {
-                total = 50;
-            }
-
-            //print value to  tPrice 
-            var dollar = "$";
-            total = total.toFixed(2);
-            document.getElementById("tPrice2").value = dollar.concat(total);
-        }
-
     </script>
     <!--google analytics-->
     <script>

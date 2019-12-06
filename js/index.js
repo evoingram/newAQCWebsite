@@ -17,7 +17,7 @@
                 return false;
             }
         }
-
+        function captchaSet() {
         var a = Math.ceil(Math.random() * 9) + '';
         var b = Math.ceil(Math.random() * 9) + '';
         var c = Math.ceil(Math.random() * 9) + '';
@@ -27,7 +27,7 @@
         var code = a + b + c + d + e;
         document.getElementById("txtCaptcha").value = code;
         document.getElementById("CaptchaDiv").innerHTML = code;
-
+}
         // Validate input against the generated number
         function ValidCaptcha() {
             var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
@@ -135,11 +135,9 @@
         }
 
         // sticky nav
-        window.onscroll = function () { stickyNav() };
-        var navbar = document.querySelector(".navigation");
-        var sticky = navbar.offsetTop;
-
         function stickyNav() {
+            var navbar = document.querySelector(".navigation");
+            var sticky = navbar.offsetTop;
             if (window.pageYOffset >= sticky) {
                 navbar.classList.add("sticky")
             } else {
@@ -171,11 +169,20 @@
                 return false;
             }
             else {
-                var vStartOF = document.getElementById("one1"); vStartOF.style.visibility = 'hidden';
-                window.location.href = '#two';
+                var vStartOF = document.getElementById("one1");
+                vStartOF.style.display = 'none';
+                vStartOF.style.height = "0";
                 var vNextFS = document.getElementById("two");
                 vNextFS.style.display = "block";
                 vNextFS.style.overflow = "visible";
+                vNextFS.style.height = "100%";
+                var form1Elements = document.getElementsByClassName('.pq1');
+                console.log("form1elements next:  " + form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                        console.log("collapsing" + item);
+                        form1Elements[x].style.height = "0px";
+
+                };
             }
         }
 
@@ -187,10 +194,27 @@
                 alert("If you do not agree to the terms of service, we will be unable to accept your order at this time.");
                 return false;
             } else {
+                /*
                 window.location.href = '#four';
                 var vNextFS = document.getElementById("four");
                 vNextFS.style.display = "block";
                 vNextFS.style.overflow = "visible";
+*/
+                
+                var vStartOF = document.getElementById("two");
+                vStartOF.style.display = 'none';
+                vStartOF.style.height = "0";
+                var vNextFS = document.getElementById("four");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+                vNextFS.style.height = "100%";
+                var form1Elements = document.getElementsByClassName('.pq2');
+                console.log("form1elements next:  " + form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                        console.log("collapsing" + item);
+                        form1Elements[x].style.height = "0px";
+
+                };
             }
         }
 
@@ -200,13 +224,29 @@
             if (v == "") {
                 var vNextFS = document.getElementById("four");
                 vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-                window.location.href = '#four';
+                vNextFS.style.height = "100%";
             } else {
+                var vStartOF = document.getElementById("four");
+                vStartOF.style.display = 'none';
+                vStartOF.style.height = "0";
+                var vNextFS = document.getElementById("five");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+                vNextFS.style.height = "100%";
+                var form1Elements = document.getElementsByClassName('.pq4');
+                console.log("form1elements next:  " + form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                        console.log("collapsing" + item);
+                        form1Elements[x].style.height = "0px";
+
+                };
+/*
+
                 window.location.href = '#five';
                 var vNextFS = document.getElementById("five");
                 vNextFS.style.display = "block";
                 vNextFS.style.overflow = "visible";
+                */
             }
         }
 
@@ -244,11 +284,30 @@
                 return false;
             }
             else {
+                /*
                 window.location.href = '#five';
                 var vNextFS = document.getElementById("five");
                 vNextFS.style.display = "block";
                 vNextFS.style.overflow = "visible";
+                */
+
+                var vStartOF = document.getElementById("four");
+                vStartOF.style.display = 'none';
+                vStartOF.style.height = "0";
+                var vNextFS = document.getElementById("five");
+                vNextFS.style.display = "block";
+                vNextFS.style.overflow = "visible";
+                vNextFS.style.height = "100%";
+                var form1Elements = document.getElementsByClassName('.pq4');
+                console.log("form1elements next:  " + form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                        console.log("collapsing" + item);
+                        form1Elements[x].style.height = "0px";
+
+                };
+
             }
+            captchaSet();
         }
 
         // screen five form validation
@@ -298,63 +357,25 @@
                 alert("Email:  Please enter a valid e-mail address.");
                 return false;
             }
-            else {
-                window.location.href = '#six';
+            else { 
+                var vStartOF = document.getElementById("five");
+                vStartOF.style.display = 'none';
+                vStartOF.style.height = "0";
                 var vNextFS = document.getElementById("six");
                 vNextFS.style.display = "block";
                 vNextFS.style.overflow = "visible";
+                vNextFS.style.height = "100%";
+                var form1Elements = document.getElementsByClassName('.pq5');
+                console.log("form1elements next:  " + form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                        console.log("collapsing" + item);
+                        form1Elements[x].style.height = "0px";
+
+                };
+
             }
         }
 
-        // go back when you click back button
-        function Back(id) {
-            var vNextFS;
-            if (id === "two") {
-                vNextFS = document.getElementById("two");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("one");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "three") {
-                vNextFS = document.getElementById("three");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("two");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "four") {
-                vNextFS = document.getElementById("four");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("three");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "five") {
-                vNextFS = document.getElementById("five");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("four");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            }
-            else if (id === "six") {
-                vNextFS = document.getElementById("six");
-                vNextFS.style.display = "none";
-                vNextFS.style.overflow = "hidden";
-                vNextFS = document.getElementById("five");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-
-            };
-        }
 
 
         // calculate and display price estimate
@@ -399,4 +420,79 @@
             var dollar = "$";
             total = total.toFixed(2);
             document.getElementById("tPrice2").value = dollar.concat(total);
+        }
+
+        // go back when you click back button
+        function backClicked(id) {
+            var vNextFS;
+            console.log(id);
+            if (id === "two") {
+                vNextFS = document.getElementById("two");
+                vNextFS.style.display = "none";
+                vNextFS.style.height = "0";
+                vNextFS = document.getElementById("one1");
+                vNextFS.style.display = "block";
+                vNextFS.style.height = "100%";
+                var form1Elements = document.getElementsByClassName('.pq1');
+                console.log(form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                    console.log("expanding" + form1Elements[x]);
+                    form1Elements[x].style.height = "100%";
+                };
+            }
+            else if (id === "three") {
+                vNextFS = document.getElementById("four");
+                vNextFS.style.display = "none";
+                vNextFS.style.height = "0";
+                vNextFS = document.getElementById("two");
+                vNextFS.style.display = "block";
+                vNextFS.style.height = "100%";
+                
+                var form1Elements = document.getElementsByClassName('.pq2');
+                console.log(form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                    console.log("expanding" + form1Elements[x]);
+                    form1Elements[x].style.height = "100%";
+                };
+
+            }
+            else if (id === "four") {
+                vNextFS = document.getElementById("four");
+                vNextFS.style.display = "none";
+                vNextFS.style.height = "0";
+                vNextFS = document.getElementById("two");
+                vNextFS.style.display = "block";
+                vNextFS.style.height = "100%";
+                
+                var form1Elements = document.getElementsByClassName('.pq2');
+                console.log(form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                    console.log("expanding" + form1Elements[x]);
+                    form1Elements[x].style.height = "100%";
+                };
+
+            }
+            else if (id === "five") {
+                vNextFS = document.getElementById("five");
+                vNextFS.style.display = "none";
+                vNextFS.style.height = "0";
+                vNextFS = document.getElementById("four");
+                vNextFS.style.display = "block";
+                vNextFS.style.height = "100%";
+
+                var form1Elements = document.getElementsByClassName('.pq4');
+                console.log(form1Elements);
+                for (x = 0; x < form1Elements.length;x++) {
+                    console.log("expanding" + form1Elements[x]);
+                    form1Elements[x].style.height = "100%";
+                };
+            }
+            else if (id === "six") {
+                vNextFS = document.getElementById("six");
+                vNextFS.style.display = "none";
+                vNextFS.style.height = "0";
+                vNextFS = document.getElementById("five");
+                vNextFS.style.display = "block";
+                vNextFS.style.height = "100%";
+            };
         }

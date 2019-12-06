@@ -836,12 +836,8 @@ li {
 .form-popup h3 {
   font-size: 2rem;
 }
-#priceQuote .form-popup {
-  overflow-y: scroll;
-}
 #priceQuote .form-container {
   height: 75vh;
-  overflow-y: scroll;
 }
 #priceQuote .form-container .stackedRows fieldset {
   height: 0;
@@ -855,6 +851,11 @@ li {
   -moz-transition: all 2s linear;
   transition: all 2s linear;
 }
+#priceQuote .form-container .stackedRows fieldset legend {
+  color: green;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 #priceQuote .form-container .stackedRows fieldset:target {
   -o-transition: all 2s linear;
   -webkit-transition: all 2s linear;
@@ -866,7 +867,12 @@ li {
   justify-content: center;
   text-align: center;
 }
+#priceQuote .form-container .stackedRows fieldset #turnaroundDiv #insideTAD {
+  flex-wrap: wrap;
+  justify-content: center;
+}
 #priceQuote .form-container .stackedRows fieldset #jurisdictionDiv {
+  display: flex;
   font-size: 2rem;
   flex-wrap: wrap;
   justify-content: center;
@@ -913,6 +919,50 @@ li {
   text-align: center;
   border: 0;
 }
+#priceQuote .form-container .stackedRows fieldset .buttonsBN {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 6%;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  border-top: 1px solid green;
+}
+#priceQuote .form-container .stackedRows fieldset .buttonsBN #submitBackButton,
+#priceQuote .form-container .stackedRows fieldset .buttonsBN #submitButton {
+  width: 50%;
+  flex-wrap: nowrap;
+}
+#priceQuote .form-container .stackedRows fieldset .buttonsBN .left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding-top: 6%;
+  padding-bottom: 8%;
+}
+#priceQuote .form-container .stackedRows fieldset .buttonsBN .left .backButton {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-left: 2%;
+  font-size: 1.5rem;
+  border: none;
+}
+#priceQuote .form-container .stackedRows fieldset .buttonsBN .right {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  border: none;
+}
+#priceQuote .form-container .stackedRows fieldset .buttonsBN .right .nextButton {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 2%;
+  font-size: 1.5rem;
+  border: none;
+}
 #priceQuote .form-container .stackedRows fieldset .pqQuestion {
   display: flex;
   flex-direction: row;
@@ -920,10 +970,13 @@ li {
   padding-top: 2%;
 }
 #priceQuote .form-container .stackedRows fieldset .pqQuestion .left {
+  display: flex;
+  flex-direction: wrap;
   font-size: 2rem;
   width: 80%;
   margin: 0;
-  padding: 0;
+  padding-bottom: 2%;
+  justify-content: left;
 }
 #priceQuote .form-container .stackedRows fieldset .pqQuestion .left input {
   background-color: #002244;
@@ -932,10 +985,6 @@ li {
   border-left: transparent;
   border-right: transparent;
   border-bottom: 1px solid green;
-}
-#priceQuote .form-container .stackedRows fieldset .pqQuestion .left input.backButton {
-  align-self: left;
-  text-align: left;
 }
 #priceQuote .form-container .stackedRows fieldset .pqQuestion .left #turnaround,
 #priceQuote .form-container .stackedRows fieldset .pqQuestion .left #p1i1 {
@@ -946,7 +995,7 @@ li {
 }
 #priceQuote .form-container .stackedRows fieldset .pqQuestion .right {
   width: 25%;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
   padding: 0;
 }
@@ -968,8 +1017,37 @@ li {
 #priceQuote .form-container .stackedRows fieldset .pqQuestion .right #turnaround {
   background-color: #002244;
 }
+#priceQuote .form-container .stackedRows fieldset .pqQuestion .right #CaptchaInput {
+  margin: 0;
+  padding: 0;
+}
 #priceQuote .form-container .stackedRows fieldset input {
   font-size: 2rem;
+}
+#priceQuote .form-container .stackedRows fieldset .pqTextField {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  width: 98%;
+  background-color: #002244;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  color: #69be28;
+  text-align: center;
+  padding-bottom: 5%;
+}
+#priceQuote .form-container .stackedRows fieldset .pqTextField input {
+  background-color: #002244;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid #69be28;
+  width: 100%;
+}
+#priceQuote .form-container .stackedRows fieldset .pqTextField label {
+  text-align: left;
+  color: #a5acaf;
 }
 #priceQuote .form-container .stackedRows .startOF fieldset {
   display: inherit;

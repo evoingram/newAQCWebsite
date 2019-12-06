@@ -4,11 +4,11 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] test order form
-- [ ] set up ericaingram.com on host
-- [ ] digital resume as placeholder there for now
-- [ ] proofing
+- [ ] figure out why submitted order form is redirecting to php page
+- [ ] change wording on pq calculator to reflect ordering also
+- [ ] set up digital resume on ericaingram.com as placeholder for now
 - [ ] mobile/tablet versions
+- [ ] proofing
 
 
 Done so far:
@@ -46,3 +46,4 @@ Done so far:
 - [X] development page goes too far down when you click development links
 - [X] refactor whole website for best LESS pages/functions
 - [X] use separate js page for javascript functions
+- [X] test order form
