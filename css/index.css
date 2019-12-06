@@ -623,6 +623,8 @@ h2 {
   margin: 0 auto;
   align-self: center;
   align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 .pageRow {
   padding-top: 7%;
@@ -771,6 +773,21 @@ h2 {
   font-size: 2rem;
   text-align: left;
 }
+#contact h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+#contact .devDetails {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#contact .devDetails .codeItem {
+  flex-wrap: nowrap;
+}
 #aboutr {
   order: 2;
 }
@@ -881,6 +898,9 @@ li {
 }
 .form-popup h3 {
   font-size: 2rem;
+}
+#jurisdictions .form-container .stackedRows .jurisListItem {
+  width: 100%;
 }
 #priceQuote .form-container {
   height: 75vh;
