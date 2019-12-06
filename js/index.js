@@ -436,7 +436,7 @@
 
         // reset form and go back to page one price quote area
         function resetForm() {
-            document.getElementById("OrderForm").reset();
+            document.getElementById("orderForm").reset();
             var vNextFS = document.getElementById("six");
             vNextFS.style.display = 'none';
             vNextFS.style.height = "0";

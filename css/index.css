@@ -932,6 +932,14 @@ li {
   width: 50%;
   flex-wrap: nowrap;
 }
+#priceQuote .form-container .stackedRows fieldset .buttonsBN #orderAgainButton {
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: 1px solid green;
+  background-color: #002244;
+  color: #69be28;
+}
 #priceQuote .form-container .stackedRows fieldset .buttonsBN .left {
   display: flex;
   width: 50%;

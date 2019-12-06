@@ -418,7 +418,7 @@
 
 
 
-    <div class="form-popup" id="requestAudio">
+    <div id="requestAudio" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('requestAudio')">Close</button>
@@ -462,7 +462,7 @@
             <button type="button" class="btn cancel" onclick="closeForm('requestAudio')">Close</button>
         </div>
     </div>
-    <div class="form-popup" id="jurisdictions">
+    <div id="jurisdictions" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('jurisdictions')">Close</button>
@@ -595,7 +595,7 @@
 
         </div>
     </div>
-    <div class="form-popup" id="priceQuote">
+    <div id="priceQuote" class="form-popup">
         <div class="form-container">
             <section class="stackedRows">
                 <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
@@ -614,7 +614,8 @@
                 </section>
             </h3>
             <section class="stackedRows">
-                <form name="OrderForm" action="test-email.php" method="post" onsubmit="window.location ='#six'">
+                <form id="orderForm" name="OrderForm" action="test-email.php" method="post"
+                    onsubmit="window.location ='#six'">
                     <div class="startOF" width="50%">
                         <a href="#one"></a>
                         <fieldset id="one1">
@@ -937,10 +938,12 @@
                             receive an order confirmation soon.
                         </section>
                         <section class="stackedRows pq6">
-                            <div id="orderAgain" class="left">
-                                <input class="backButton" title="Place another order." type="button" value="Order Again"
-                                    onclick="resetForm();">
+                            <div id="orderAgain" class="buttonsBN left">
+                                <input id="orderAgainButton" class="backButton" title="Place another order."
+                                    type="button" value="Order Again" onclick="resetForm();">
                             </div>
+
+
                         </section>
                         <section class="stackedRows pq6">
                             <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>

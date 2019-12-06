@@ -51,6 +51,6 @@ Done so far:
 - [X] use separate js page for javascript functions
 - [X] test order form
 - [X] change wording on pq calculator to reflect ordering also
-- [X] figure out why submitted order form is redirecting to php page
 - [X] add button to order another when complete
 - [X] fixed recaptcha
+- [X] figure out why submitted order form is redirecting to php page
