@@ -6,9 +6,14 @@ Still left to finish:
 
 - [ ] figure out why submitted order form is redirecting to php page
 - [ ] add button to order another when complete
+- [ ] redo content on about pages
+- [ ] fix tos links
+- [ ] fix rates on tos
+- [ ] fix spacing on li links
+- [ ] close other sub-windows when you open another one
 - [ ] set up digital resume on ericaingram.com as placeholder for now
-- [ ] mobile/tablet versions
 - [ ] proofing
+- [ ] mobile/tablet versions
 
 
 Done so far:
