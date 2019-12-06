@@ -5,10 +5,10 @@ new company website using what i've learned in Lambda
 Still left to finish:
 
 - [ ] figure out why submitted order form is redirecting to php page
-- [ ] change wording on pq calculator to reflect ordering also
 - [ ] set up digital resume on ericaingram.com as placeholder for now
 - [ ] mobile/tablet versions
 - [ ] proofing
+- [ ] add button to order another when complete
 
 
 Done so far:
@@ -47,3 +47,4 @@ Done so far:
 - [X] refactor whole website for best LESS pages/functions
 - [X] use separate js page for javascript functions
 - [X] test order form
+- [X] change wording on pq calculator to reflect ordering also

@@ -172,6 +172,10 @@
                 var vStartOF = document.getElementById("one1");
                 vStartOF.style.display = 'none';
                 vStartOF.style.height = "0";
+                var pqChange1 = document.getElementById('pqChange1');
+                pqChange1.textContent = `Order a Transcript`;
+                var pqChange2 = document.getElementById('pqChange2');
+                pqChange2.textContent = `Finish filling out the form to order your transcript.`;
                 var vNextFS = document.getElementById("two");
                 vNextFS.style.display = "block";
                 vNextFS.style.overflow = "visible";
@@ -184,7 +188,16 @@
 
                 };
             }
-        }
+}
+        
+/*
+    <section id="pqChange1" class="stackedRows" id="formHeading">
+        <h1>Price Quote Calculator:</h1>
+    </section><br><br>
+    <section id="pqChange2" class="stackedRows">
+        <h3>Get a price quote on your transcript:</h3>
+    </section>
+*/
 
         // screen two form validation
         function Allow2() {
@@ -432,7 +445,12 @@
                 vNextFS.style.height = "0";
                 vNextFS = document.getElementById("one1");
                 vNextFS.style.display = "block";
-                vNextFS.style.height = "100%";
+                vNextFS.style.height = "100%";                
+                var pqChange1 = document.getElementById('pqChange1');
+                pqChange1.textContent = "Price Quote Calculator";
+                var pqChange2 = document.getElementById('pqChange2');
+                pqChange2.textContent = "Get a price quote on your transcript.";
+                var vNextFS = document.getElementById("two");
                 var form1Elements = document.getElementsByClassName('.pq1');
                 console.log(form1Elements);
                 for (x = 0; x < form1Elements.length;x++) {
