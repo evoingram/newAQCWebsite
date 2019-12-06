@@ -4,11 +4,11 @@
         function checkForm(theForm) {
             var why = "";
 
-            if (theForm.CaptchaInput.value == "") {
+            if (document.getElementsByName("captchaInput")[0].value == "") {
                 why += "- Please Enter CAPTCHA Code.\n";
             }
-            if (theForm.CaptchaInput.value != "") {
-                if (ValidCaptcha(theForm.CaptchaInput.value) == false) {
+            if (document.getElementsByName("captchaInput")[0].value != "") {
+                if (ValidCaptcha(document.getElementsByName("captchaInput")[0].value) == false) {
                     why += "- The CAPTCHA Code Does Not Match.\n";
                 }
             }
@@ -31,7 +31,7 @@
         // Validate input against the generated number
         function ValidCaptcha() {
             var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-            var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+            var str2 = removeSpaces(document.getElementById('captchaInput').value);
             if (str1 == str2) { return true; }
             else { return false; }
         }

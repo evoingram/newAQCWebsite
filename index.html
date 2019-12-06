@@ -903,7 +903,7 @@
                                         <div class="left">
                                             <input type="hidden" id="txtCaptcha"></div>
                                         <div class="right">
-                                            <input title="captcha box" type="text" name="CaptchaInput" id="CaptchaInput"
+                                            <input title="captcha box" type="text" name="captchaInput" id="captchaInput"
                                                 size="15"><br>
                                         </div>
                                     </div>
@@ -919,7 +919,7 @@
                                             value="back" onclick="backClicked('five')"></div>
                                     <div id="submitButton" class="right">
                                         <input title="Submit Order" type="submit" name="submit" value="Submit Order"
-                                            onclick="return !!(Allow5() & checkForm(this));">
+                                            onclick="return !!(checkForm(this) & Allow5());">
                                         <!-- <input title="" type="hidden" name="redirect" value="#six">-->
                                     </div>
                                 </div>
@@ -935,16 +935,16 @@
                             touch very shortly to confirm and finish processing your order.<br><br>If you have any
                             questions, please e-mail us at inquiries@aquoco.co or call us at 206-478-5028. You will
                             receive an order confirmation soon.
-                            <section class="stackedRows pq6">
-                                <div id="orderAgain" class="left">
-                                    <input class="backButton" title="Place another order." type="button"
-                                        value="Order Again" onclick="resetForm();">
-                                </div>
-                            </section>
-                            <section class="stackedRows pq6">
-                                <button type="button" class="btn cancel"
-                                    onclick="closeForm('priceQuote')">Close</button>
-                            </section>
+                        </section>
+                        <section class="stackedRows pq6">
+                            <div id="orderAgain" class="left">
+                                <input class="backButton" title="Place another order." type="button" value="Order Again"
+                                    onclick="resetForm();">
+                            </div>
+                        </section>
+                        <section class="stackedRows pq6">
+                            <button type="button" class="btn cancel" onclick="closeForm('priceQuote')">Close</button>
+                        </section>
 
                     </fieldset>
                 </form>

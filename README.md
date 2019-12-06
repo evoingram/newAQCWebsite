@@ -4,8 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] figure out why submitted order form is redirecting to php page
-- [ ] add button to order another when complete
 - [ ] redo content on about pages
 - [ ] fix tos links
 - [ ] fix rates on tos
@@ -41,7 +39,6 @@ Done so far:
 - [X] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
 - [X] add blur transition fade-in to showcase
 - [X] priceQuote popup
-
 - [X] finish rates section
 - [X] social media icons for contact page (NO)
 - [X] change links on development page, add new/diff projects<br>
@@ -54,3 +51,6 @@ Done so far:
 - [X] use separate js page for javascript functions
 - [X] test order form
 - [X] change wording on pq calculator to reflect ordering also
+- [X] figure out why submitted order form is redirecting to php page
+- [X] add button to order another when complete
+- [X] fixed recaptcha
