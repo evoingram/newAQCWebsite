@@ -11,6 +11,7 @@ Still left to finish:
 - [ ] fix rates on tos
 - [ ] fix spacing on li links
 - [ ] close other sub-windows when you open another one
+- [ ] reformat languages in development section; flex, nowrap
 - [ ] set up digital resume on ericaingram.com as placeholder for now
 - [ ] proofing
 - [ ] mobile/tablet versions
