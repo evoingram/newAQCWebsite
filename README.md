@@ -5,10 +5,10 @@ new company website using what i've learned in Lambda
 Still left to finish:
 
 - [ ] figure out why submitted order form is redirecting to php page
+- [ ] add button to order another when complete
 - [ ] set up digital resume on ericaingram.com as placeholder for now
 - [ ] mobile/tablet versions
 - [ ] proofing
-- [ ] add button to order another when complete
 
 
 Done so far:
