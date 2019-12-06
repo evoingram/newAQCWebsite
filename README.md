@@ -4,13 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] fix FAQ: payment accepted, pricequote link
-- [ ] fix jurisdictions hidden page list
-- [ ] fix contact SM list to look like dev tech list
-- [ ] fix court transcription narrow rates para width
-- [ ] fix rates narrow payment-arr/govt-agen para width
-- [ ] fix tos links turnaround & rates
-- [ ] change softwaredev contact-me link
 - [ ] mobile/tablet versions
 
 
@@ -61,3 +54,10 @@ Done so far:
 - [X] close other sub-windows when you open another one
 - [X] set up digital resume on ericaingram.com as placeholder for now
 - [X] proofing
+- [X] fix FAQ: payment accepted, pricequote link
+- [X] fix jurisdictions hidden page list
+- [X] fix contact SM list to look like dev tech list
+- [X] fix court transcription narrow rates para width
+- [X] fix rates narrow payment-arr/govt-agen para width
+- [X] fix tos links turnaround & rates
+- [X] change softwaredev contact-me link
