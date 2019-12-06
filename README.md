@@ -4,8 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] close other sub-windows when you open another one
-- [ ] set up digital resume on ericaingram.com as placeholder for now
 - [ ] proofing
 - [ ] mobile/tablet versions
 
@@ -54,3 +52,5 @@ Done so far:
 - [X] fix tos links
 - [X] fix rates on tos
 - [X] reformat languages in development section
+- [X] close other sub-windows when you open another one
+- [X] set up digital resume on ericaingram.com as placeholder for now
