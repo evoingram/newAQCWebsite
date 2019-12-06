@@ -789,20 +789,23 @@ h2 {
 #ratesi {
   width: 70%;
 }
-#aboutELI .meLinks .meLink {
+.meLinks {
+  width: 100%;
+  justify-content: center;
+}
+.meLinks .meLink {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 98%;
   position: relative;
   padding: 1rem 0 0.5rem;
-  margin: 0 1.5rem;
   color: #69be28;
   text-decoration: none;
   font-weight: bold;
   line-height: 1.75;
 }
-#aboutELI .meLinks .meLink:after {
+.meLinks .meLink:after {
   content: '';
   position: absolute;
   left: 50%;
@@ -814,10 +817,10 @@ h2 {
   background-color: #002244;
   transition: transform 250ms;
 }
-#aboutELI .meLinks .meLink:hover::after {
+.meLinks .meLink:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
-#aboutELI .meLinks #linkList {
+.meLinks #linkList {
   width: 98%;
   margin-top: 3%;
 }

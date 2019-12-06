@@ -4,7 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] fix tos links
 - [ ] fix rates on tos
 - [ ] close other sub-windows when you open another one
 - [ ] reformat languages in development section; flex, nowrap
@@ -54,3 +53,4 @@ Done so far:
 - [X] figure out why submitted order form is redirecting to php page
 - [X] fix spacing on li links
 - [X] redo content on about pages
+- [X] fix tos links
