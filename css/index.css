@@ -1252,12 +1252,37 @@ li {
   .showcase .content .frontWords {
     width: 85%;
   }
+  .showcase .content .aqcLogo h1 {
+    font-size: 7rem;
+    padding: 2%;
+  }
+  .mainSection {
+    flex-wrap: wrap;
+  }
+  .mainSection #leftHalf,
+  .mainSection #rightHalf {
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #ratesi,
+  #softwareDevelopmenti,
+  #abouti,
+  #contacti {
+    width: 90%;
+    max-width: 90%;
+  }
+  #abouth {
+    margin-top: 5%;
+  }
+  #contact .codeItem a {
+    font-size: 2rem;
+  }
 }
 @media (max-width: 600px) {
   .navbar {
-    margin: 0;
-    padding: 0;
     width: 100%;
+    margin-top: 5%;
   }
   .navigation {
     display: flex;
@@ -1275,15 +1300,38 @@ li {
     color: #002244;
   }
   .showcase .content .frontWords {
-    width: 85%;
+    width: 100%;
+  }
+  .showcase .content .aqcLogo {
+    width: 95%;
+  }
+  .showcase .content .aqcLogo h1 {
+    font-size: 6rem;
+    padding: 1.5%;
+  }
+  .mainSection {
+    flex-wrap: wrap;
+  }
+  .mainSection #leftHalf,
+  .mainSection #rightHalf {
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #ratesi,
+  #softwareDevelopmenti,
+  #abouti,
+  #contacti {
+    width: 90%;
+  }
+  #abouth {
+    margin-top: 5%;
+  }
+  #contact .codeItem a {
+    font-size: 2rem;
   }
   /* 
-
-	change aqc logo showcase
-	change carousel/list order to top/bottom
-	change softwaredev picture/list order to top/bottom
-	change about picture/list order to top/bottom
+	
 	change contact picture/list order to top/bottom
-
 	*/
 }
