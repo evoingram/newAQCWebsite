@@ -4,7 +4,8 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] mobile/tablet versions
+- [ ] mobile version
+- [ ] tablet version
 
 
 Done so far:

@@ -1229,11 +1229,61 @@ li {
   border-bottom: 1px solid #69be28;
 }
 @media (max-width: 900px) {
-  border: 1px solid pink;
-}
-@media (max-width: 1200px) {
-  border: 1px solid white;
+  .navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation .navLinkContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1%;
+  }
+  .navigation .navLinkContainer #loginLink {
+    color: #002244;
+  }
+  .showcase .content .frontWords {
+    width: 85%;
+  }
 }
 @media (max-width: 600px) {
-  border: 1px solid red;
+  .navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation .navLinkContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1%;
+  }
+  .navigation .navLinkContainer #loginLink {
+    color: #002244;
+  }
+  .showcase .content .frontWords {
+    width: 85%;
+  }
+  /* 
+
+	change aqc logo showcase
+	change carousel/list order to top/bottom
+	change softwaredev picture/list order to top/bottom
+	change about picture/list order to top/bottom
+	change contact picture/list order to top/bottom
+
+	*/
 }
