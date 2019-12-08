@@ -61,3 +61,5 @@ Done so far:
 - [X] change softwaredev contact-me link
 - [X] tablet version
 - [X] mobile version
+- [X] alternate blue/silver background
+- [X] rounded aqc logo corners
