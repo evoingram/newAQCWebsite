@@ -4,8 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] mobile/tablet versions
-
 
 Done so far:
 
@@ -61,3 +59,5 @@ Done so far:
 - [X] fix rates narrow payment-arr/govt-agen para width
 - [X] fix tos links turnaround & rates
 - [X] change softwaredev contact-me link
+- [X] tablet version
+- [X] mobile version

@@ -19,13 +19,12 @@
 
 <body>
     <header>
-        <section class="stackedRows">
             <nav class="navigation">
                 <div class="navLinkContainer">
                     <a href="index.html" class="navLink">Home</a>
                 </div>
                 <div class="navLinkContainer">
-                    <a href="#about" class="navLink">About & FAQ</a>
+                    <a href="#about" class="navLink">About</a>
                 </div>
                 <div class="navLinkContainer">
                     <a href="#rates" class="navLink">Rates</a>
@@ -40,10 +39,8 @@
                     <a href="#contact" class="navLink">Contact</a>
                 </div>
                 <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
-                        target="_blank">Log
-                        In</a></div>
+                        target="_blank">Files</a></div>
             </nav>
-        </section>
 
         <section class="stackedRows">
 
@@ -76,7 +73,7 @@
                 <h2>A Quo Co. Court Transcription Services</h2>
             </section>
             <br><br>
-            <section class="stackedRows">
+            <section class="stackedRows mainSection">
                 <section id="leftHalf" class="quarter">
 
                     <div class="carouselContainer">
@@ -91,17 +88,17 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img src="img/table-of-authorities.jpg" alt="example of table of authorities"
+                                    <img id="1" src="img/table-of-authorities.jpg" alt="example of table of authorities"
                                         style="width:100%;">
                                 </div>
 
                                 <div class="item">
-                                    <img src="img/TOA-HeadingLinks.jpg"
+                                    <img id="2" src="img/TOA-HeadingLinks.jpg"
                                         alt="example of Table of Authorities with heading links" style="width:100%;">
                                 </div>
 
                                 <div class="item">
-                                    <img src="img/word-index.jpg" alt="example of word index" style="width:100%;">
+                                    <img id="3" src="img/word-index.jpg" alt="example of word index" style="width:100%;">
                                 </div>
                             </div>
 
@@ -128,7 +125,7 @@
                         <li>Condensed versions, two and four per page</li>
                         <li>Hyperlinked table of contents & headers where applicable</li>
                         <li><a href="https://www.ned.uscourts.gov/internetDocs/cmecf/LinkBuilderforMSWord.pdf"
-                                target="_blank">Linkbuilder on all USBC transcripts where
+                                target="_blank">USBC's Linkbuilder where
                                 possible</a></li>
                         <li>A "working copy" of your court transcript, an
                             uncertified copy that makes normal Microsoft Word features usable.</li>
@@ -249,7 +246,7 @@
                 <h2>Software Development by Erica Ingram</h2>
             </section>
 
-            <section class="stackedRows">
+            <section class="stackedRows mainSection">
 
                 <section id="leftHalf" class="quarter">
                     <br><br>
@@ -301,8 +298,7 @@
                                 </div>
                             </center>
                         </li>
-                        <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Build Week Project
-                                developed at Lambda</a><br>
+                        <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Lambda Build Week Project</a><br>
                             <center>
                                 <div class="devdetails">
                                     <div class="codeItem">HTML</div>
@@ -341,13 +337,11 @@
 
         <section id="about" class="row row4 pageRow">
 
-            <section class="stackedRows">
-                <section id="abouth" class="row">
-                    <h2>About & FAQ</h2>
-                </section>
+            <section id="abouth" class="row stackedRows">
+                <h2>About A Quo Co.</h2>
             </section>
 
-            <section class="stackedRows">
+            <section class="stackedRows mainSection">
                 <section id="leftHalf" class="quarter">
                     <img src="img/AQC Square Ad 01.png" alt="rates as low as $2.50 per page" id="abouti"
                         class="quarterImgs">
@@ -390,7 +384,7 @@
                 <h2>Contact</h2>
             </section>
 
-            <section class="stackedRows">
+            <section class="stackedRows mainSection">
 
                 <section id="leftHalf" class="quarter"><br><br><br>
                     <p>Our telephone hours are from 4:00 a.m. PST to 5:00 p.m. PST Monday to Friday, office hours by
@@ -450,15 +444,14 @@
         <nav class="navigation">
             <div id="navLinkContainerHome" class="navLinkContainer"><a href="index.html" class="navLink">Home</a>
             </div>
-            <div class="navLinkContainer"><a href="#about" class="navLink">About & FAQ</a></div>
+            <div class="navLinkContainer"><a href="#about" class="navLink">About</a></div>
             <div class="navLinkContainer"><a href="#rates" class="navLink">Rates</a></div>
             <div class="navLinkContainer"><a href="#courtTranscription" class="navLink">Court Transcription</a>
             </div>
             <div class="navLinkContainer"><a href="#softwareDevelopment" class="navLink">Development</a></div>
             <div class="navLinkContainer"><a href="#contact" class="navLink">Contact</a></div>
             <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
-                    target="_blank">Log
-                    In</a></div>
+                    target="_blank">Files</a></div>
         </nav>
     </footer>
 
@@ -1930,6 +1923,18 @@
         var code = a + b + c + d + e;
         document.getElementById("txtCaptcha").value = code;
         document.getElementById("CaptchaDiv").innerHTML = code;
+
+            var globalResizeTimer = null;
+
+            $(window).resize(function () {
+                if (globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+                globalResizeTimer = window.setTimeout(function () {
+                    imageChangeWindowResize();
+                }, 25);
+            });
+        /*
+        window.onresize = imageChangeWindowResize();
+            */
     </script>
     <!--google analytics-->
     <script>

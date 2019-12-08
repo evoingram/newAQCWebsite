@@ -1,11 +1,213 @@
 @media (@tablet) {
-	border: 1px solid pink;
-}
+	// format nav bar in tablet mode properly
+	.navbar {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
 
-@media (@desktop) {
-	border: 1px solid white;
+	.navigation {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		width: 100%;
+
+		.navLinkContainer {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			padding: 1%;
+
+			#loginLink {
+				color: @navy;
+			}
+		}
+	}
+
+	// change gray text header in showcase
+	.showcase {
+		.content {
+			.frontWords {
+				width: 85%;
+			}
+
+			.aqcLogo {
+				// change aqc logo showcase
+				h1 {
+					font-size: 7rem;
+					padding: 2%;
+				}
+			}
+		}
+	}
+
+	// change carousel/list order to top/bottom
+	// change softwaredev picture/list order to top///bottom
+	// change about picture/list order to top/bottom
+	// change contact picture/list order to top/bottom
+	.mainSection {
+		flex-wrap: wrap;
+
+		#leftHalf,
+		#rightHalf {
+			width: 80%;
+			padding-top: 3%;
+			padding-bottom: 3%;
+
+			ul {
+				padding-left: 2%;
+			}
+		}
+	}
+
+	// format images on page correctly
+	#ratesi,
+	#softwareDevelopmenti,
+	#abouti,
+	#contacti {
+		width: 100%;
+		max-width: 100%;
+		margin: 1%;
+	}
+
+	// about headline is janky without this
+	#abouth {
+		margin-top: 5%;
+	}
+
+	// increase font size for these items on tablet
+	#contact {
+		.codeItem {
+			a {
+				font-size: 2rem;
+			}
+		}
+	}
 }
 
 @media (@mobile) {
-	border: 1px solid red;
+	// format nav bar in mobile mode properly
+	.navbar {
+		width: 100%;
+	}
+
+	.navigation {
+		padding-top: 5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		width: 100%;
+
+		.navLinkContainer {
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			padding: 1%;
+
+			#loginLink {
+				color: @navy;
+			}
+		}
+	}
+
+	// change gray text header in showcase
+	.showcase {
+		.content {
+			.frontWords {
+				width: 100%;
+			}
+
+			.aqcLogo {
+				width: 95%;
+
+				// change aqc logo showcase
+				h1 {
+					font-size: 6rem;
+					padding: 1.5%;
+				}
+			}
+		}
+	}
+
+	// change carousel/list order to top/bottom
+	// change softwaredev picture/list order to top///bottom
+	// change about picture/list order to top/bottom
+	// change contact picture/list order to top/bottom
+	.mainSection {
+		flex-wrap: wrap;
+
+		#leftHalf,
+		#rightHalf {
+			width: 95%;
+			padding-top: 3%;
+			padding-bottom: 3%;
+
+			ul {
+				padding-left: 2%;
+
+				li {
+					padding-bottom: 1.5%;
+				}
+			}
+		}
+	}
+
+	// format images on page correctly
+	#ratesi,
+	#softwareDevelopmenti,
+	#abouti,
+	#contacti {
+		width: 100%;
+		max-width: 100%;
+		margin: 1%;
+	}
+
+	// about headline is janky without this
+	#abouth {
+		margin-top: 5%;
+	}
+
+	// increase font size for these items on mobile
+	#contact {
+		.codeItem {
+			a {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.sticky {
+		padding-top: 4%;
+	}
+}
+
+@media (@ultraSmall) {
+	// change gray text header in showcase
+	.showcase {
+		width: 100%;
+		padding: 0;
+		margin: 0 0 5% 0;
+
+		.content {
+			#showcaseRow1 {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+
+				// change aqc logo showcase
+				h1 {
+					font-size: 4.25rem;
+					padding: 1.5%;
+				}
+			}
+		}
+	}
+
+	.navigation {
+		padding-top: 10%;
+	}
+
+	.bodyContent {
+		margin-top: 6%;
+	}
 }
