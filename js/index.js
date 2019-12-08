@@ -540,3 +540,31 @@ function closeFPOpenCurrent(id) {
 		document.getElementById(id).style.display = 'block';
 	}
 }
+function imageChangeWindowResize() {
+	// ad image switch for mobile/tablet versions
+
+	// if #ratesi, #softwareDevelopmenti, #abouti,#contacti max-width = 90%
+	// then change src to banner ad imgs
+
+	if (window.innerWidth < 900) {
+		document.getElementById('softwareDevelopmenti').style.display = 'none';
+		document.getElementById('abouti').style.display = 'none';
+		document.getElementById('contacti').style.display = 'none';
+		document.getElementById('softwareDevelopmenti').src = 'img/BannerExpertise.png';
+		document.getElementById('abouti').src = 'img/BannerRate.png';
+		document.getElementById('contacti').src = 'img/BannerFree.png';
+		document.getElementById('abouti').style.display = 'block';
+		document.getElementById('softwareDevelopmenti').style.display = 'block';
+		document.getElementById('contacti').style.display = 'block';
+	} else if (window.innerWidth > 899) {
+		document.getElementById('softwareDevelopmenti').style.display = 'none';
+		document.getElementById('abouti').style.display = 'none';
+		document.getElementById('contacti').style.display = 'none';
+		document.getElementById('softwareDevelopmenti').src = 'img/AQC Square Ad 04.png';
+		document.getElementById('abouti').src = 'img/AQC Square Ad 01.png';
+		document.getElementById('contacti').src = 'img/AQC Square Ad 05.png';
+		document.getElementById('softwareDevelopmenti').style.display = 'block';
+		document.getElementById('abouti').style.display = 'block';
+		document.getElementById('contacti').style.display = 'block';
+	}
+}

@@ -19,7 +19,6 @@
 
 <body>
     <header>
-        <section class="stackedRows navbar">
             <nav class="navigation">
                 <div class="navLinkContainer">
                     <a href="index.html" class="navLink">Home</a>
@@ -40,10 +39,8 @@
                     <a href="#contact" class="navLink">Contact</a>
                 </div>
                 <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
-                        target="_blank">Log
-                        In</a></div>
+                        target="_blank">Files</a></div>
             </nav>
-        </section>
 
         <section class="stackedRows">
 
@@ -128,7 +125,7 @@
                         <li>Condensed versions, two and four per page</li>
                         <li>Hyperlinked table of contents & headers where applicable</li>
                         <li><a href="https://www.ned.uscourts.gov/internetDocs/cmecf/LinkBuilderforMSWord.pdf"
-                                target="_blank">Linkbuilder on all USBC transcripts where
+                                target="_blank">USBC's Linkbuilder where
                                 possible</a></li>
                         <li>A "working copy" of your court transcript, an
                             uncertified copy that makes normal Microsoft Word features usable.</li>
@@ -301,8 +298,7 @@
                                 </div>
                             </center>
                         </li>
-                        <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Build Week Project
-                                developed at Lambda</a><br>
+                        <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Lambda Build Week Project</a><br>
                             <center>
                                 <div class="devdetails">
                                     <div class="codeItem">HTML</div>
@@ -455,8 +451,7 @@
             <div class="navLinkContainer"><a href="#softwareDevelopment" class="navLink">Development</a></div>
             <div class="navLinkContainer"><a href="#contact" class="navLink">Contact</a></div>
             <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
-                    target="_blank">Log
-                    In</a></div>
+                    target="_blank">Files</a></div>
         </nav>
     </footer>
 
@@ -1928,6 +1923,18 @@
         var code = a + b + c + d + e;
         document.getElementById("txtCaptcha").value = code;
         document.getElementById("CaptchaDiv").innerHTML = code;
+
+            var globalResizeTimer = null;
+
+            $(window).resize(function () {
+                if (globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+                globalResizeTimer = window.setTimeout(function () {
+                    imageChangeWindowResize();
+                }, 25);
+            });
+        /*
+        window.onresize = imageChangeWindowResize();
+            */
     </script>
     <!--google analytics-->
     <script>
