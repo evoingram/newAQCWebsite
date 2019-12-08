@@ -1296,9 +1296,9 @@ li {
 @media (max-width: 600px) {
   .navbar {
     width: 100%;
-    margin-top: 5%;
   }
   .navigation {
+    padding-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
