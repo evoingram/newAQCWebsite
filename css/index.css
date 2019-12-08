@@ -858,8 +858,10 @@ h2 {
   width: 45%;
 }
 .quarter .quarterImgs {
+  display: inline-flex;
   max-width: 300px;
   align-items: center;
+  align-self: center;
 }
 *,
 h1,
