@@ -4,7 +4,6 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
-- [ ] add blank image between pages to trick anchors for sticky navbar
 
 Done so far:
 
@@ -64,3 +63,4 @@ Done so far:
 - [X] mobile version
 - [X] alternate blue/silver background
 - [X] rounded aqc logo corners
+- [X] trick anchors for sticky navbar
