@@ -4,6 +4,7 @@ new company website using what i've learned in Lambda
 
 Still left to finish:
 
+- [ ] add blank image between pages to trick anchors for sticky navbar
 
 Done so far:
 

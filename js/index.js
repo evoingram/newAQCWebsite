@@ -154,10 +154,15 @@ function toggleFAQDetails(obj) {
 function stickyNav() {
 	var navbar = document.querySelector('.navigation');
 	var sticky = navbar.offsetTop;
+	console.log("offsetTop " + navbar.offsetTop);
+	console.log("sticky " + sticky);
+	console.log("pageY offset " + window.pageYOffset);
 	if (window.pageYOffset >= sticky) {
+        document.body.style.paddingTop = (navbar.offsetHeight + 45) + 'px';
 		navbar.classList.add('sticky');
 	} else {
 		navbar.classList.remove('sticky');
+        document.body.style.paddingTop = 0;
 	}
 }
 
