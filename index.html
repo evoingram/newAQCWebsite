@@ -19,40 +19,37 @@
 
 <body>
     <header>
-            <nav class="navigation">
-                <div class="navLinkContainer">
-                    <a href="index.html" class="navLink">Home</a>
-                </div>
-                <div class="navLinkContainer">
-                    <a href="#about" class="navLink">About</a>
-                </div>
-                <div class="navLinkContainer">
-                    <a href="#rates" class="navLink">Rates</a>
-                </div>
-                <div class="navLinkContainer">
-                    <a href="#courtTranscription" class="navLink">Court Transcription</a>
-                </div>
-                <div class="navLinkContainer">
-                    <a href="#softwareDevelopment" class="navLink">Development</a>
-                </div>
-                <div class="navLinkContainer">
-                    <a href="#contact" class="navLink">Contact</a>
-                </div>
-                <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
-                        target="_blank">Files</a></div>
-            </nav>
-
-        <section class="stackedRows">
+        <nav class="navigation">
+            <div class="navLinkContainer">
+                <a href="index.html" class="navLink">Home</a>
+            </div>
+            <div class="navLinkContainer">
+                <a href="#about" class="navLink">About</a>
+            </div>
+            <div class="navLinkContainer">
+                <a href="#rates" class="navLink">Rates</a>
+            </div>
+            <div class="navLinkContainer">
+                <a href="#courtTranscription" class="navLink">Court Transcription</a>
+            </div>
+            <div class="navLinkContainer">
+                <a href="#softwareDevelopment" class="navLink">Development</a>
+            </div>
+            <div class="navLinkContainer">
+                <a href="#contact" class="navLink">Contact</a>
+            </div>
+            <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
+                    target="_blank">Files</a></div>
+        </nav>
+        <section class="stackedRows bsShowcase">
 
             <section id="headerImgoverlay" class="showcase">
 
                 <section class="content">
-
-                    <section id="showcaseRow1" class="stackedRows aqcLogo">
+                    <section id="showcaseRow1" class="stackedRows aqcLogo vignette">
                         <h1>A QUO CO.</h1>
                         <!--<img src="https://www.aquoco.co/images/RectLogo.png" class="logo" alt="A Quo Co.">-->
                     </section>
-
                     <section id="showcaseRow2" class="stackedRows frontWords">
                         <p>A Quo Co. Transcripts<br>Seattle, Washington</p>
                     </section>
@@ -60,15 +57,17 @@
                     <section id="showcaseRow3" class="stackedRows frontWords">
                         <h1>court transcription services<br>since 2009 in <br>Seattle, Washington</h1>
                     </section>
-
                 </section>
             </section>
         </section>
     </header>
 
     <section id="bodyContent" class="bodyContent">
-        <section id="courtTranscription" class="row row1 pageRow">
+        <section class="anchorTrick">
+            <img id="anchorCourtTranscription" src="img/anchor.png" alt="court transcription page anchor">
 
+        </section>
+        <section id="courtTranscription" class="row row1 pageRow">
             <section class="stackedRows">
                 <h2>A Quo Co. Court Transcription Services</h2>
             </section>
@@ -98,7 +97,8 @@
                                 </div>
 
                                 <div class="item">
-                                    <img id="3" src="img/word-index.jpg" alt="example of word index" style="width:100%;">
+                                    <img id="3" src="img/word-index.jpg" alt="example of word index"
+                                        style="width:100%;">
                                 </div>
                             </div>
 
@@ -153,14 +153,16 @@
                 </p>
             </section>
         </section>
-
+        <section id="anchorRates" class="anchorTrick">
+            <img src="img/anchor.png" alt="rates page anchor"><br>
+        </section>
         <section id="rates" class="row row2 pageRow">
 
             <section class="stackedRows">
                 <h1>Rates</h1>
             </section>
             <section class="stackedRows">
-                <p>Looking to log in to upload files?<a href="https://www.aquoco.co/Files/" class="navLink"
+                <p><br>Looking to log in to upload files?<a href="https://www.aquoco.co/Files/" class="navLink"
                         target="_blank">Log in
                         here.</a></p>
             </section>
@@ -240,7 +242,9 @@
                         via e-mail here.</a> Just fill out the form that pops up.</p>
             </section>
         </section>
-
+        <section id="anchorSoftwareDevelopment" class="anchorTrick">
+            <img src="img/anchor.png" alt="software development page anchor"><br>
+        </section>
         <section id="softwareDevelopment" class="row row3 pageRow">
             <section class="stackedRows">
                 <h2>Software Development by Erica Ingram</h2>
@@ -298,7 +302,8 @@
                                 </div>
                             </center>
                         </li>
-                        <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Lambda Build Week Project</a><br>
+                        <li><a href="https://partyplannersite.herokuapp.com/" target="_blank">Lambda Build Week
+                                Project</a><br>
                             <center>
                                 <div class="devdetails">
                                     <div class="codeItem">HTML</div>
@@ -334,10 +339,13 @@
             </section>
 
         </section>
-
+        <section id="anchorAbout" class="anchorTrick">
+            <img src="img/anchor.png" alt="about page anchor"><br>
+        </section>
         <section id="about" class="row row4 pageRow">
 
             <section id="abouth" class="row stackedRows">
+                <p><br> </p>
                 <h2>About A Quo Co.</h2>
             </section>
 
@@ -377,7 +385,9 @@
             </section>
 
         </section>
-
+        <section id="anchorContact" class="anchorTrick">
+            <img src="img/anchor.png" alt="contact page anchor"><br>
+        </section>
         <section id="contact" class="row row5 pageRow">
 
             <section class="stackedRows">
@@ -1924,14 +1934,14 @@
         document.getElementById("txtCaptcha").value = code;
         document.getElementById("CaptchaDiv").innerHTML = code;
 
-            var globalResizeTimer = null;
+        var globalResizeTimer = null;
 
-            $(window).resize(function () {
-                if (globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
-                globalResizeTimer = window.setTimeout(function () {
-                    imageChangeWindowResize();
-                }, 25);
-            });
+        $(window).resize(function () {
+            if (globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+            globalResizeTimer = window.setTimeout(function () {
+                imageChangeWindowResize();
+            }, 25);
+        });
         /*
         window.onresize = imageChangeWindowResize();
             */

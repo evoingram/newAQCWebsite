@@ -56,23 +56,25 @@ h2 {
 .row2 {
 	.sharedAnimation(0, titleAnimationR, 0s);
 	.orderZI(2, 100);
-	.cBGreenTNavy();
+	.cBGrayTNavy();
+	// .cBGreenTNavy();
 }
 
 .row3 {
 	.orderZI(3, 100);
-	.cBGrayTNavy();
+	.cBNavyTGray();
 }
 
 .row4 {
 	.sharedAnimation(0, titleAnimationR, 0s);
 	.orderZI(4, 100);
-	.cBNavyTGray();
+	.cBGrayTNavy();
 }
 
 .row5 {
 	.orderZI(5, 100);
-	.cBGreenTNavy();
+	.cBNavyTGray();
+	// .cBGreenTNavy();
 }
 
 .stackedRows {
@@ -123,15 +125,17 @@ h2 {
 	li {
 		padding-top: 2rem;
 		line-height: 2;
+		background-color: transparent;
 	}
 
 	a {
 		.cBNavyTGray();
 		.fontBold();
-		color: @gray;
+		color: @navy;
+		background-color: transparent;
 
 		&:after {
-			background-color: @gray;
+			background-color: @navy;
 		}
 	}
 
@@ -198,8 +202,13 @@ h2 {
 	.orderZI(3, 200);
 
 	a {
-		color: @navy;
+		color: @gray;
 		.fontBold();
+		background-color: transparent;
+
+		&:after {
+			background-color: @gray;
+		}
 	}
 
 	ul {
@@ -238,8 +247,12 @@ h2 {
 	}
 
 	a {
-		color: @navy;
+		color: @gray;
 		.fontBold();
+
+		&:after {
+			background-color: @gray;
+		}
 	}
 
 	h3 {
@@ -253,6 +266,7 @@ h2 {
 	h4 {
 		.fontSize(1.5rem, center);
 	}
+
 	.devDetails {
 		display: flex;
 		width: 100%;
