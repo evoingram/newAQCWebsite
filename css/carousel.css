@@ -1,0 +1,49 @@
+.carousel {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .carousel {
+    width: 100%;
+  }
+}
+
+.carousel .left-button, .carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #A5ACAF;
+  background-color: #002244;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.carousel .left-button:hover, .carousel .right-button:hover {
+  color: #002244;
+  background-color: #A5ACAF;
+  border: 2px solid #002244;
+}
+
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+}
