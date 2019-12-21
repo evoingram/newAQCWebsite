@@ -1,3 +1,19 @@
+/* raleway-regular - latin */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/raleway-v14-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'), url('../font/raleway-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/raleway-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../font/raleway-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../font/raleway-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../font/raleway-v14-latin-regular.svg#Raleway') format('svg');
+  /* Legacy iOS */
+}
+
 .vCenter {
   display: flex;
   justify-content: center;
