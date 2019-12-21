@@ -154,9 +154,6 @@ function toggleFAQDetails(obj) {
 function stickyNav() {
 	var navbar = document.querySelector('.navigation');
 	var sticky = navbar.offsetTop;
-	console.log("offsetTop " + navbar.offsetTop);
-	console.log("sticky " + sticky);
-	console.log("pageY offset " + window.pageYOffset);
 	if (window.pageYOffset >= sticky) {
         document.body.style.paddingTop = (navbar.offsetHeight + 45) + 'px';
 		navbar.classList.add('sticky');
@@ -165,8 +162,6 @@ function stickyNav() {
         document.body.style.paddingTop = 0;
 	}
 }
-
-// var titleInput = document.getElementById("p1i1");
 
 // screen one form validation
 function Allow1() {
@@ -200,22 +195,11 @@ function Allow1() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq1');
-		console.log('form1elements next:  ' + form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('collapsing' + item);
 			form1Elements[x].style.height = '0px';
 		}
 	}
 }
-
-/*
-    <section id="pqChange1" class="stackedRows" id="formHeading">
-        <h1>Price Quote Calculator:</h1>
-    </section><br><br>
-    <section id="pqChange2" class="stackedRows">
-        <h3>Get a price quote on your transcript:</h3>
-    </section>
-*/
 
 // screen two form validation
 function Allow2() {
@@ -225,12 +209,6 @@ function Allow2() {
 		alert('If you do not agree to the terms of service, we will be unable to accept your order at this time.');
 		return false;
 	} else {
-		/*
-                window.location.href = '#four';
-                var vNextFS = document.getElementById("four");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-*/
 
 		var vStartOF = document.getElementById('two');
 		vStartOF.style.display = 'none';
@@ -240,9 +218,7 @@ function Allow2() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq2');
-		console.log('form1elements next:  ' + form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('collapsing' + item);
 			form1Elements[x].style.height = '0px';
 		}
 	}
@@ -264,18 +240,9 @@ function Allow3() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq4');
-		console.log('form1elements next:  ' + form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('collapsing' + item);
 			form1Elements[x].style.height = '0px';
 		}
-		/*
-
-                window.location.href = '#five';
-                var vNextFS = document.getElementById("five");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-                */
 	}
 }
 
@@ -308,12 +275,6 @@ function Allow4() {
 		alert("Please enter the judge or hearing officer's name.");
 		return false;
 	} else {
-		/*
-                window.location.href = '#five';
-                var vNextFS = document.getElementById("five");
-                vNextFS.style.display = "block";
-                vNextFS.style.overflow = "visible";
-                */
 
 		var vStartOF = document.getElementById('four');
 		vStartOF.style.display = 'none';
@@ -323,9 +284,7 @@ function Allow4() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq4');
-		console.log('form1elements next:  ' + form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('collapsing' + item);
 			form1Elements[x].style.height = '0px';
 		}
 	}
@@ -383,9 +342,7 @@ function Allow5() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq5');
-		console.log('form1elements next:  ' + form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('collapsing' + item);
 			form1Elements[x].style.height = '0px';
 		}
 	}
@@ -458,16 +415,13 @@ function resetForm() {
 	vNextFS.style.overflow = 'visible';
 	vNextFS.style.height = '100%';
 	var form1Elements = document.getElementsByClassName('.pq6');
-	console.log('form1elements next:  ' + form1Elements);
 	for (x = 0; x < form1Elements.length; x++) {
-		console.log('collapsing' + item);
 		form1Elements[x].style.height = '0px';
 	}
 }
 // go back when you click back button
 function backClicked(id) {
 	var vNextFS;
-	console.log(id);
 	if (id === 'two') {
 		vNextFS = document.getElementById('two');
 		vNextFS.style.display = 'none';
@@ -481,9 +435,7 @@ function backClicked(id) {
 		pqChange2.textContent = 'Get a price quote on your transcript.';
 		var vNextFS = document.getElementById('two');
 		var form1Elements = document.getElementsByClassName('.pq1');
-		console.log(form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('expanding' + form1Elements[x]);
 			form1Elements[x].style.height = '100%';
 		}
 	} else if (id === 'three') {
@@ -495,9 +447,7 @@ function backClicked(id) {
 		vNextFS.style.height = '100%';
 
 		var form1Elements = document.getElementsByClassName('.pq2');
-		console.log(form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('expanding' + form1Elements[x]);
 			form1Elements[x].style.height = '100%';
 		}
 	} else if (id === 'four') {
@@ -509,9 +459,7 @@ function backClicked(id) {
 		vNextFS.style.height = '100%';
 
 		var form1Elements = document.getElementsByClassName('.pq2');
-		console.log(form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('expanding' + form1Elements[x]);
 			form1Elements[x].style.height = '100%';
 		}
 	} else if (id === 'five') {
@@ -523,9 +471,7 @@ function backClicked(id) {
 		vNextFS.style.height = '100%';
 
 		var form1Elements = document.getElementsByClassName('.pq4');
-		console.log(form1Elements);
 		for (x = 0; x < form1Elements.length; x++) {
-			console.log('expanding' + form1Elements[x]);
 			form1Elements[x].style.height = '100%';
 		}
 	} else if (id === 'six') {
