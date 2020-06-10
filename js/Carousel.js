@@ -12,17 +12,21 @@ function carouselMaker() {
 	imgTOA.classList.add('imgCarousel');
 	imgTOA.style.display = 'block';
 	imgTOA.id = '0';
+	imgTOA.alt = "picture of table of authorities from transcript";
+	
 	let imgTOAHLinks = divCarousel.appendChild(document.createElement('img'));
 	imgTOAHLinks.src = 'img/TOA-HeadingLinks.webp';
 	imgTOAHLinks.classList.add('imgCarousel');
 	imgTOAHLinks.style.display = 'none';
 	imgTOAHLinks.id = '1';
+	imgTOAHLinks.alt = 'picture of table of contents from transcript';
 
 	let imgWordIndex = divCarousel.appendChild(document.createElement('img'));
 	imgWordIndex.src = 'img/word-index.webp';
 	imgWordIndex.classList.add('imgCarousel');
 	imgWordIndex.style.display = 'none';
 	imgWordIndex.id = '2';
+	imgWordIndex.alt = 'picture of word index from transcript';
 
 	let divRightButton = divCarousel.appendChild(document.createElement('div'));
 	divRightButton.classList.add('right-button');
