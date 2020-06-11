@@ -155,11 +155,11 @@ function stickyNav() {
 	var navbar = document.querySelector('.navigation');
 	var sticky = navbar.offsetTop;
 	if (window.pageYOffset >= sticky) {
-        document.body.style.paddingTop = (navbar.offsetHeight + 45) + 'px';
+		document.body.style.paddingTop = navbar.offsetHeight + 45 + 'px';
 		navbar.classList.add('sticky');
 	} else {
 		navbar.classList.remove('sticky');
-        document.body.style.paddingTop = 0;
+		document.body.style.paddingTop = 0;
 	}
 }
 
@@ -209,7 +209,6 @@ function Allow2() {
 		alert('If you do not agree to the terms of service, we will be unable to accept your order at this time.');
 		return false;
 	} else {
-
 		var vStartOF = document.getElementById('two');
 		vStartOF.style.display = 'none';
 		vStartOF.style.height = '0';
@@ -275,7 +274,6 @@ function Allow4() {
 		alert("Please enter the judge or hearing officer's name.");
 		return false;
 	} else {
-
 		var vStartOF = document.getElementById('four');
 		vStartOF.style.display = 'none';
 		vStartOF.style.height = '0';
@@ -426,13 +424,17 @@ function backClicked(id) {
 		vNextFS = document.getElementById('two');
 		vNextFS.style.display = 'none';
 		vNextFS.style.height = '0';
+
 		vNextFS = document.getElementById('one1');
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
+
 		var pqChange1 = document.getElementById('pqChange1');
 		pqChange1.textContent = 'Price Quote Calculator';
+
 		var pqChange2 = document.getElementById('pqChange2');
 		pqChange2.textContent = 'Get a price quote on your transcript.';
+
 		var vNextFS = document.getElementById('two');
 		var form1Elements = document.getElementsByClassName('.pq1');
 		for (x = 0; x < form1Elements.length; x++) {
