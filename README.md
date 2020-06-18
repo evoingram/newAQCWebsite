@@ -27,7 +27,7 @@ This project was developed using many parametric mixins and nested styles, diffe
 - image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
 - added hover blur to front showcase image
 - added linear gradient to logo and nav menus
-- added underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
+- added underline from [inside out effect](https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100) to nav link hover 
 - FAQ issues fixed (width, padding, and questions/answers not popping out properly)
 - added clickable image carousel, removed timed image shuffle
 - sticky header menu
