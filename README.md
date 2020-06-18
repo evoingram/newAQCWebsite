@@ -1,125 +1,66 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/043ebab30e06dbf85ed7/maintainability)](https://codeclimate.com/github/evoingram/newAQCWebsite/maintainability)
 
-# new company website using what i've learned in Lambda
+# A Quo Co. Official COmpany Website
 
-Live @ https://www.aquoco.co
-
-
-* Made with LESS, JavaScript, HTML, and CSS
-* Fourth iteration, utilizing what I've learned at Lambda
-* Ranks in the 90th percentile in Google PageSpeed Insights
-* Ranks on first page results for "seattle transcription" in Google, page two for Bing/Duckduckgo
-* 100/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
-* 95/100 for performance in Google Chrome's Lighthouse report
-
-This project was developed using many parametric mixins and nested styles, different media queries for phone, tablet, and desktop, responsive units for font sizing, and media queries escaped. It has several animations, two for the showcase image up top, another for the various sections coming in from alternating sides (slide in left/right), and yet another for the underlines when you hover over a link. On the main page, they underline from the inside outward. Any gradient you see was generated with pure CSS. The site utilizes a form I designed from scratch for orders and price quotes.
-
--------------------------------------------------------------------
-
-
-### to-do list
-
-Still left to finish:
-
-Done so far:
-
-- [X] made base layout
-- [X] set colors and added previous content
-- [X] completed popup windows except for priceQuote & FAQ
-- [X] this is an infinite or endless page; all internal links on main page are a popup to other hidden sections on the same page.
-- [X] added placeholder pictures
-- [X] contains animation in showcase image from top of page to where it resides.
-- [X] contains animation bringing in the stripes/main nav linked pages from either side; left, right, left,right, left to where they each reside.
-- [X] contains separate less files for animation/header/form or popup window.
-- [X] contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
-- [X] image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
-- [X] added hover blur to front showcase image
-- [X] added linear gradient to logo and nav menus
-- [X] add underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
-- [X] FAQ issues fixed (width, padding, and questions/answers not popping out properly)
-- [X] added clickable image carousel, removed timed image shuffle
-- [X] sticky header menu
-- [X] add empty line/space above green text in showcase image
-- [X] stop underlining of all body links
-- [X] sub real images for placeholders
-- [X] margin-bottom on showcase image; add so that 'courthouse' word on cement is readable
-- [X] add blur transition fade-in to showcase
-- [X] priceQuote popup
-- [X] finish rates section
-- [X] social media icons for contact page (NO)
-- [X] change links on development page, add new/diff projects<br>
-    (build week, company, vb projects, digital resume, ericaingram portfolio page)
-- [X] contact us form (NO)
-- [X] make clear about when people will pay on order form/page
-- [X] transfer order form from old to new
-- [X] development page goes too far down when you click development links
-- [X] refactor whole website for best LESS pages/functions
-- [X] use separate js page for javascript functions
-- [X] test order form
-- [X] change wording on pq calculator to reflect ordering also
-- [X] add button to order another when complete
-- [X] fixed recaptcha
-- [X] figure out why submitted order form is redirecting to php page
-- [X] fix spacing on li links
-- [X] redo content on about pages
-- [X] fix tos links
-- [X] fix rates on tos
-- [X] reformat languages in development section
-- [X] close other sub-windows when you open another one
-- [X] set up digital resume on ericaingram.com as placeholder for now
-- [X] proofing
-- [X] fix FAQ: payment accepted, pricequote link
-- [X] fix jurisdictions hidden page list
-- [X] fix contact SM list to look like dev tech list
-- [X] fix court transcription narrow rates para width
-- [X] fix rates narrow payment-arr/govt-agen para width
-- [X] fix tos links turnaround & rates
-- [X] change softwaredev contact-me link
-- [X] tablet version
-- [X] mobile version
-- [X] alternate blue/silver background
-- [X] rounded aqc logo corners
-- [X] trick anchors for sticky navbar
-
-# Title Product Overview
-
-* You can find the deployed project at 
-
-* Trello Boards: 
-    - [Labs 18]()
-
-* [Product Canvas]()
-
-* [Design Files]()
+[Deployed Project](https://www.aquoco.co)
 
 ## Project Description
 
+new company website using what I've learned in Lambda.
 
+This project was developed using many parametric mixins and nested styles, different media queries for phone, tablet, and desktop, responsive units for font sizing, and media queries escaped. It has several animations, two for the showcase image up top, another for the various sections coming in from alternating sides (slide in left/right), and yet another for the underlines when you hover over a link. On the main page, they underline from the inside outward. Any gradient you see was generated with pure CSS. The site utilizes a form I designed from scratch for orders and price quotes.
 
 ## Key Features
 
 - Live solo project
+- Made with LESS, JavaScript, HTML, and CSS
+- Fourth iteration, utilizing what I've learned at Lambda
+- Ranks in the 90th percentile in Google PageSpeed Insights
+- Ranks on first page results for "seattle transcription" in Google, page two for Bing/Duckduckgo
+- 100/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
+- 95/100 for performance in Google Chrome's Lighthouse report
+- pure CSS gradients
+- completed popup windows except for priceQuote & FAQ
+- this is an infinite or endless page; all internal links on main page are a popup to other hidden sections on the same page.
+- contains animation in showcase image from top of page to where it resides.
+- contains animation bringing in the stripes/main nav linked pages from either side; left, right, left,right, left to where they each reside.
+- contains separate less files for animation/header/form or popup window.
+- contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
+- image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
+- added hover blur to front showcase image
+- added linear gradient to logo and nav menus
+- added underline from inside out effect to nav link hover https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100
+- FAQ issues fixed (width, padding, and questions/answers not popping out properly)
+- added clickable image carousel, removed timed image shuffle
+- sticky header menu
+- added empty line/space above green text in showcase image
+- stopped underlining of all body links
+- added blur transition fade-in to showcase
+- priceQuote popup
+- refactor order form from old to new
+- development page goes too far down when you click development links
+- refactored whole website for best LESS pages/functions
+- used separate js page for javascript functions
+- tested order form
+- added button to order another when complete
+- fixed recaptcha
+- figured out why submitted order form is redirecting to php page
+- reformatted languages in development section
+- closed other sub-windows when you open another one
+- tablet & mobile versions
+- alternate blue/silver background
+- rounded aqc logo corners
+- trick anchors for sticky navbar
 
 ## Tech Stack
 
-Front end deployed to `Heroku` and built using:
+Front end deployed to `private hosting` and built using:
 
-- [React](https://reactjs.org/): ReactJS is an open-source JavaScript library which is used for building user interfaces specifically for single page applications. It's used for handling view layer for web and mobile apps. React also allows us to create reusable UI components.
-- [Cypress](https://github.com/cypress-io/cypress):  fast, easy and reliable testing for anything that runs in a browser.
-- []():  Description
-- []():  Description
-- []():  Description
-
-## Available Scripts 
-
-in the project directory, you can run: 
-
-### `npm start`
-
-## APIs
+- [HTML](https://en.wikipedia.org/wiki/HTML): standard markup language for documents designed to be displayed in a web browser.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS):  a stylesheet language used to describe the presentation of a document written in HTML or XML.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/javascript):  a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
+- [LESS](http://lesscss.org/):  a backwards-compatible language extension for CSS.
    
 ## Testing
 
-- Cypress testing will be completed in a future release.
-
-## Documentation
+This site was tested in Brave, Firefox, I.E., Edge, and Chrome.
