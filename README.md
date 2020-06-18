@@ -4,6 +4,10 @@
 
 [Deployed Project](https://www.aquoco.co)
 
+## My Role
+
+This was a solo project, so I completed every aspect of this project.
+
 ## Project Description
 
 new company website using what I've learned in Lambda.
