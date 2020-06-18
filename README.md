@@ -47,4 +47,4 @@ Front end deployed to `private hosting` and built using:
    
 ## Testing
 
-This site was tested in Brave, Firefox, I.E., Edge, and Chrome.
+This site was tested in Brave, Firefox, Internet Explorer, Edge, and Chrome.
