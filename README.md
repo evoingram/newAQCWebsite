@@ -24,16 +24,14 @@ This project was developed using many parametric mixins and nested styles, diffe
 - contains animation bringing in the stripes/main nav linked pages from either side; left, right, left,right, left to where they each reside.
 - contains separate less files for animation/header/form or popup window.
 - contains several mixins: one for animation, several for color manipulation according to color scheme, some flexbox ones, and an order/z-index one.
-- image carousel for court transcription section changes images every 7-8 seconds to show sections of the company's product.
-- added hover blur to front showcase image
-- added linear gradient to logo and nav menus
-- added underline from [inside out effect](https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100) to nav link hover 
-- FAQ issues fixed (width, padding, and questions/answers not popping out properly)
-- added clickable image carousel, removed timed image shuffle
+- image carousel for court transcription section
+- linear gradient on logo and nav menus
+- [inside out underline](https://codepen.io/matchboxhero/pen/VMEWrq?editors=1100) to nav link hover 
+- FAQ with expandable questions
 - sticky header menu
-- refactor order form from old to new
-- refactored whole website for best LESS pages/functions
-- used separate js page for javascript functions
+- custom order form
+- organized directory of LESS files
+- separate js pages for the carousel and another for all other javascript functions
 - tablet & mobile versions
 
 ## Tech Stack
