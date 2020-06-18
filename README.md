@@ -9,6 +9,8 @@ Live @ https://www.aquoco.co
 * Fourth iteration, utilizing what I've learned at Lambda
 * Ranks in the 90th percentile in Google PageSpeed Insights
 * Ranks on first page results for "seattle transcription" in Google, page two for Bing/Duckduckgo
+* 100/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
+* 95/100 for performance in Google Chrome's Lighthouse report
 
 This project was developed using many parametric mixins and nested styles, different media queries for phone, tablet, and desktop, responsive units for font sizing, and media queries escaped. Like my build week project, it has several animations, two for the showcase image up top, another for the various sections coming in from alternating sides (slide in left/right), and yet another for the underlines when you hover over a link. On the main page, they underline from the inside outward. Any gradient you see was generated with pure CSS. The site utilizes a form I designed from scratch for orders and price quotes.
 
