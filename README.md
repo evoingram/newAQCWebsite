@@ -1,6 +1,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/043ebab30e06dbf85ed7/maintainability)](https://codeclimate.com/github/evoingram/newAQCWebsite/maintainability)
 
-# newAQCWebsite
+# new company website using what i've learned in Lambda
 
 Live @ https://www.aquoco.co
 
@@ -12,12 +12,12 @@ Live @ https://www.aquoco.co
 * 100/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
 * 95/100 for performance in Google Chrome's Lighthouse report
 
-This project was developed using many parametric mixins and nested styles, different media queries for phone, tablet, and desktop, responsive units for font sizing, and media queries escaped. Like my build week project, it has several animations, two for the showcase image up top, another for the various sections coming in from alternating sides (slide in left/right), and yet another for the underlines when you hover over a link. On the main page, they underline from the inside outward. Any gradient you see was generated with pure CSS. The site utilizes a form I designed from scratch for orders and price quotes.
+This project was developed using many parametric mixins and nested styles, different media queries for phone, tablet, and desktop, responsive units for font sizing, and media queries escaped. It has several animations, two for the showcase image up top, another for the various sections coming in from alternating sides (slide in left/right), and yet another for the underlines when you hover over a link. On the main page, they underline from the inside outward. Any gradient you see was generated with pure CSS. The site utilizes a form I designed from scratch for orders and price quotes.
 
 -------------------------------------------------------------------
 
 
-### new company website using what i've learned in Lambda
+### to-do list
 
 Still left to finish:
 
