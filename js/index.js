@@ -29,9 +29,9 @@ function captchaSet() {
 }
 // Validate input against the generated number
 function ValidCaptcha() {
-	var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
-	var str2 = removeSpaces(document.getElementById('captchaInput').value);
-	if (str1 == str2) {
+	var textCaptcha = removeSpaces(document.getElementById('txtCaptcha').value);
+	var captchaInput = removeSpaces(document.getElementById('captchaInput').value);
+	if (textCaptcha == captchaInput) {
 		return true;
 	} else {
 		return false;
@@ -324,11 +324,7 @@ function Allow5() {
 	} else if (!e.match(/(^\d{5}$)|(^\d{5}-\d{4}$)/)) {
 		alert('ZIP:  Please enter a five-digit ZIP code.');
 		return false;
-	} else if (
-		!f.match(
-			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-		)
-	) {
+	} else if (f.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
 		alert('Email:  Please enter a valid e-mail address.');
 		return false;
 	} else {
@@ -340,9 +336,7 @@ function Allow5() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq5');
-		for (x = 0; x < form1Elements.length; x++) {
-			form1Elements[x].style.height = '0px';
-		}
+		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '0px';}
 	}
 }
 
@@ -417,6 +411,7 @@ function resetForm() {
 		form1Elements[x].style.height = '0px';
 	}
 }
+
 // go back when you click back button
 function backClicked(id) {
 	var vNextFS;
@@ -424,22 +419,16 @@ function backClicked(id) {
 		vNextFS = document.getElementById('two');
 		vNextFS.style.display = 'none';
 		vNextFS.style.height = '0';
-
 		vNextFS = document.getElementById('one1');
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
-
 		var pqChange1 = document.getElementById('pqChange1');
 		pqChange1.textContent = 'Price Quote Calculator';
-
 		var pqChange2 = document.getElementById('pqChange2');
 		pqChange2.textContent = 'Get a price quote on your transcript.';
-
 		var vNextFS = document.getElementById('two');
 		var form1Elements = document.getElementsByClassName('.pq1');
-		for (x = 0; x < form1Elements.length; x++) {
-			form1Elements[x].style.height = '100%';
-		}
+		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'three') {
 		vNextFS = document.getElementById('four');
 		vNextFS.style.display = 'none';
@@ -447,11 +436,8 @@ function backClicked(id) {
 		vNextFS = document.getElementById('two');
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
-
 		var form1Elements = document.getElementsByClassName('.pq2');
-		for (x = 0; x < form1Elements.length; x++) {
-			form1Elements[x].style.height = '100%';
-		}
+		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'four') {
 		vNextFS = document.getElementById('four');
 		vNextFS.style.display = 'none';
@@ -459,11 +445,8 @@ function backClicked(id) {
 		vNextFS = document.getElementById('two');
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
-
 		var form1Elements = document.getElementsByClassName('.pq2');
-		for (x = 0; x < form1Elements.length; x++) {
-			form1Elements[x].style.height = '100%';
-		}
+		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'five') {
 		vNextFS = document.getElementById('five');
 		vNextFS.style.display = 'none';
@@ -471,11 +454,8 @@ function backClicked(id) {
 		vNextFS = document.getElementById('four');
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
-
 		var form1Elements = document.getElementsByClassName('.pq4');
-		for (x = 0; x < form1Elements.length; x++) {
-			form1Elements[x].style.height = '100%';
-		}
+		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'six') {
 		vNextFS = document.getElementById('six');
 		vNextFS.style.display = 'none';
@@ -493,8 +473,9 @@ function closeFPOpenCurrent(id) {
 		document.getElementById(id).style.display = 'block';
 	}
 }
+
+// ad image switch for mobile/tablet versions
 function imageChangeWindowResize() {
-	// ad image switch for mobile/tablet versions
 
 	// if #ratesi, #softwareDevelopmenti, #abouti,#contacti max-width = 90%
 	// then change src to banner ad imgs
