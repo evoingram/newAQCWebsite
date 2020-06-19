@@ -171,16 +171,13 @@ function Allow1() {
 	var s = document.forms['OrderForm']['p1i5'].value;
 	var vStartOF = document.getElementById('one1');
 	if (w == '') {
-		alert('You must enter the jurisdiction where the hearing took place before we can proceed.');
+		missingInfoAlert('You must enter the jurisdiction where the hearing took place before we can proceed.');
 		return false;
-	} else if (z == '') {
-		alert('You must enter audio length in minutes.');
-		return false;
-	} else if (z < 1) {
-		alert('You must enter audio length in minutes.');
+	} else if (z == '' || z < 1) {
+		missingInfoAlert('You must enter audio length in minutes.');
 		return false;
 	} else if (s == 'No') {
-		alert('You must agree to the listed page rate before we can proceed.');
+		missingInfoAlert('You must agree to the listed page rate before we can proceed.');
 		return false;
 	} else {
 		var vStartOF = document.getElementById('one1');
@@ -262,16 +259,16 @@ function Allow4() {
 	var p = document.forms['OrderForm']['p5i10'].value;
 	var q = document.forms['OrderForm']['p5i11'].value;
 	if (g == '') {
-		alert('Please enter the case caption exactly as it should appear on the transcript.');
+		missingInfoAlert('Please enter the case caption exactly as it should appear on the transcript.');
 		return false;
 	} else if (h == '') {
-		alert('Please enter the case number as it should appear on the transcript.');
+		missingInfoAlert('Please enter the case number as it should appear on the transcript.');
 		return false;
 	} else if (k == '') {
-		alert('Please enter the hearing date.');
+		missingInfoAlert('Please enter the hearing date.');
 		return false;
 	} else if (l == '') {
-		alert("Please enter the judge or hearing officer's name.");
+		missingInfoAlert("Please enter the judge or hearing officer's name.");
 		return false;
 	} else {
 		var vStartOF = document.getElementById('four');
@@ -282,52 +279,54 @@ function Allow4() {
 		vNextFS.style.overflow = 'visible';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq4');
-		for (x = 0; x < form1Elements.length; x++) {
-			form1Elements[x].style.height = '0px';
-		}
+		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '0px';}
 	}
 	captchaSet();
 }
 
 // screen five form validation
 function Allow5() {
-	var xx = document.forms['OrderForm']['p6i1'].value;
-	var yy = document.forms['OrderForm']['p6i2'].value;
+	var xx = document.forms['OrderForm']['p6i1'].value.match(/^[a-zA-Z0-9., ]+$/);
+	var yy = document.forms['OrderForm']['p6i2'].value.match(/^[a-zA-Z0-9., ]+$/);
 	var zz = document.forms['OrderForm']['p6i3'].value;
-	var a = document.forms['OrderForm']['p6i4'].value;
-	var b = document.forms['OrderForm']['p6i5'].value;
-	var c = document.forms['OrderForm']['p6i6'].value;
-	var d = document.forms['OrderForm']['p6i7'].value;
-	var e = document.forms['OrderForm']['p6i8'].value;
-	var f = document.forms['OrderForm']['p6i9'].value;
-	if (!xx.match(/^[a-zA-Z0-9., ]+$/)) {
-		alert('Your Name:  Please use only alphanumeric characters, commas, or periods.');
+	var a = document.forms['OrderForm']['p6i4'].value.match(/^[a-zA-Z0-9., ]+$/);
+	var b = document.forms['OrderForm']['p6i5'].value.match(/^[a-zA-Z0-9., ]*$/);
+	var c = document.forms['OrderForm']['p6i6'].value.match(/^[a-zA-Z. ]+$/);
+	var d = document.forms['OrderForm']['p6i7'].value.match(/^[a-zA-Z ]+$/);
+	var e = document.forms['OrderForm']['p6i8'].value.match(/(^\d{5}$)|(^\d{5}-\d{4}$)/);
+	var f = document.forms['OrderForm']['p6i9'].value.match(
+		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+	);
+	if (!xx) {
+		missingInfoAlert('Your Name:  Please use only alphanumeric characters, commas, or periods.');
 		return false;
-	} else if (!yy.match(/^[a-zA-Z0-9., ]+$/)) {
-		alert("Attorney's Name:  Please use only alphanumeric characters, commas, or periods.");
+	} else if (!yy) {
+		missingInfoAlert("Attorney's Name:  Please use only alphanumeric characters, commas, or periods.");
 		return false;
 	} else if (zz == '') {
-		alert('Company Name:  Please use only alphanumeric characters, commas, or periods.');
+		missingInfoAlert('Company Name:  Please use only alphanumeric characters, commas, or periods.');
 		return false;
-	} else if (!a.match(/^[a-zA-Z0-9., ]+$/)) {
-		alert('Address1:  Please use only alphanumeric characters, commas, or periods.');
+	} else if (!a) {
+		missingInfoAlert('Address1:  Please use only alphanumeric characters, commas, or periods.');
 		return false;
-	} else if (!b.match(/^[a-zA-Z0-9., ]*$/)) {
-		alert('Address2:  Please use only alphanumeric characters, commas, or periods.');
+	} else if (!b) {
+		missingInfoAlert('Address2:  Please use only alphanumeric characters, commas, or periods.');
 		return false;
-	} else if (!c.match(/^[a-zA-Z. ]+$/)) {
-		alert('City:  Please use only alphabetic characters or periods.');
+	} else if (!c) {
+		missingInfoAlert('City:  Please use only alphabetic characters or periods.');
 		return false;
-	} else if (!d.match(/^[a-zA-Z ]+$/)) {
-		alert('State:  Please use only alphabetic characters.');
+	} else if (!d) {
+		missingInfoAlert('State:  Please use only alphabetic characters.');
 		return false;
-	} else if (!e.match(/(^\d{5}$)|(^\d{5}-\d{4}$)/)) {
-		alert('ZIP:  Please enter a five-digit ZIP code.');
+	} else if (!e) {
+		missingInfoAlert('ZIP:  Please enter a five-digit ZIP code.');
+		alert(alertText);
 		return false;
-	} else if (f.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-		alert('Email:  Please enter a valid e-mail address.');
+	} else if (f) {
+		missingInfoAlert('Email:  Please enter a valid e-mail address.');
 		return false;
-	} else {
+	}
+	else {
 		var vStartOF = document.getElementById('five');
 		vStartOF.style.display = 'none';
 		vStartOF.style.height = '0';
@@ -340,6 +339,9 @@ function Allow5() {
 	}
 }
 
+function missingInfoAlert(alertText) { 
+		alert(alertText);
+}
 // calculate and display price estimate
 function calculatePrice(OrderForm) {
 	//Get selected data
