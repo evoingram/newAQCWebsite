@@ -5,38 +5,22 @@ function calculatePrice(OrderForm) {
 	var AudioLength = document.forms['OrderForm']['p1i4'].value;
 	var Turnaround = document.forms['OrderForm']['turnaround'].value;
 
-	//var PageRate = 2.65;
+	var PageRate;
 	var hours = 0;
 	AudioLength = parseInt(AudioLength);
 
-	if (AudioLength >= 885) {
-		if (Turnaround == '30') {
-			PageRate = 2.65;
-		} else if (Turnaround == '45') {
-			PageRate = 2.5;
-		} else if (Turnaround == '14') {
-			PageRate = 3.25;
-		} else if (Turnaround == '7') {
-			PageRate = 3.75;
-		} else if (Turnaround == '3') {
-			PageRate = 4.25;
-		} else if (Turnaround == '1') {
-			PageRate = 5.25;
-		}
-	} else {
-		if (Turnaround == '30') {
-			PageRate = 2.65;
-		} else if (Turnaround == '45') {
-			PageRate = 2.5;
-		} else if (Turnaround == '14') {
-			PageRate = 3.25;
-		} else if (Turnaround == '7') {
-			PageRate = 3.75;
-		} else if (Turnaround == '3') {
-			PageRate = 4.25;
-		} else if (Turnaround == '1') {
-			PageRate = 5.25;
-		}
+	if (Turnaround == '30') {
+		PageRate = 2.65;
+	} else if (Turnaround == '45') {
+		PageRate = 2.5;
+	} else if (Turnaround == '14') {
+		PageRate = 3.25;
+	} else if (Turnaround == '7') {
+		PageRate = 3.75;
+	} else if (Turnaround == '3') {
+		PageRate = 4.25;
+	} else if (Turnaround == '1') {
+		PageRate = 5.25;
 	}
 
 	//convert data to integers
@@ -45,9 +29,7 @@ function calculatePrice(OrderForm) {
 	//calculate total value
 	var total = 45 * hours * PageRate;
 
-	if (total < 50) {
-		total = 50;
-	}
+	if (total < 50) {total = 50;}
 
 	//print value to  tPrice
 	var dollar = '$';
