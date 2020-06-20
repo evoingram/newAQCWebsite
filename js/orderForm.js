@@ -209,7 +209,6 @@ function backClicked(id) {
 		pqChange2.textContent = 'Get a price quote on your transcript.';
 		var vNextFS = document.getElementById('two');
 		var form1Elements = document.getElementsByClassName('.pq1');
-		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'three') {
 		vNextFS = document.getElementById('four');
 		vNextFS.style.display = 'none';
@@ -218,7 +217,6 @@ function backClicked(id) {
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq2');
-		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'four') {
 		vNextFS = document.getElementById('four');
 		vNextFS.style.display = 'none';
@@ -227,7 +225,6 @@ function backClicked(id) {
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq2');
-		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'five') {
 		vNextFS = document.getElementById('five');
 		vNextFS.style.display = 'none';
@@ -236,7 +233,6 @@ function backClicked(id) {
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
 		var form1Elements = document.getElementsByClassName('.pq4');
-		for (x = 0; x < form1Elements.length; x++) {form1Elements[x].style.height = '100%';}
 	} else if (id === 'six') {
 		vNextFS = document.getElementById('six');
 		vNextFS.style.display = 'none';
@@ -244,5 +240,10 @@ function backClicked(id) {
 		vNextFS = document.getElementById('five');
 		vNextFS.style.display = 'block';
 		vNextFS.style.height = '100%';
+	}
+	if (id === 'two' || id === 'three' || id === 'four' || id === 'five') {
+		for (x = 0; x < form1Elements.length; x++) {
+			form1Elements[x].style.height = '100%';
+		}
 	}
 }
