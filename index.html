@@ -11,8 +11,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/orderForm.js"></script>
-    <script src="js/capcha.js"></script>
     <script src="./js/Carousel.js" async></script>
     <!--
         <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
@@ -23,7 +21,8 @@
     -->
 
 
-    <link rel="canonical" href="https://www.aquoco.co/" />
+    <link rel="canonical" href="https://www.aquoco.co/index.html" />
+
     <!-- favicons -->
     <link rel="icon" href="SQUARELOGO.jpg" sizes="32x32" />
     <link rel="icon" href="SQUARELOGO.jpg" sizes="192x192" />
@@ -169,7 +168,7 @@
             <div class="navLinkContainer">
                 <a href="#contact" class="navLink">Contact</a>
             </div>
-            <div class="navLinkContainer"><a id="loginLink" href="https://www.aquoco.co/Files/" class="navLink"
+            <div class="navLinkContainer"><a id="loginLinkHeader" href="https://www.aquoco.co/Files/" class="navLink"
                     target="_blank" rel="noopener noreferrer">Files</a>
             </div>
         </nav>
@@ -737,9 +736,9 @@
                                     <label for="p1i2" id="p1i2Label" class="labelPQ">Are we ordering audio?</label>
                                 </div>
                                 <div class="right">
-                                    <input title="No, we are not ordering audio" id="p1i2" type="radio" name="p1i2"
+                                    <input title="No, we are not ordering audio" id="p1i2n" type="radio" name="p1i2"
                                         value="No" checked required>No
-                                    <input title="Yes, we are ordering audio" id="p1i2" type="radio" name="p1i2"
+                                    <input title="Yes, we are ordering audio" id="p1i2y" type="radio" name="p1i2"
                                         value="Yes" required>Yes
                                 </div>
                             </div>
@@ -748,10 +747,10 @@
                                 <div class="left"><label for="p1i3">Hard copy (extra charge, $0.25/page +
                                         $5/CD)?</label>
                                 </div>
-                                <div class="right"><input title="No hard copy" id="p1i3" type="radio" name="p1i3"
+                                <div class="right"><input title="No hard copy" id="p1i3n" type="radio" name="p1i3"
                                         value="No" checked required>No
 
-                                    <input title="Yes, hard copy" id="p1i3" type="radio" name="p1i3" value="Yes"
+                                    <input title="Yes, hard copy" id="p1i3y" type="radio" name="p1i3" value="Yes"
                                         required>Yes
                                 </div>
                             </div>
@@ -782,36 +781,19 @@
                             </div>
 
                             <br><br><br><br>
-                            <div class="pqQuestion pq1">
-                                <div class="left">
-                                    <label for="p1i5">Do you agree you are ordering a transcript @ above page rate &
-                                        turnaround with a price estimate of:</label></div>
-                                <div class="right">
-                                    <input title="No, I do not agree to the terms." id="p1i5" type="radio" name="p1i5"
-                                        value="No" checked required>No
-                                    <br><input title="Yes, I agree to the terms" id="p1i5" type="radio" name="p1i5"
-                                        value="Yes" required>Yes</div>
+                            <div class="pqQuestion pq1" style="visibility: hidden; display: none;">
                             </div>
                             <br><br><br><br>
                             <div id="priceQuoteBox" class="pqQuestion pq1">
                                 <input title="price estimate" id="tPrice2" size='8' name="tPrice2">
                             </div>
                             <br><br><br>
-                            <div id="jurisdictionDiv" class="pqQuestion pqTextField pq1">
-                                <label for="p1i1">Enter the court proceeding's jurisdiction to proceed to the next page
-                                    (example: none, King County Superior Court, USBC Eastern District of Wisconsin,
-                                    Seattle
-                                    Municipal Court, etc.): </label>
-                                <input title="enter jurisdiction here" id="p1i1" name="p1i1" required />
+                            <div id="jurisdictionDiv" class="pqQuestion pqTextField pq1" style="visibility: hidden; display: none;">
                             </div>
                             <div class="pqQuestion pq1 buttonsBN">
 
                                 <div class="left"><br><br><br></div>
                                 <div class="right">
-                                    <!--
-                                    <input title="Go to the next screen" type="button" value="next"
-                                        onclick="return Allow1();" class="nextButton">
-                                    -->
                                 </div>
 
                             </div>
@@ -846,8 +828,8 @@
                                 </label>
                             </div>
                             <div class="right">
-                                <input title="no billing terms" id="p3i2" type="radio" name="p3i2" value="No" checked>No
-                                <input title="Yes, we would like to be considered for billing terms" id="p3i2"
+                                <input title="no billing terms" id="p3i2" type="radio" name="p3i2n" value="No" checked>No
+                                <input title="Yes, we would like to be considered for billing terms" id="p3i2y"
                                     type="radio" name="p3i2" value="Yes">Yes
                             </div>
                         </div>
@@ -860,9 +842,9 @@
                                 </label>
                             </div>
                             <div class="right">
-                                <input title="No, I do not agree to the terms." id="p3i3" type="radio" name="p3i3"
+                                <input title="No, I do not agree to the terms." id="p3i3n" type="radio" name="p3i3"
                                     value="No" checked required>No
-                                <input title="Yes, I agree to the terms." id="p3i3" type="radio" name="p3i3" value="Yes"
+                                <input title="Yes, I agree to the terms." id="p3i3y" type="radio" name="p3i3" value="Yes"
                                     required>Yes
                             </div>
                         </div>
@@ -944,9 +926,9 @@
                                 <label for="p5i11">For appeal y/n: </label>
                             </div>
                             <div class="right">
-                                <input title="No, this is not for an appeal." id="p5i11" type="radio" name="ForAppeal"
+                                <input title="No, this is not for an appeal." id="p5i11n" type="radio" name="ForAppeal"
                                     value="No" checked>No
-                                <input title="Yes.  This is for an appeal." id="p5i11" type="radio" name="ForAppeal"
+                                <input title="Yes.  This is for an appeal." id="p5i11y" type="radio" name="ForAppeal"
                                     value="Yes">Yes
                             </div>
                         </div>
