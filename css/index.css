@@ -400,8 +400,11 @@ header .navigation a:after {
 header .navigation a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
-
 header .navigation #loginLink {
+  color: #002244;
+}
+
+header .navigation #loginLinkHeader {
   color: #002244;
 }
 
@@ -1355,6 +1358,9 @@ h2 {
   .navigation .navLinkContainer #loginLink {
     color: #002244;
   }
+  .navigation .navLinkContainer #loginLinkHeader {
+    color: #002244;
+  }
   .showcase .content .frontWords {
     width: 85%;
   }
@@ -1404,6 +1410,9 @@ h2 {
     padding: 1%;
   }
   .navigation .navLinkContainer #loginLink {
+    color: #002244;
+  }
+  .navigation .navLinkContainer #loginLinkHeader {
     color: #002244;
   }
   .showcase .content .frontWords {
