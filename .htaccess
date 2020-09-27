@@ -4,7 +4,36 @@
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
 </IfModule>
-<filesMatch ".(webp|jpg|jpeg|png|gif|js|ico)$">
+
+<IfModule mod_headers.c>
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "origin"
+Header set X-XSS-Protection "1; mode=block"
+Header set Content-Security-Policy "default-src 'self' https://*.bloggify.net https://bloggify.net https://doubleclick.net https://*.doubleclick.net;font-src 'self' https://*.fontawesome.com https://fontawesome.com;script-src 'unsafe-inline' 'self' https://unpkg.com https://google-analytics.com https://*.google-analytics.com;media-src 'self';img-src 'self' https://*.githubassets.com https://*.githubusercontent.com https://*.shields.io https://shields.io https://githubusercontent.com https://google-analytics.com https://*.google-analytics.com;style-src 'unsafe-inline' 'self' https://*.googleapis.com https://googleapis.com https://fontawesome.com https://*.fontawesome.com https://*.unpkg.com https://unpkg.com https://*.githubusercontent.com githubusercontent.com https://google-analytics.com https://*.google-analytics.com https://*.doubleclick.net  https://doubleclick.net;"
+</IfModule>
+
+# GZIP compression for text files: fonts
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-font
+AddOutputFilterByType DEFLATE application/x-font-opentype
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE application/x-font-truetype
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE font/opentype
+AddOutputFilterByType DEFLATE font/otf
+AddOutputFilterByType DEFLATE font/ttf
+AddOutputFilterByType DEFLATE text/vtt
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+</IfModule>
+
+<filesMatch ".(webp|jpg|jpeg|png|gif|js|ico|ttf|woff2|css|mp4|vtt)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
