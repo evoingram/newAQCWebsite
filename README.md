@@ -21,7 +21,7 @@ This project was developed using many parametric mixins and nested styles, diffe
 - Ranks in the 90th percentile in Google PageSpeed Insights
 - Ranks on first page results for "seattle transcription" in Google, page two for Bing/Duckduckgo
 - 100/100 for accessibility, best practices, and SEO in Google Chrome's Lighthouse report
-- 95/100 for performance in Google Chrome's Lighthouse report
+- 91/100 for performance in Google Chrome's Lighthouse report
 - pure CSS gradients
 - this is an infinite or endless page; all internal links on main page are a popup to other hidden sections on the same page.
 - contains animation in showcase image from top of page to where it resides.
