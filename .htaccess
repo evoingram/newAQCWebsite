@@ -11,10 +11,10 @@ Header set X-Frame-Options "SAMEORIGIN"
 Header set X-Content-Type-Options "nosniff"
 Header set Referrer-Policy "origin"
 Header set X-XSS-Protection "1; mode=block"
-Header set Content-Security-Policy "default-src 'self' https://*.bloggify.net https://bloggify.net https://doubleclick.net https://*.doubleclick.net;font-src 'self' https://*.fontawesome.com https://fontawesome.com;script-src 'unsafe-inline' 'self' https://unpkg.com https://google-analytics.com https://*.google-analytics.com;media-src 'self';img-src 'self' https://*.githubassets.com https://*.githubusercontent.com https://*.shields.io https://shields.io https://githubusercontent.com https://google-analytics.com https://*.google-analytics.com;style-src 'unsafe-inline' 'self' https://*.googleapis.com https://googleapis.com https://fontawesome.com https://*.fontawesome.com https://*.unpkg.com https://unpkg.com https://*.githubusercontent.com githubusercontent.com https://google-analytics.com https://*.google-analytics.com https://*.doubleclick.net  https://doubleclick.net;"
+Header set Content-Security-Policy "default-src 'self' https://*.bloggify.net https://bloggify.net https://doubleclick.net https://*.doubleclick.net;font-src 'self' https://*.fontawesome.com https://fontawesome.com;script-src 'unsafe-inline' 'self' https://unpkg.com https://google-analytics.com https://*.google-analytics.com;media-src 'self';img-src 'self' https://*.githubassets.com https://*.githubusercontent.com https://*.shields.io https://shields.io https://githubusercontent.com https://google-analytics.com https://*.google-analytics.com https://codeclimate.com https://*.codeclimate.com;style-src 'unsafe-inline' 'self' https://*.googleapis.com https://googleapis.com https://fontawesome.com https://*.fontawesome.com https://*.unpkg.com https://unpkg.com https://*.githubusercontent.com githubusercontent.com https://google-analytics.com https://*.google-analytics.com https://*.doubleclick.net  https://doubleclick.net;"
 </IfModule>
 
-# GZIP compression for text files: fonts
+# GZIP compression for text files: HTML, CSS, JS, Text, fonts
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE application/javascript
 AddOutputFilterByType DEFLATE application/x-font
