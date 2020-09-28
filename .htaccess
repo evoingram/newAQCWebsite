@@ -5,6 +5,16 @@
   AddHandler application/x-httpd-ea-php73 .php .php7 .phtml
 </IfModule>
 
+AddType text/vtt .vtt
+
+<Files "captions.vtt">
+  ForceType text/vtt;charset=utf-8
+</Files>
+
+<Files "chapters.vtt">
+  ForceType text/vtt;charset=utf-8
+</Files>
+
 <IfModule mod_headers.c>
 Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 Header set X-Frame-Options "SAMEORIGIN"
@@ -32,6 +42,7 @@ AddOutputFilterByType DEFLATE text/html
 AddOutputFilterByType DEFLATE text/javascript
 AddOutputFilterByType DEFLATE text/plain
 </IfModule>
+
 
 <filesMatch ".(webp|jpg|jpeg|png|gif|js|ico|ttf|woff2|css|mp4|vtt)$">
 Header set Cache-Control "max-age=2628000, public"
